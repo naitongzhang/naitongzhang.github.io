@@ -34,6 +34,15 @@ theme: minima
 plugins:
   - jekyll-feed
 
+default:
+  - 
+    scope:
+      path: "" # the root path of your site
+      type: "post" # the type of content this applies to
+    values:
+      layout: "post" # the default layout for all pages
+      permalink: /:title/ # the default permalink structure for all pages
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
