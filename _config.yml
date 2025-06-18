@@ -24,6 +24,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   economist and artist
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "naitongzhang.com" # the base hostname & protocol for your site, e.g. http://example.com
+collections:
+  - posts
+  - pages
+  - artworks
+  - docs
 twitter_username: NaitongZhang
 github_username:  naitongzhang
 
@@ -39,7 +44,7 @@ default:
       type: "post" # the type of content this applies to
     values:
       layout: "post" # the default layout for all pages
-      permalink: /:title/ # the default permalink structure for all pages
+      permalink: /:categories/:year/:month/:day/:title.html # the default permalink structure for all pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
