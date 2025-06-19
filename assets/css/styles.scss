@@ -1,3 +1,32 @@
 ---
 ---
 @import "main";
+
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 2em 0;
+  text-align: center;
+
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  .site-info {
+    margin-bottom: 1em;
+  }
+
+  .social-links {
+    a {
+      display: inline-block;
+      margin: 0 0.5em;
+    }
+
+    .social-icon {
+      width: 1.5em;
+      height: 1.5em;
+      fill: #828282; /* 你可以自定义颜色 */
+    }
+  }
+}
