@@ -2,14 +2,14 @@
 
   <div class="wrapper">
 
-    <p class="site-info">
+    <div class="site-info">
       {% if site.email %}
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
       {% endif %}
       {% if site.description %}
-        <br>{{ site.description }}
+        <p>{{ site.description }}</p>
       {% endif %}
-    </p>
+    </div>
 
     <div class="social-links">
       {% if site.twitter_username %}
