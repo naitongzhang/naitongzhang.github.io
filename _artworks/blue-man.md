@@ -1,0 +1,7 @@
+---
+title: "Blue Man"
+image: /assets/images/blue man.jpg
+date_created: 2024-09-08
+layout: post
+---
+
