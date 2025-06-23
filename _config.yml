@@ -24,12 +24,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   economist and artist
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://naitongzhang.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+
 collections:
   - posts
   - pages
   - artworks
+
+# Social media links
 twitter_username: NaitongZhang
 github_username:  naitongzhang
+instagram_username: naitong.zhang
 
 # Build settings
 theme: minima
@@ -38,12 +43,16 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Pages
 header_pages:
   - index.md
   - blog.md
   - artwork.md
   - about.md
 
+google_analytics: G-790T779RET # Replace with your Google Analytics ID
+
+# This is the default configuration for Jekyll.
 default:
   - 
     scope:
