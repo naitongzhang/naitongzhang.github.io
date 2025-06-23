@@ -52,6 +52,8 @@ header_pages:
 
 google_analytics: G-790T779RET # Replace with your Google Analytics ID
 
+show_excerpts: true
+
 # This is the default configuration for Jekyll.
 default:
   - 
