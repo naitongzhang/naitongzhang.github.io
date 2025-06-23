@@ -38,6 +38,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+header_pages:
+  - index.md
+  - blog.md
+  - artwork.md
+  - about.md
+
 default:
   - 
     scope:

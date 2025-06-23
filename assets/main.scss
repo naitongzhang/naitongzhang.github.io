@@ -1,7 +1,11 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+// This file is processed by Jekyll and compiled into CSS.
+// The empty front matter tells Jekyll to process this file.
+// You can add custom styles here or import other Sass files.
 
+// Import the Minima theme's base styles to build upon them.
 @import "minima";
 
 .current {
@@ -35,4 +39,64 @@
       fill: #828282; /* 你可以自定义颜色 */
     }
   }
+}
+
+//
+// Custom styles for the artwork gallery page
+//
+
+.artwork-gallery {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: grid;
+  // Create a responsive grid that shows as many 300px columns as will fit.
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.artwork-gallery li {
+  border: 1px solid $grey-color-light;
+  border-radius: 8px;
+  overflow: hidden; // Ensures the image corners respect the border-radius.
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.artwork-gallery .artwork-link {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.artwork-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+.artwork-gallery h3,
+.artwork-gallery .artwork-description {
+  padding: 0.5rem 1rem;
+}
+
+.artwork-gallery h3 {
+  margin-bottom: 0;
+}
+
+.artwork-gallery .artwork-description {
+  padding-top: 0;
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.artwork-gallery .artwork-date {
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
