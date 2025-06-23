@@ -116,3 +116,70 @@
     white-space: nowrap; // Prevents tags from breaking onto multiple lines
   }
 }
+
+//
+// Custom styles for the category/tag index page
+//
+
+.topic-index h2 {
+  margin-top: 2rem;
+  border-bottom: 1px solid $grey-color-light;
+  padding-bottom: 0.5rem;
+}
+
+.topic-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.topic-list li {
+  margin-bottom: 0.5rem;
+}
+
+.topic-list a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.topic-list .post-count {
+  color: $grey-color;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+//
+// Custom styles for the search page
+//
+
+#search-input {
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1.1em;
+  border: 1px solid $grey-color-light;
+  border-radius: 4px;
+  margin-bottom: 1.5em;
+  box-sizing: border-box; // Include padding in width
+}
+
+#search-results {
+  list-style: none;
+  padding: 0;
+}
+
+#search-results li {
+  margin-bottom: 0.8em;
+  border-bottom: 1px dashed $grey-color-light;
+  padding-bottom: 0.8em;
+}
+
+#search-results li:last-child {
+  border-bottom: none;
+}
+
+#search-results a {
+  
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: $link-color;
+}

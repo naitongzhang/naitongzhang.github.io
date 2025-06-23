@@ -49,6 +49,8 @@ header_pages:
   - blog.md
   - artwork.md
   - about.md
+  - browse.md # Assuming you've added the browse page from previous suggestions
+  - search.md
 
 google_analytics: G-790T779RET # Replace with your Google Analytics ID
 
