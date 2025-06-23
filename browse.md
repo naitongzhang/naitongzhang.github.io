@@ -9,7 +9,7 @@ layout: page
     {% assign sorted_categories = site.categories | sort %}
     {% for category in sorted_categories %}
       <li>
-        <a href="{{ '/categories/' | append: category[0] | slugify | append: '/' | relative_url }}">{{ category[0] | capitalize }}</a>
+        <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">{{ category[0] | capitalize }}</a>
         <span class="post-count">({{ category[1].size }})</span>
       </li>
     {% endfor %}
@@ -20,7 +20,7 @@ layout: page
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
       <li>
-        <a href="{{ '/tags/' | append: tag[0] | slugify | append: '/' | relative_url }}">{{ tag[0] }}</a>
+        <a href="{{ site.baseurl }}/tags/{{ tag[0] | slugify }}/">{{ tag[0] }}</a>
         <span class="post-count">({{ tag[1].size }})</span>
       </li>
     {% endfor %}
