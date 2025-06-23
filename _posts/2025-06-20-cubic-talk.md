@@ -1,6 +1,6 @@
 ---
 title: "Cubic Talk"
-image: /assets/images/cubic talk.png
+image: /assets/images/cubic-talk.png
 layout: post
 ---
 
