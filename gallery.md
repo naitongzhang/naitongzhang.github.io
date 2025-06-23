@@ -1,9 +1,7 @@
 ---
-title: Gallery
+title: Artworks
 layout: page
 ---
-
-<h1>Artworks</h1>
 
 <ul class="artwork-gallery">
   {% assign sorted_artworks = site.artworks | sort: 'date_created' | reverse %}
