@@ -1,8 +1,10 @@
 ---
 title: "Cubic Talk"
-image: /assets/images/cubic talk.png
+image: /assets/images/cubic-talk.png
 date_created: 2025-01-15
-layout: post
+layout: artwork
+categories: [sculpture, abstract]
+tags: [geometric, conversation, 3d]
 ---
 
 A piece exploring geometric forms and conversation.

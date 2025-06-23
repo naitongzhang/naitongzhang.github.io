@@ -1,7 +1,8 @@
 ---
 title: "Blue Man"
-image: /assets/images/blue man.jpg
+image: /assets/images/blue-man.jpg
 date_created: 2024-09-08
-layout: post
+layout: artwork
+categories: [painting, portrait]
+tags: [blue, abstract, figure]
 ---
-

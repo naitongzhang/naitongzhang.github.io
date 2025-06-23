@@ -100,3 +100,19 @@
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+
+.artwork-gallery .artwork-categories,
+.artwork-gallery .artwork-tags {
+  font-size: $small-font-size;
+  color: $grey-color;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding: 0 1rem;
+
+  span {
+    background-color: $grey-color-light;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    white-space: nowrap; // Prevents tags from breaking onto multiple lines
+  }
+}
