@@ -28,7 +28,6 @@ url: "https://naitongzhang.com" # the base hostname & protocol for your site, e.
 
 collections:
   - posts
-  - pages
   - artworks
 
 # Social media links
