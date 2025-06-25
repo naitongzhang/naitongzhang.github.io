@@ -57,7 +57,7 @@ google_analytics: G-790T779RET # Replace with your Google Analytics ID
 show_excerpts: true
 
 # This is the default configuration for Jekyll.
-default:
+defaults:
   - 
     scope:
       path: "" # the root path of your site
@@ -78,19 +78,12 @@ default:
 category_permalink: /categories/:name/
 tag_permalink: /tags/:name/
 
-# Jekyll Archives
-# Settings for the jekyll-archives plugin
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    category: archive
-    tag: archive
-  # Tell the plugin to scan both 'posts' and 'artworks' for categories and tags
-  collections:
-    - posts
-    - artworks
+# Tell the plugin to scan both 'posts' and 'artworks' for categories and tags
+collections:
+  posts:
+    output: true
+  artworks:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
