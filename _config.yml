@@ -21,7 +21,7 @@
 title: Naitong Zhang
 email: naitong.zhang@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  economist and artist
+  economist and artist, based in Beijing and Dubai
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://naitongzhang.com" # the base hostname & protocol for your site, e.g. http://example.com
 
