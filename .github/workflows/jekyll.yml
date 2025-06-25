@@ -34,6 +34,9 @@ jobs:
           ruby-version: '3.1' # Version of Ruby to use
           bundler-cache: true # runs 'bundle install' and caches installed gems
       - name: Build with Jekyll
+        # Sets JEKYLL_ENV to production for build, ensuring plugins and settings are correct.
+        env:
+          JEKYLL_ENV: production
         run: bundle exec jekyll build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
