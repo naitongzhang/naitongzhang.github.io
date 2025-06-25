@@ -1,18 +1,17 @@
 ---
 layout: null
-permalink: /search.json
 ---
-{% assign all_searchable_items = site.posts | concat: site.pages | concat: site.artworks %}
 [
-  {% for item in all_searchable_items %}
-    {% unless item.url contains "/search.json" or item.url contains "/feed.xml" or item.layout == "null" %}
-    {
-      "title"    : {{ item.title | jsonify }},
-      "url"      : {{ item.url | relative_url | jsonify }},
-      "content"  : {{ item.content | strip_html | strip_newlines | jsonify }},
-      "categories": {{ item.categories | default: "" | jsonify }},
-      "tags"     : {{ item.tags | default: "" | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-    {% endunless %}
-  {% endfor %}
+  {%- assign collections_to_search = "posts,artworks" | split: "," -%}
+  {%- for collection_name in collections_to_search -%}
+    {%- assign collection_data = site[collection_name] -%}
+    {%- for item in collection_data -%}
+      {
+        "title": {{ item.title | jsonify }},
+        "url": {{ item.url | relative_url | jsonify }},
+        "content": {{ item.content | strip_html | strip_newlines | jsonify }}
+      }
+      {%- unless forloop.last and forloop.parentloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  {%- endfor -%}
 ]

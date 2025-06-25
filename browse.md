@@ -1,28 +1,29 @@
 ---
-title: Browse by Topic
 layout: page
+title: Browse
+permalink: /browse/
 ---
 
-<div class="topic-index">
-  <h2>Browse by Category</h2>
-  <ul class="topic-list">
-    {% assign sorted_categories = site.categories | sort %}
-    {% for category in sorted_categories %}
-      <li>
-        <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">{{ category[0] | capitalize }}</a>
-        <span class="post-count">({{ category[1].size }})</span>
-      </li>
-    {% endfor %}
-  </ul>
+## Browse by Category
 
-  <h2>Browse by Tag</h2>
-  <ul class="topic-list">
-    {% assign sorted_tags = site.tags | sort %}
-    {% for tag in sorted_tags %}
-      <li>
-        <a href="{{ site.baseurl }}/tags/{{ tag[0] | slugify }}/">{{ tag[0] }}</a>
-        <span class="post-count">({{ tag[1].size }})</span>
-      </li>
-    {% endfor %}
-  </ul>
+<ul>
+  {% for category in site.categories %}
+    <li>
+      <a href="{{ site.baseurl }}/categories/{{ category | first | slugify }}/">{{ category | first }}</a> ({{ category | last | size }})
+    </li>
+  {% endfor %}
+</ul>
+
+## Browse by Tag
+
+<div class="tag-cloud">
+{% for tag in site.tags %}
+  <a href="{{ site.baseurl }}/tags/{{ tag | first | slugify }}/" class="tag-item">{{ tag | first }} ({{ tag | last | size }})</a>
+{% endfor %}
 </div>
+
+<style>
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.tag-item { padding: 4px 10px; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; font-size: 0.9em; background-color: #f7f7f7; }
+.tag-item:hover { background-color: #eee; border-color: #ccc; }
+</style>
