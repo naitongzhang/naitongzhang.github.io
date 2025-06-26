@@ -27,8 +27,26 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
+  {%- endif -%}
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- if site.artworks.size > 0 -%}
+    <h2 class="artwork-list-heading">{{ page.artwork_list_title | default: "Artworks" }}</h2>
+    <ul class="artwork-list">
+      {%- for artwork in site.artworks -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ artwork.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ artwork.url | relative_url }}">
+            {{ artwork.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ artwork.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
   {%- endif -%}
 
 </div>
