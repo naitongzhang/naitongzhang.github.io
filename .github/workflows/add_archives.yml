@@ -12,10 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate Jekyll Archives
+      - name: Setup Ruby
         uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7' # Specify a Ruby version compatible with your Jekyll setup
+
       - name: Install dependencies
-        run: pip install jekyll-archives
+        run: bundle install --jobs 4 --retry 3
 
       - name: Generate Jekyll Archives
         run: |
@@ -23,8 +26,8 @@ jobs:
 
       - name: setup git config
         run: |
-          git config user.name "GitHub Actions Bot"          
-          git config user.email "<>"          
+          git config user.name "GitHub Actions Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: commit
         run: |
