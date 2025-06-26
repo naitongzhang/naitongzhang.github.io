@@ -56,6 +56,9 @@ collections:
     output: true
   artworks:
     output: true
+  archives:
+    output: true
+    permalink: /archives/:path/
 
 # This is the default configuration for Jekyll.
 defaults:
