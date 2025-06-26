@@ -16,8 +16,12 @@ gem "minima", "~> 2.5"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
-# If you want to use Jekyll with plugins, uncomment the line below.
-gem 'jekyll-archives'
+
+# Add fiddle to silence warnings about implicit dependency
+gem "fiddle"
+# Add faraday-retry if you want retry middleware for Faraday
+gem "faraday-retry"
+
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

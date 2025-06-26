@@ -27,8 +27,8 @@ layout: default
   {%- endif -%}
 
   {%- if site.artworks.size > 0 -%}
-    <h2 class="artwork-list-heading">{{ page.artwork_list_title | default: "Artworks" }}</h2>
-    <ul class="artwork-list">
+    <h2 class="post-list-heading">{{ page.artwork_list_title | default: "Artworks" }}</h2>
+    <ul class="post-list">
       {%- for artwork in site.artworks -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
