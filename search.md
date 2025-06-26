@@ -4,8 +4,6 @@ title: Search
 permalink: /search/
 ---
 
-Suggested: #Dubai Financial Market #Dubai Real Estate
-
 <div id="search-container">
   <input type="text" id="search-input" placeholder="Search for posts and artworks...">
   <ul id="results-container"></ul>
