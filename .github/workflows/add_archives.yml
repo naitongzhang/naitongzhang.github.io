@@ -13,10 +13,16 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Generate Jekyll Archives
-        uses: naitongzhang/jekyll-archive-action@main
+        uses: actions/setup-python@v4
         with:
-          archive_url: "https://naitongzhang.com/archives/archivedata"
-          archive_folder_path: "_archives"
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install jekyll-archives
+
+      - name: Generate Jekyll Archives
+        run: |
+          jekyll build
 
       - name: setup git config
         run: |
