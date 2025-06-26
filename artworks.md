@@ -16,10 +16,12 @@ layout: page
         <h3>{{ artwork.title }}</h3>
       </a>
 
+      {%- if artwork.date_created or artwork.content != "" -%}
       <div class="artwork-description">
         {% if artwork.date_created %}<p class="artwork-date">{{ artwork.date_created | date: "%B %Y" }}</p>{% endif %}
         {{ artwork.content | markdownify }}
       </div>
+      {%- endif -%}
 
     </li>
 

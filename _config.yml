@@ -41,8 +41,8 @@ plugins:
 # Pages
 header_pages:
   - index.md
-  - blog.md
-  - artwork.md
+  - articles.md
+  - artworks.md
   - about.md
   - search.md
 
