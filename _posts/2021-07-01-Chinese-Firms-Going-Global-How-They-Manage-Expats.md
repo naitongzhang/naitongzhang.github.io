@@ -1,6 +1,7 @@
-# Chinese Firms Going Global: How They Manage Expatriates?
-
-Created: August 13, 2024 10:47 AM
+---
+title: "Chinese Firms Going Global: How They Manage Expatriates?"
+layout: post
+---
 
 Thesis for applying for MBA Degree of CKGSB
 
