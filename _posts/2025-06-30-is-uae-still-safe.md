@@ -40,11 +40,11 @@ layout: post
 ## 迪拜金融市场市场反应
 宏观的环境对资产的表现有决定性影响。自从2020年迪拜金融市场跌落谷底后，目前依然在走一轮大牛市。尽管目前已经是过去十几年的新高，市场整体的P/E也都在30多，但依然有很多P/E在10、股息率在5%的好公司，而且从DFMGI的数据看这一次增长要比过去两次都更为稳健。
 
-![dfmgi202506](/assets/images/article/dfmgi202506.png)
+![DFMGI202506](/assets/images/article/DFMGI202506.png)
 
 较为有代表性的是迪拜Emaar股票，过去两年的每一次危机，都变成了抄底买入的好时机。那些战争和冲突实实在在的发生了，但是对迪拜金融市场没有本质上的影响，也就意味着，对迪拜的影响其实有限。
 
-![emaar202506](/assets/images/article/emaar202506.png)
+![EMAAR202506](/assets/images/article/EMAAR202506.png)
 
 海合会国家的具体情况可能略有差别，但从本次危机中市场恢复的情况来看，情况可能大差不差。科威特的BKM，卡塔尔的QSI，沙特的TASI，巴林的BHSEA SI，阿曼的MSX，表现都还好。尤其是卡塔尔，这一次危机中被伊朗射来导弹，但市场没有受影响。
 ![ME-market-202506](/assets/images/article/ME-market-202506.png)
