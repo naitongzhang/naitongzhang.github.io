@@ -12,8 +12,6 @@ Thesis for applying for MBA Degree of CKGSB
 | Supervisor: | Jennifer Huang |
 | Student ID: | CKMBA1921 |
 
-July, 2021
-
 **Statement of Authorization**
 
 I fully understand the policy of Cheung Kong Graduate School of Business (referred to as CKGSB thereinafter) regarding preservation and disposition of my thesis, i.e.:
