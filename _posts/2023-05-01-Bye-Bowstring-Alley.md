@@ -1,7 +1,7 @@
-# Bye, Bowstring Alley
-
-Created: August 13, 2024 10:45 AM
-
+---
+Title: "Bye, Bowstring Alley"
+layout: post
+---
 Today marks the final day of the rental contract for the house in Beijing's Bowstring Alley, a place I left several months ago. The house holds significant sentimental value as my wife had renovated it approximately seven years ago. Despite having no savings at the time, she managed to borrow money from her siblings and parents, dedicating months of effort and a total of 60,000 RMB to transform the house into a beautiful space. Bowstring Alley itself is located just a few hundred meters away from the Forbidden City and a few kilometers from the Middle South Sea.
 
 One intriguing resident who used to live in this alley was Mr. Li, the chairman's doctor. He gained fame for writing a book about his experiences living alongside the chairman. Unfortunately, Mr. Li's departure from his homeland ended in tragedy, as he sadly passed away shortly after completing his first book.
