@@ -17,6 +17,22 @@
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(255, 182, 193, 0.6); /* 悬停时阴影加深 */
 }
+.promo-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #d1d1d1;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+.promo-close-btn:hover {
+  color: #999;
+}
 .promo-card h2 {
   margin-top: 0;
   font-size: 1.3rem; /* 减小标题字体 */
@@ -63,7 +79,24 @@
 }
 </style>
 
-<div class="promo-card">
+<div class="promo-card" id="promo-card-container">
+  <button class="promo-close-btn" aria-label="Close">&times;</button>
   <h2>迪拜房屋贷款与黄金签证办理</h2>
   <a href="/Dubai-morgage-and-golden-visa/" class="promo-button">✨ 立即申请 ✨</a>
 </div>
+
+<script>
+  // Self-contained script to handle the close button functionality.
+  document.addEventListener('DOMContentLoaded', function() {
+    const promoCard = document.getElementById('promo-card-container');
+    // Check if the card exists on the page
+    if (promoCard) {
+      const closeBtn = promoCard.querySelector('.promo-close-btn');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          promoCard.style.display = 'none';
+        });
+      }
+    }
+  });
+</script>
