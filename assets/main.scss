@@ -8,3 +8,13 @@
 // Import the Minima theme's base styles to build upon them.
 @import "minima";
 
+/*
+ * 自定义样式: 
+ * 为网站标题 "Naitong Zhang" 设计一个更优雅、更具设计感的样式。
+ */
+.site-title,
+.site-title:visited {
+  font-size: 1.25rem;       // 尺寸比导航稍大，更突出 (约 20px)
+  font-weight: 400;         // 使用常规字重，比主题默认的 light 更清晰
+  letter-spacing: 0.5px;    // 增加微小的字母间距，提升精致感
+}
