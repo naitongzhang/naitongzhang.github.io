@@ -1,0 +1,102 @@
+<style>
+.mw-promo-card {
+  position: fixed; /* 核心：将定位方式改为固定 */
+  bottom: 170px;  /* 增加与下方卡片的距离 (原为150px) */
+  right: 20px;    /* 与另一个卡片右对齐 */
+  z-index: 1001;  /* 确保它显示在最上层 (另一个卡片是 1000) */
+  border: 2px solid #F0B90B; /* Binance yellow border */
+  border-radius: 20px; /* 更圆润的边角 */
+  padding: 1.2rem; /* 调整内边距以适应新尺寸 */
+  text-align: center;
+  max-width: 320px; /* 与另一个卡片宽度一致 */
+  box-shadow: 0 8px 16px rgba(240, 185, 11, 0.3); /* Softer yellow shadow */
+  background: #FFFBE6; /* Very light yellow background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mw-promo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(240, 185, 11, 0.5); /* Deeper shadow on hover */
+}
+.mw-promo-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #d1d1d1;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+.mw-promo-close-btn:hover {
+  color: #999;
+}
+.mw-promo-card h2 {
+  margin-top: 0;
+  font-size: 1.3rem; /* 减小标题字体 */
+  color: #1E2026; /* Dark grey for the title, for contrast */
+}
+.mw-promo-card p {
+  color: #343A40; /* Darker grey text for readability */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.mw-promo-button {
+  display: inline-block;
+  background-color: #F0B90B; /* Binance yellow */
+  color: #1E2026; /* Dark grey text for readability */
+  padding: 10px 22px; /* 减小按钮内边距 */
+  text-decoration: none;
+  border-radius: 30px; /* 更圆润的“药丸”形状 */
+  font-weight: bold;
+  font-size: 1rem; /* 减小按钮字体 */
+  margin-top: 0.5rem;
+  transition: all 0.3s ease; /* 平滑所有过渡效果 */
+  box-shadow: 0 5px 15px rgba(240, 185, 11, 0.4); /* Softer same-color shadow */
+  animation: mw-pulse-animation 2s infinite; /* 应用动画 */
+  border: none;
+}
+.mw-promo-button:hover {
+  background-color: #D9A407; /* Darker yellow on hover */
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(240, 185, 11, 0.6); /* Deeper shadow on hover */
+  animation-play-state: paused; /* 鼠标悬停时暂停动画 */
+}
+
+/* 定义脉冲动画 */
+@keyframes mw-pulse-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+
+<div class="mw-promo-card" id="marketwebb-promo-card-container">
+  <button class="mw-promo-close-btn" aria-label="Close">&times;</button>
+  <h2>注册币安，开始加密货币交易</h2>
+  <a href="https://accounts.marketwebb.org/register?ref=533247701" class="mw-promo-button">🚀 立即注册 🚀</a>
+</div>
+
+<script>
+  // Self-contained script to handle the close button functionality.
+  document.addEventListener('DOMContentLoaded', function() {
+    const promoCard = document.getElementById('marketwebb-promo-card-container');
+    // Check if the card exists on the page
+    if (promoCard) {
+      const closeBtn = promoCard.querySelector('.mw-promo-close-btn');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          promoCard.style.display = 'none';
+        });
+      }
+    }
+  });
+</script>
