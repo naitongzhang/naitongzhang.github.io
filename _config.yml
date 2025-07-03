@@ -30,6 +30,7 @@ url: "https://naitongzhang.com" # the base hostname & protocol for your site, e.
 twitter_username: NaitongZhang
 github_username:  naitongzhang
 instagram_username: naitong.zhang
+linkedin_username: naitongzhang
 
 # Build settings
 theme: minima
