@@ -52,11 +52,26 @@
   box-shadow: 0 5px 15px rgba(93, 173, 226, 0.4);
   border: none;
   cursor: pointer;
+  animation: donation-pulse-animation 2s infinite; /* 应用动画 */
 }
 .donation-promo-button:hover {
   background-color: #3498DB;
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(93, 173, 226, 0.6);
+  animation-play-state: paused; /* 鼠标悬停时暂停动画 */
+}
+
+/* 定义脉冲动画 */
+@keyframes donation-pulse-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .donation-qr-container {
   display: none; /* 初始隐藏 */

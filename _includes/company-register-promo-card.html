@@ -59,11 +59,26 @@
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(84, 153, 199, 0.4);
   border: none;
+  animation: company-register-pulse-animation 2s infinite; /* 应用动画 */
 }
 .company-register-promo-button:hover {
   background-color: #4682B4;
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(70, 130, 180, 0.6);
+  animation-play-state: paused; /* 鼠标悬停时暂停动画 */
+}
+
+/* 定义脉冲动画 */
+@keyframes company-register-pulse-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 </style>
 
