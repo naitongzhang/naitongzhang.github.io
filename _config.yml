@@ -67,7 +67,7 @@ defaults:
   - 
     scope:
       path: "" # the root path of your site
-      type: "post" # the type of content this applies to
+      type: "posts" # the type of content this applies to
     values:
       layout: "post" # the default layout for all pages
       permalink: /:categories/:year/:month/:day/:title.html # the default permalink structure for all pages
