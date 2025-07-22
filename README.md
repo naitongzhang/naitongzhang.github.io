@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b70e5258-5259-40e5-a555-cee7e4656918/deploy-status)](https://app.netlify.com/projects/naitongzhang/deploys)
+
 # minima
 
 *Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
