@@ -69,8 +69,8 @@ defaults:
       path: "" # the root path of your site
       type: "posts" # the type of content this applies to
     values:
-      layout: "post" # the default layout for all pages
-      permalink: /:categories/:year/:month/:day/:title.html # the default permalink structure for all pages
+      layout: "post"
+      permalink: /:categories/:year/:month/:day/:title/ # Cleaner permalink structure
   -
     scope:
       path: ""
@@ -78,6 +78,11 @@ defaults:
     values:
       layout: "artwork" # Use a specific layout for artworks (you'll create this next)
       permalink: /artworks/:title/ # A cleaner permalink structure for artworks
+  -
+    scope:
+      path: ""
+    values:
+      author: "Naitong Zhang" # Example of a default value
 
 # Jekyll Archives configuration
 jekyll-archives:
@@ -90,6 +95,9 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
+
+# This is the line causing the build to fail. It should be removed.
+# url: http://localhost:4000
 
 # Exclude from processing.
 # The following items will not be processed, by default.
