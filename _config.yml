@@ -46,6 +46,7 @@ header_pages:
   - articles.md
   - artworks.md
   - about.md
+  - arkplan.md
   - search.md
 
 google_analytics: G-790T779RET # Replace with your Google Analytics ID

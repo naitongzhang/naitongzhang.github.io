@@ -9,6 +9,8 @@ Bachelor from University of Nottingham
 
 MBA from Cheung Kong Graduate School of Business
 
-Studied in College of Charleston, National Taiwan University, Heriot-Watt University
+Postgraduate Real Estate from Heriot Watt Uniersity
+
+Exchange studied in College of Charleston, National Taiwan University
 
 Worked in a China Harbour Engineering Company and Strategy&
