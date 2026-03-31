@@ -300,9 +300,9 @@ layout: page
 
 如果您对迪拜移民感兴趣，请通过以下方式联系我们：
 
-- 📧 邮箱：info@naitongzhang.com
-- 📱 微信：扫描二维码咨询
-- 🌐 网站：[迪拜房屋贷款与黄金签证办理](Dubai-morgage-and-golden-visa.html)
+- 📧 邮箱：naitong.zhang@outlook.com
+- 📱 微信：zhangnaitong
+- 🌐 网站：[迪拜房屋贷款与黄金签证办理]({{ '/Dubai-morgage-and-golden-visa/' | relative_url }})
 
 ## 🏛️ 官方政府资源
 
