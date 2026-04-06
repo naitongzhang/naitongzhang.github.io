@@ -18,3 +18,62 @@
   font-weight: 400;         // 使用常规字重，比主题默认的 light 更清晰
   letter-spacing: 0.5px;    // 增加微小的字母间距，提升精致感
 }
+
+.article-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.article-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  background: #ffffff;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+  border-color: #667eea;
+}
+
+.article-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1.25rem 1.5rem;
+}
+
+.article-card-meta {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.55rem;
+}
+
+.article-card-title {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.35;
+  color: #0f172a;
+}
+
+.article-preview {
+  margin: 0.85rem 0 0;
+  color: #475569;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  max-height: 7.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.article-preview p {
+  margin: 0;
+}

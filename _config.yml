@@ -59,6 +59,8 @@ collections:
     output: true
   artworks:
     output: true
+  arkplan:
+    output: true
   archives:
     output: true
     permalink: /archives/:path/
@@ -79,6 +81,13 @@ defaults:
     values:
       layout: "artwork" # Use a specific layout for artworks (you'll create this next)
       permalink: /artworks/:title/ # A cleaner permalink structure for artworks
+  -
+    scope:
+      path: ""
+      type: "arkplan"
+    values:
+      layout: "page"
+      permalink: /arkplan/:title/
   -
     scope:
       path: ""
