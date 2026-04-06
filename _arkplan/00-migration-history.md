@@ -4,6 +4,9 @@ date: 2026-04-06
 layout: page
 order: 0
 ---
+
+![方舟计划迁徙历史]({{ '/assets/images/arkplan/arkplan-migration-history.svg' | relative_url }}){: loading="lazy" }
+
 收录在方舟计划 https://naitongzhang.com/arkplan
 
 2026年2月的最后一天，美国和以色列对伊朗发动了袭击。

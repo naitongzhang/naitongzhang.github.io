@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7f3ea" />
+      <stop offset="100%" stop-color="#c8d8f0" />
+    </linearGradient>
+    <linearGradient id="path" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f4a261" />
+      <stop offset="100%" stop-color="#e76f51" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <rect width="1200" height="600" fill="url(#sky)" />
+  <g filter="url(#shadow)">
+    <path d="M 160 420 C 260 400 360 320 420 280 C 480 240 540 220 620 240 C 700 260 760 330 860 340 C 960 350 1020 320 1080 280" fill="none" stroke="url(#path)" stroke-width="28" stroke-linecap="round" />
+    <circle cx="160" cy="420" r="40" fill="#2a9d8f" />
+    <circle cx="1080" cy="280" r="44" fill="#e9c46a" />
+  </g>
+  <g fill="#264653" opacity="0.92">
+    <path d="M210 395 c0 -30 20 -55 45 -55 26 0 45 24 45 55 0 31 -19 56 -45 56 -25 0 -45 -25 -45 -56z" />
+    <path d="M225 430 c10 0 18 8 18 18 v28 h-36 v-28 c0 -10 8 -18 18 -18z" />
+    <path d="M190 350 c0 -24 18 -44 40 -44 22 0 40 20 40 44 0 25 -18 44 -40 44 -22 0 -40 -19 -40 -44z" />
+    <path d="M205 420 l35 35" stroke="#264653" stroke-width="10" stroke-linecap="round" />
+  </g>
+  <g fill="#264653" opacity="0.94">
+    <path d="M560 255 c0 -32 23 -58 52 -58 28 0 52 26 52 58 0 32 -24 58 -52 58 -29 0 -52 -26 -52 -58z" />
+    <path d="M580 325 c10 0 18 8 18 18 v36 h-36 v-36 c0 -10 8 -18 18 -18z" />
+    <path d="M540 170 c0 -26 18 -48 40 -48 22 0 40 22 40 48 0 27 -18 48 -40 48 -22 0 -40 -21 -40 -48z" />
+    <path d="M560 250 l45 42" stroke="#264653" stroke-width="10" stroke-linecap="round" />
+  </g>
+  <g fill="#264653" opacity="0.94">
+    <path d="M930 245 c0 -26 18 -46 40 -46 22 0 40 20 40 46 0 26 -18 46 -40 46 -22 0 -40 -20 -40 -46z" />
+    <path d="M950 310 c10 0 18 8 18 18 v30 h-36 v-30 c0 -10 8 -18 18 -18z" />
+    <path d="M910 180 c0 -24 18 -44 40 -44 22 0 40 20 40 44 0 24 -18 44 -40 44 -22 0 -40 -20 -40 -44z" />
+    <path d="M930 245 l40 38" stroke="#264653" stroke-width="10" stroke-linecap="round" />
+  </g>
+  <g fill="#ffffff" opacity="0.95">
+    <rect x="100" y="90" width="420" height="150" rx="20" ry="20" fill="#ffffff" opacity="0.9" />
+    <text x="130" y="140" fill="#264653" font-family="Noto Sans SC, sans-serif" font-size="40" font-weight="700">一代人有一代人的</text>
+    <text x="130" y="195" fill="#264653" font-family="Noto Sans SC, sans-serif" font-size="40" font-weight="700">闯关东、下南洋、走西口</text>
+    <text x="130" y="245" fill="#6d6875" font-family="Noto Sans SC, sans-serif" font-size="20">历史迁徙 · 时代节点 · 现实移民</text>
+  </g>
+  <g fill="#f4a261" opacity="0.92">
+    <path d="M720 360 c-34 0 -60 26 -60 60 v44 h120 v-44 c0 -34 -26 -60 -60 -60z" />
+    <circle cx="720" cy="332" r="30" fill="#264653" />
+    <path d="M700 388 l40 40" stroke="#264653" stroke-width="12" stroke-linecap="round" />
+    <path d="M743 388 l-40 40" stroke="#264653" stroke-width="12" stroke-linecap="round" />
+  </g>
+  <g fill="#e9c46a" opacity="0.9">
+    <path d="M840 370 c-28 0 -50 22 -50 50 v28 h100 v-28 c0 -28 -22 -50 -50 -50z" />
+    <circle cx="840" cy="342" r="26" fill="#264653" />
+    <path d="M820 388 l40 40" stroke="#264653" stroke-width="10" stroke-linecap="round" />
+  </g>
+  <g fill="#2a9d8f" opacity="0.9">
+    <path d="M980 330 c-30 0 -54 24 -54 54 v34 h108 v-34 c0 -30 -24 -54 -54 -54z" />
+    <circle cx="980" cy="300" r="28" fill="#264653" />
+    <path d="M955 362 l50 48" stroke="#264653" stroke-width="10" stroke-linecap="round" />
+  </g>
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="214" cy="80" r="18" />
+    <circle cx="338" cy="62" r="14" />
+    <path d="M190 82 c28 -16 84 -32 130 -28" stroke="#2a9d8f" stroke-width="10" stroke-linecap="round" fill="none" />
+  </g>
+  <text x="170" y="560" fill="#264653" font-family="Noto Sans SC, sans-serif" font-size="18" font-weight="500">方舟计划 · 迁徙历史与现代移民逻辑</text>
+</svg>
