@@ -3,6 +3,8 @@ title: "🌏 一代人有一代人的闯关东、下南洋、走西口"
 date: 2026-04-06
 layout: page
 order: 0
+image: /assets/images/arkplan/arkplan-migration-history.svg
+description: "方舟计划第一篇：从历史迁徙到现代移民的逻辑，串联‘闯关东、下南洋、走西口’与当下迪拜移民视角。"
 ---
 
 ![方舟计划迁徙历史]({{ '/assets/images/arkplan/arkplan-migration-history.svg' | relative_url }}){: loading="lazy" }
