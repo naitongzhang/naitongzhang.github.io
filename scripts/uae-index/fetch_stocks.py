@@ -55,14 +55,14 @@ def load_tickers():
     return data["dfm"], data["adx"]
 
 
-def fetch_one(ticker_meta, period="2y"):
-    """Fetch one ticker: info + ~2y of price history. Returns (record, ok)."""
+def fetch_one(ticker_meta, period="10y"):
+    """Fetch one ticker: info + up to ~10y of price history. Returns (record, ok)."""
     ticker = ticker_meta["ticker"]
     try:
         tk = yf.Ticker(ticker)
         info = tk.info or {}
 
-        # History: 2 years of daily OHLCV. yfinance clamps to actual availability.
+        # History: up to 10 years of daily OHLCV. yfinance clamps to actual availability per stock.
         hist = tk.history(period=period, auto_adjust=False)
         history = []
         if hist is not None and len(hist) > 0:
