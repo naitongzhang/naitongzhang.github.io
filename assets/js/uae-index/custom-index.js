@@ -142,7 +142,7 @@
         return;
       }
 
-      const startOffset = parseInt(startSel.value, 10) || -90;
+      const startOffset = parseInt(startSel.value, 10);  // 0 = "Maximum" — let it pass through
       const weights = computeWeights(selected);
       // For each selected, find min history length, then align dates
       // Simple approach: take all unique dates, then compute weighted return per date.
