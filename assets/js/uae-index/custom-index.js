@@ -6,9 +6,21 @@
     const tbody = document.querySelector('[data-builder-tbody]');
     if (!tbody) return;
 
-    // The snapshot stocks.json now embeds the last ~90 days of history per
-    // ticker inline, so we don't need to wait for the async history.json
-    // fetch. Render immediately.
+    // Resolve all DOM references first — avoids TDZ ReferenceError if any
+    // downstream code tries to use one of these before its const declaration.
+    const search = document.querySelector('[data-builder-search]');
+    const sectorSel = document.querySelector('[data-builder-sector]');
+    const topnInput = document.querySelector('[data-builder-topn]');
+    const weightingSel = document.querySelector('[data-builder-weighting]');
+    const startSel = document.querySelector('[data-builder-start]');
+    const addBtn = document.querySelector('[data-builder-addtopn]');
+    const clearBtn = document.querySelector('[data-builder-clear]');
+    const calcBtn = document.querySelector('[data-builder-calc]');
+    const countEl = document.querySelector('[data-builder-selected-count]');
+    const statsEl = document.querySelector('[data-builder-stats]');
+
+    // The snapshot stocks.json embeds full per-ticker history inline, so
+    // we render synchronously without any async fetch.
     let stocks = ((window.UAE_DATA.stocks && window.UAE_DATA.stocks.stocks) || [])
       .filter((s) => s.exchange === 'DFM' && s.price !== null);
 
@@ -28,17 +40,6 @@
       const match = Array.from(startSel.options).find((o) => parseInt(o.value, 10) === defaultStartDays);
       if (match) startSel.value = String(defaultStartDays);
     }
-
-    const search = document.querySelector('[data-builder-search]');
-    const sectorSel = document.querySelector('[data-builder-sector]');
-    const topnInput = document.querySelector('[data-builder-topn]');
-    const weightingSel = document.querySelector('[data-builder-weighting]');
-    const startSel = document.querySelector('[data-builder-start]');
-    const addBtn = document.querySelector('[data-builder-addtopn]');
-    const clearBtn = document.querySelector('[data-builder-clear]');
-    const calcBtn = document.querySelector('[data-builder-calc]');
-    const countEl = document.querySelector('[data-builder-selected-count]');
-    const statsEl = document.querySelector('[data-builder-stats]');
 
     // Populate sector dropdown
     const sectors = [...new Set(stocks.map((s) => s.sector).filter(Boolean))].sort();
