@@ -109,13 +109,12 @@ def fetch_dfm_official():
 
 
 def _dfm_ts_to_date(ts):
-    # id looks like "2026-07-03T11:41:00"
+    """DFM id looks like '2026-07-03T13:41:00'. Keep the full ISO timestamp so
+    the front-end can render intraday granularity; truncate to date only when
+    callers explicitly need a daily key."""
     if not ts:
         return None
-    try:
-        return ts[:10]
-    except Exception:
-        return ts
+    return ts
 
 
 def _is_nan(v):
@@ -189,6 +188,38 @@ def main():
             "note": "Sub-indices not exposed via DFM official API. Manual entry only.",
         })
 
+    # ---- Synthetic DFMGI proxy from DFM stock history ----
+    # Read stocks.json if available; build a daily market-cap-weighted index.
+    stocks_json = REPO_ROOT / "_data" / "uae" / "stocks.json"
+    if stocks_json.exists():
+        try:
+            with stocks_json.open("r", encoding="utf-8") as f:
+                sdata = json.load(f)
+            synth = build_synthetic_dfmgi(sdata.get("stocks", []))
+            if synth:
+                indices_out.append({
+                    "id": "DFMGI_SYNTH",
+                    "name": "DFM General Index (synthetic, market-cap weighted)",
+                    "exchange": "DFM",
+                    "currency": "AED",
+                    "source": "Synthetic: daily total market cap of 52 DFM stocks (rebased to 100)",
+                    "history": synth,
+                    "note": "Proxy for official DFMGI. Daily market-cap-weighted index computed from the 52 DFM stocks' daily close prices and current market caps.",
+                })
+                print(f"  DFMGI_SYNTH: {len(synth)} rows (replaces single-point DFMGI for daily history)")
+                # Replace the official intraday DFMGI row in place with a note, since the
+                # synthetic daily series supersedes it for chart purposes.
+                dfmgi_idx = next((i for i, x in enumerate(indices_out) if x["id"] == "DFMGI"), None)
+                if dfmgi_idx is not None:
+                    # Keep the intraday feed as `intraday` for the live stats card,
+                    # but make sure the `history` array doesn't dominate the chart.
+                    intraday = indices_out[dfmgi_idx].get("history", [])
+                    indices_out[dfmgi_idx]["history"] = []
+                    indices_out[dfmgi_idx]["intraday"] = intraday
+                    indices_out[dfmgi_idx]["note"] = "Official DFMGI intraday series stored under .intraday. Use DFMGI_SYNTH for daily chart."
+        except Exception as e:
+            print(f"Synthetic DFMGI build failed: {e}")
+
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "indices": indices_out,
@@ -199,6 +230,61 @@ def main():
         json.dump(output, f, indent=2, ensure_ascii=False, allow_nan=False)
 
     print(f"\nWrote {OUTPUT_JSON.relative_to(REPO_ROOT)}")
+
+
+def build_synthetic_dfmgi(stocks):
+    """Build a daily market-cap-weighted DFMGI proxy from DFM stock history.
+
+    Method: index_t = sum(w_s * close_s_t / close_s_base) * 100
+    where w_s = market_cap_s / sum(market_cap_s) is the constant weight
+    (current market cap). Base date = earliest date where ALL stocks have data.
+    """
+    valid = [s for s in stocks if s.get("exchange") == "DFM"
+             and s.get("price") is not None
+             and s.get("market_cap")
+             and s.get("history")]
+    if len(valid) < 5:
+        return []
+
+    # Build date -> {ticker: close} map
+    date_to_closes = {}
+    for s in valid:
+        for h in s["history"]:
+            if h.get("close") is not None:
+                date_to_closes.setdefault(h["date"], {})[s["ticker"]] = h["close"]
+
+    # Find earliest date where ALL stocks have a close
+    all_tickers = [s["ticker"] for s in valid]
+    base_date = None
+    for d in sorted(date_to_closes.keys()):
+        if all(t in date_to_closes[d] for t in all_tickers):
+            base_date = d
+            break
+    if not base_date:
+        return []
+
+    # Compute weights from current market cap (constant over the period)
+    total_cap = sum(s["market_cap"] for s in valid)
+    if total_cap <= 0:
+        return []
+    weights = {s["ticker"]: s["market_cap"] / total_cap for s in valid}
+
+    base_closes = date_to_closes[base_date]
+    history = []
+    for d in sorted(date_to_closes.keys()):
+        if d < base_date:
+            continue
+        closes = date_to_closes[d]
+        idx_val = 0.0
+        for s in valid:
+            ticker = s["ticker"]
+            if ticker in closes and ticker in base_closes and base_closes[ticker]:
+                ratio = closes[ticker] / base_closes[ticker]
+                idx_val += weights[ticker] * ratio * 100.0
+        if idx_val > 0:
+            history.append({"date": d, "close": round(idx_val, 4)})
+
+    return history
 
 
 if __name__ == "__main__":

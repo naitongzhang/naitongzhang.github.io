@@ -70,8 +70,9 @@ def _latest_close(indices_data, idx_id):
 
 
 def main():
-    run("fetch_indices.py")
+    # Stocks first so synthetic DFMGI can read the daily history.
     run("fetch_stocks.py")
+    run("fetch_indices.py")
     write_meta()
     print("\nAll done.")
 

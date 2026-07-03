@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T09:19:39+00:00",
+  "generated_at": "2026-07-03T09:55:28+00:00",
   "site_version": "1.0.0",
   "data_source": {
     "primary": "Yahoo Finance via yfinance (DFM coverage ~50-60%)",
@@ -12,14 +12,8 @@
     "adx_total": 52
   },
   "tickers_count": 104,
-  "indices_count": 6,
-  "dfmgi_latest": {
-    "date": "2026-07-03",
-    "close": 6007.23,
-    "change": 16.64,
-    "change_pct": 0.278,
-    "volume": 660583
-  },
+  "indices_count": 7,
+  "dfmgi_latest": null,
   "adxgi_latest": null,
   "notes": [
     "All AED-denominated prices from Yahoo Finance.",

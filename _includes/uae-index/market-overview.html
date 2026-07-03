@@ -44,7 +44,10 @@ Compute summary stats from data.
       <span class="uae-stat-delta {% if dfmgi_latest.change_pct and dfmgi_latest.change_pct >= 0 %}is-up{% else %}is-down{% endif %}">
         {%- if dfmgi_latest.change_pct and dfmgi_latest.change_pct >= 0 -%}+{%- endif -%}{{ dfmgi_latest.change_pct | round: 2 }}%
       </span>
-      <span class="uae-stat-meta">{{ dfmgi_latest.date }}</span>
+      <span class="uae-stat-meta">
+        {%- assign dfmgi_meta = dfmgi_latest.date | slice: 0, 10 -%}
+        {{ dfmgi_meta }} (intraday)
+      </span>
     {%- else -%}
       <span class="uae-stat-value">N/A</span>
     {%- endif -%}

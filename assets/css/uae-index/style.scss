@@ -147,6 +147,18 @@
   width: 100%;
   min-height: 320px;
 }
+.uae-chart-note {
+  font-size: 0.85rem;
+  color: #555;
+  background: #fff8e1;
+  border-left: 3px solid #d4af37;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0 0.75rem 0;
+  border-radius: 0 4px 4px 0;
+}
+.uae-chart-note strong {
+  color: #1a1a1a;
+}
 
 /* Stocks table controls */
 .uae-stocks-controls,

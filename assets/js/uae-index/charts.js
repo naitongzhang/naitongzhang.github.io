@@ -20,22 +20,43 @@
     function buildSeriesData(history, days, rebase) {
       if (!history || history.length === 0) return null;
       const sliced = history.slice(-Math.min(days, history.length));
-      const values = sliced.map((d) => [d.date, d.close]).filter((d) => d[1] !== null);
+      const values = sliced.map((d) => [d.date, d.close]).filter((d) => d[1] !== null && d[1] !== undefined);
       if (values.length === 0) return null;
-      if (rebase) {
-        const base = values[0][1];
-        return values.map((d) => [d[0], (d[1] / base) * 100]);
+
+      // Dedupe same-timestamp rows to avoid drawing vertical artifacts when
+      // multiple intraday points collapse onto one x position.
+      const seen = new Set();
+      const deduped = [];
+      for (const v of values) {
+        if (seen.has(v[0])) continue;
+        seen.add(v[0]);
+        deduped.push(v);
       }
-      return values;
+      if (deduped.length === 0) return null;
+
+      if (rebase) {
+        const base = deduped[0][1];
+        if (!base) return null;
+        return deduped.map((d) => [d[0], (d[1] / base) * 100]);
+      }
+      return deduped;
+    }
+
+    function isIntradayIndex(idxId) {
+      // DFMGI from DFM official API is intraday (timestamped minute-level updates).
+      // Everything else is daily.
+      return idxId === 'DFMGI';
     }
 
     function render() {
       const days = getRangeDays();
       const rebase = getRebase();
       const series = [];
-      const colors = { DFMGI: '#d4af37', UAEETF: '#0a66c2', ADXGI: '#7c3aed' };
+      const colors = { DFMGI_SYNTH: '#d4af37', DFMGI: '#d4af37', UAEETF: '#0a66c2', ADXGI: '#7c3aed' };
 
       (window.UAE_DATA.indices.indices || []).forEach((idx) => {
+        // Skip the official DFMGI intraday row in the daily chart — the synthetic proxy supersedes it.
+        if (idx.id === 'DFMGI') return;
         const data = buildSeriesData(idx.history, days, rebase);
         if (!data) return;
         series.push({
