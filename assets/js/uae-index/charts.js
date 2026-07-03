@@ -68,7 +68,7 @@
       const days = getRangeDays();
       const rebase = getRebase();
       const series = [];
-      const colors = { DFMGI_SYNTH: '#d4af37', DFMGI: '#d4af37', UAEETF: '#0a66c2', ADXGI: '#7c3aed' };
+      const colors = { DFMGI_SYNTH: '#d4af37', DFMGI: '#d4af37', UAEETF: '#0a66c2', NAITONG_ETF: '#e11d48', ADXGI: '#7c3aed' };
 
       const plottables = (window.UAE_DATA.indices.indices || []).filter(
         (idx) => idx.id !== 'DFMGI' && idx.history && idx.history.length > 0
@@ -102,7 +102,7 @@
         const data = buildSeriesData(idx.history, days, rebase, commonEnd, commonStart);
         if (!data) return;
         series.push({
-          name: idx.id,
+          name: idx.name || idx.id,
           type: 'line',
           data,
           smooth: true,
@@ -117,7 +117,7 @@
       chart.setOption({
         title: { text: 'UAE Indices', left: 'center', textStyle: { fontSize: 16 } },
         tooltip: { trigger: 'axis' },
-        legend: { bottom: 0 },
+        legend: { bottom: 0, data: series.map((s) => s.name) },
         grid: { left: 60, right: 30, top: 50, bottom: 50 },
         xAxis: { type: 'time' },
         yAxis: { type: 'value', name: yName, scale: true },

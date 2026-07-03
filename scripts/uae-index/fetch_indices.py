@@ -128,6 +128,25 @@ def main():
     print("Fetching UAE indices...")
     indices_out = []
 
+    # Load DFM stock history (inlined) and ticker config up front. Both are used
+    # by the synthetic-index blocks below (DFMGI_SYNTH + NAITONG_ETF).
+    stocks_json = REPO_ROOT / "_data" / "uae" / "stocks.json"
+    tickers_json = REPO_ROOT / "_data" / "uae" / "tickers.json"
+    sdata = {"stocks": []}
+    if stocks_json.exists():
+        try:
+            with stocks_json.open("r", encoding="utf-8") as f:
+                sdata = json.load(f)
+        except Exception as e:
+            print(f"stocks.json load failed: {e}")
+    tdata = {}
+    if tickers_json.exists():
+        try:
+            with tickers_json.open("r", encoding="utf-8") as f:
+                tdata = json.load(f)
+        except Exception as e:
+            print(f"tickers.json load failed: {e}")
+
     # DFMGI: prefer DFM official (more reliable) → fallback to Yahoo
     dfm_hist = fetch_dfm_official()
     dfmgi_entry = {
@@ -172,6 +191,34 @@ def main():
     })
     print(f"  UAEETF: {len(uae['history'])} rows")
 
+    # Naitong UAE ETF — custom basket of DFM stocks (tickers.json:default_index).
+    # Built by the same weighted-index math as DFMGI_SYNTH, just with a different
+    # ticker set and (typically) a different weighting scheme.
+    if sdata.get("stocks") and tdata:
+        try:
+            cfg = tdata.get("default_index", {})
+            basket_tickers = cfg.get("tickers") or []
+            basket_weighting = cfg.get("weighting") or "equal"
+            if basket_tickers:
+                etf = build_weighted_index(
+                    sdata.get("stocks", []),
+                    tickers=basket_tickers,
+                    weighting=basket_weighting,
+                )
+                if etf:
+                    indices_out.append({
+                        "id": "NAITONG_ETF",
+                        "name": "Naitong UAE ETF",
+                        "exchange": "DFM",
+                        "currency": "AED",
+                        "source": f"Synthetic: daily {'equal-weighted' if basket_weighting == 'equal' else basket_weighting + '-weighted'} basket of {len(basket_tickers)} DFM stocks (from tickers.json:default_index), rebased to 100",
+                        "history": etf,
+                        "note": "Custom DFM basket defined in _data/uae/tickers.json under default_index. Edits to that file take effect on the next fetch.",
+                    })
+                    print(f"  NAITONG_ETF: {len(etf)} rows (basket={len(basket_tickers)} {basket_weighting})")
+        except Exception as e:
+            print(f"Naitong UAE ETF build failed: {e}")
+
     # Other DFM sub-indices (placeholder, will be empty until DFM exposes more)
     for sub in [
         {"id": "DFMRI", "name": "DFM Real Estate Index"},
@@ -190,13 +237,10 @@ def main():
 
     # ---- Synthetic DFMGI proxy from DFM stock history ----
     # Read stocks.json if available; build a daily market-cap-weighted index.
-    stocks_json = REPO_ROOT / "_data" / "uae" / "stocks.json"
-    if stocks_json.exists():
+    if sdata.get("stocks"):
         try:
-            with stocks_json.open("r", encoding="utf-8") as f:
-                sdata = json.load(f)
             # History is now inlined into each stock record — pass it through directly.
-            synth = build_synthetic_dfmgi(sdata.get("stocks", []))
+            synth = build_weighted_index(sdata.get("stocks", []), tickers=None, weighting="market_cap")
             if synth:
                 indices_out.append({
                     "id": "DFMGI_SYNTH",
@@ -230,13 +274,22 @@ def main():
 
 
 def build_synthetic_dfmgi(stocks):
-    """Build a daily market-cap-weighted DFMGI proxy from DFM stock history.
+    """Market-cap-weighted DFMGI proxy over all DFM stocks. Thin wrapper kept
+    for backwards compatibility — main() now calls build_weighted_index directly."""
+    return build_weighted_index(stocks, tickers=None, weighting="market_cap")
 
-    Reads `history` field that is now inlined into each stock record.
+
+def build_weighted_index(stocks, tickers=None, weighting="market_cap"):
+    """Build a daily weighted DFM index from DFM stock history.
+
+    Args:
+        stocks: list of stock dicts (each with exchange, price, market_cap,
+            ticker, history fields).
+        tickers: optional ticker filter (e.g. Naitong basket). None = all DFM.
+        weighting: 'market_cap' | 'equal'.
 
     Method: index_t = sum(w_s * close_s_t / close_s_base) * 100
-    where w_s = market_cap_s / sum(market_cap_s) is the constant weight
-    (current market cap).
+    where w_s is the constant per-stock weight.
 
     Safeguards against yfinance backfilled weekend/holiday data:
     - For each date, require at least MIN_COVERAGE_FRACTION of valid stocks
@@ -252,7 +305,8 @@ def build_synthetic_dfmgi(stocks):
     valid = [s for s in stocks if s.get("exchange") == "DFM"
              and s.get("price") is not None
              and s.get("market_cap")
-             and s.get("history")]
+             and s.get("history")
+             and (tickers is None or s.get("ticker") in set(tickers))]
     if len(valid) < 5:
         return []
 
@@ -274,11 +328,15 @@ def build_synthetic_dfmgi(stocks):
     if not base_date:
         return []
 
-    # Compute weights from current market cap (constant over the period)
-    total_cap = sum(s["market_cap"] for s in valid)
-    if total_cap <= 0:
-        return []
-    weights = {s["ticker"]: s["market_cap"] / total_cap for s in valid}
+    # Compute weights
+    if weighting == "equal":
+        n = len(valid)
+        weights = {s["ticker"]: 1.0 / n for s in valid}
+    else:
+        total_cap = sum(s["market_cap"] for s in valid)
+        if total_cap <= 0:
+            return []
+        weights = {s["ticker"]: s["market_cap"] / total_cap for s in valid}
 
     base_closes = date_to_closes[base_date]
 
