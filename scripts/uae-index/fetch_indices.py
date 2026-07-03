@@ -237,8 +237,19 @@ def build_synthetic_dfmgi(stocks):
 
     Method: index_t = sum(w_s * close_s_t / close_s_base) * 100
     where w_s = market_cap_s / sum(market_cap_s) is the constant weight
-    (current market cap). Base date = earliest date where ALL stocks have data.
+    (current market cap).
+
+    Safeguards against yfinance backfilled weekend/holiday data:
+    - For each date, require at least MIN_COVERAGE_FRACTION of valid stocks
+      to have a close; otherwise the date is treated as a non-trading day
+      and skipped.
+    - Forward-fill missing stock closes with the previous trading day's value
+      so a single missing stock doesn't drop out of the index.
+
+    Base date = earliest date where >= MIN_COVERAGE_FRACTION of stocks have data.
     """
+    MIN_COVERAGE_FRACTION = 0.85  # need >= 85% of valid stocks to call it a trading day
+
     valid = [s for s in stocks if s.get("exchange") == "DFM"
              and s.get("price") is not None
              and s.get("market_cap")
@@ -253,11 +264,12 @@ def build_synthetic_dfmgi(stocks):
             if h.get("close") is not None:
                 date_to_closes.setdefault(h["date"], {})[s["ticker"]] = h["close"]
 
-    # Find earliest date where ALL stocks have a close
-    all_tickers = [s["ticker"] for s in valid]
+    min_required = int(len(valid) * MIN_COVERAGE_FRACTION)
+
+    # Find earliest date where enough stocks have a close
     base_date = None
     for d in sorted(date_to_closes.keys()):
-        if all(t in date_to_closes[d] for t in all_tickers):
+        if len(date_to_closes[d]) >= min_required:
             base_date = d
             break
     if not base_date:
@@ -270,17 +282,31 @@ def build_synthetic_dfmgi(stocks):
     weights = {s["ticker"]: s["market_cap"] / total_cap for s in valid}
 
     base_closes = date_to_closes[base_date]
+
+    # Walk dates in order. Forward-fill each stock's price between its actual
+    # trading days so the index stays continuous.
+    last_known = dict(base_closes)  # seed with base-date closes
     history = []
     for d in sorted(date_to_closes.keys()):
         if d < base_date:
             continue
         closes = date_to_closes[d]
+        # Require minimum coverage
+        if len(closes) < min_required:
+            continue
+        # Forward-fill any missing ticker from previous trading day
+        for ticker in weights:
+            if ticker in closes:
+                last_known[ticker] = closes[ticker]
+            else:
+                closes[ticker] = last_known.get(ticker)
+        # Compute weighted ratio
         idx_val = 0.0
-        for s in valid:
-            ticker = s["ticker"]
-            if ticker in closes and ticker in base_closes and base_closes[ticker]:
-                ratio = closes[ticker] / base_closes[ticker]
-                idx_val += weights[ticker] * ratio * 100.0
+        for ticker, w in weights.items():
+            cur = closes.get(ticker)
+            base = base_closes.get(ticker)
+            if cur is not None and base:
+                idx_val += w * (cur / base) * 100.0
         if idx_val > 0:
             history.append({"date": d, "close": round(idx_val, 4)})
 
