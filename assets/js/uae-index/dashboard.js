@@ -50,6 +50,35 @@
     return sign + n.toFixed(2) + '%';
   };
 
+  // ---- Async-load stock history (large file) ----
+  // stocks.json is the small snapshot (~50 KB). history.json is ~6 MB and
+  // is fetched on demand so the initial page payload stays small.
+  function loadHistory() {
+    return fetch('/assets/data/history.json')
+      .then(function (r) {
+        if (!r.ok) throw new Error('history fetch failed: ' + r.status);
+        return r.json();
+      })
+      .then(function (hdata) {
+        const histByTicker = hdata && hdata.history ? hdata.history : {};
+        if (window.UAE_DATA && window.UAE_DATA.stocks && Array.isArray(window.UAE_DATA.stocks.stocks)) {
+          window.UAE_DATA.stocks.stocks.forEach(function (s) {
+            if (histByTicker[s.ticker]) s.history = histByTicker[s.ticker];
+          });
+        }
+        window.UAE_HISTORY_READY = true;
+        window.dispatchEvent(new Event('uae-history-ready'));
+      })
+      .catch(function (e) {
+        console.warn('UAE history.json failed to load; charts will use fallback data', e);
+        window.UAE_HISTORY_READY = false;
+        window.dispatchEvent(new Event('uae-history-ready'));
+      });
+  }
+
+  // Kick off async history load (don't block initial render).
+  loadHistory();
+
   // ---- Load sub-modules ----
   function loadModule(name) {
     const s = document.createElement('script');

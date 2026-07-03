@@ -47,6 +47,7 @@ import yfinance as yf
 REPO_ROOT = Path(__file__).resolve().parents[2]
 TICKERS_JSON = REPO_ROOT / "_data" / "uae" / "tickers.json"
 OUTPUT_JSON = REPO_ROOT / "_data" / "uae" / "stocks.json"
+PUBLIC_HISTORY_JSON = REPO_ROOT / "assets" / "data" / "history.json"
 
 
 def load_tickers():
@@ -160,7 +161,19 @@ def main():
             "note": "ADX equities not covered by Yahoo Finance. Live data unavailable in this build.",
         })
 
-    output = {
+    # Split into two files:
+    #   stocks.json:  snapshot (price, market cap, fundamentals) — small, used for table
+    #   history.json: per-ticker daily OHLCV — large, fetched async for charts
+    history_index = {}
+    compact_records = []
+    for r in records:
+        hist = r.pop("history", None) or []
+        compact_records.append(r)
+        if hist and r.get("exchange") == "DFM":
+            # Compact format: list of {d, c, v} dicts; downstream code reads via _compat
+            history_index[r["ticker"]] = hist
+
+    snapshot = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source": "Yahoo Finance via yfinance (DFM only; ADX metadata-only)",
         "coverage": {
@@ -168,16 +181,29 @@ def main():
             "dfm_ok": ok_count,
             "adx_total": len(adx_tickers),
         },
-        "count": len(records),
-        "stocks": records,
+        "count": len(compact_records),
+        "stocks": compact_records,
         "missing_dfm": missing,
+    }
+
+    history_payload = {
+        "generated_at": snapshot["generated_at"],
+        "source": snapshot["source"],
+        "history": history_index,
     }
 
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT_JSON.open("w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2, ensure_ascii=False, allow_nan=False)
+        json.dump(snapshot, f, indent=2, ensure_ascii=False, allow_nan=False)
+    # Also write history to assets/data/ so Jekyll copies it to _site/data/
+    # (the live frontend fetches /data/uae/history.json on demand).
+    public_history = REPO_ROOT / "assets" / "data" / "history.json"
+    public_history.parent.mkdir(parents=True, exist_ok=True)
+    with public_history.open("w", encoding="utf-8") as f:
+        json.dump(history_payload, f, ensure_ascii=False, allow_nan=False)
 
-    print(f"\nWrote {OUTPUT_JSON.relative_to(REPO_ROOT)}")
+    print(f"\nWrote {OUTPUT_JSON.relative_to(REPO_ROOT)} (snapshot)")
+    print(f"Wrote {public_history.relative_to(REPO_ROOT)} (history, async-loaded)")
     print(f"  DFM ok: {ok_count}/{len(dfm_tickers)}")
     print(f"  ADX (metadata only): {len(adx_tickers)}")
     print(f"  Missing DFM tickers: {missing}")

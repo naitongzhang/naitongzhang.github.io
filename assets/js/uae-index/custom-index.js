@@ -287,7 +287,7 @@
     renderList();
     // Auto-compute once with DEFAULT basket (from tickers.json:default_index).
     // If the JSON default_index is empty or missing, fall back to all DFM stocks.
-    setTimeout(() => {
+    function bootAutoCompute() {
       const targetTickers = defaultSet.size > 0
         ? stocks.filter((s) => defaultSet.has(s.ticker))
         : stocks;
@@ -296,7 +296,13 @@
       });
       renderList();
       autoComputeIndex();
-    }, 50);
+    }
+
+    if (window.UAE_HISTORY_READY) {
+      bootAutoCompute();
+    } else {
+      window.addEventListener('uae-history-ready', bootAutoCompute, { once: true });
+    }
   }
 
   if (document.readyState === 'loading') {

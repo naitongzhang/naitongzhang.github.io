@@ -119,6 +119,15 @@
     });
 
     render();
+
+    // Re-render after the async history.json finishes loading so sparklines
+    // get populated without blocking the initial table render.
+    if (window.UAE_HISTORY_READY) {
+      // Already loaded — render once more in case anything is stale.
+      render();
+    } else {
+      window.addEventListener('uae-history-ready', render, { once: true });
+    }
   }
 
   if (document.readyState === 'loading') {
