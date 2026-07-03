@@ -161,20 +161,11 @@ def main():
             "note": "ADX equities not covered by Yahoo Finance. Live data unavailable in this build.",
         })
 
-    # Split history per ticker into:
-    #   inline  (last 90 trading days) — embedded in snapshot, ~150 KB total
-    #   async   (full 10y)             — assets/data/history.json, ~6 MB
-    INLINE_HISTORY_DAYS = 90
-    history_index = {}
-    inline_history = {}
+    # Inline ALL history into stocks.json (so the page is fully self-contained).
+    # The page becomes ~11 MB but renders immediately with no async loading.
     compact_records = []
     for r in records:
-        hist = r.pop("history", None) or []
-        if hist and r.get("exchange") == "DFM":
-            history_index[r["ticker"]] = hist
-            inline_history[r["ticker"]] = hist[-INLINE_HISTORY_DAYS:]
-            r["history"] = inline_history[r["ticker"]]  # also embed short history
-        compact_records.append(r)
+        compact_records.append(r)  # keep `history` field attached
 
     snapshot = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -189,24 +180,11 @@ def main():
         "missing_dfm": missing,
     }
 
-    history_payload = {
-        "generated_at": snapshot["generated_at"],
-        "source": snapshot["source"],
-        "history": history_index,
-    }
-
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT_JSON.open("w", encoding="utf-8") as f:
         json.dump(snapshot, f, indent=2, ensure_ascii=False, allow_nan=False)
-    # Also write history to assets/data/ so Jekyll copies it to _site/data/
-    # (the live frontend fetches /data/uae/history.json on demand).
-    public_history = REPO_ROOT / "assets" / "data" / "history.json"
-    public_history.parent.mkdir(parents=True, exist_ok=True)
-    with public_history.open("w", encoding="utf-8") as f:
-        json.dump(history_payload, f, ensure_ascii=False, allow_nan=False)
 
-    print(f"\nWrote {OUTPUT_JSON.relative_to(REPO_ROOT)} (snapshot, incl. inline 90d)")
-    print(f"Wrote {public_history.relative_to(REPO_ROOT)} (full history, async-loaded)")
+    print(f"\nWrote {OUTPUT_JSON.relative_to(REPO_ROOT)} (snapshot + full inline history)")
     print(f"  DFM ok: {ok_count}/{len(dfm_tickers)}")
     print(f"  ADX (metadata only): {len(adx_tickers)}")
     print(f"  Missing DFM tickers: {missing}")

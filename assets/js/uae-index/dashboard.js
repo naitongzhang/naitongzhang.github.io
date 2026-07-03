@@ -50,37 +50,8 @@
     return sign + n.toFixed(2) + '%';
   };
 
-  // ---- Async-load stock history (large file) ----
-  // stocks.json is the small snapshot (~50 KB). history.json is ~6 MB and
-  // is fetched on demand so the initial page payload stays small.
-  function loadHistory() {
-    // Always dispatch the event so the UI doesn't hang — even on failure.
-    function done(ok) {
-      window.UAE_HISTORY_READY = ok;
-      window.dispatchEvent(new Event('uae-history-ready'));
-    }
-    fetch('/assets/data/history.json?t=' + Date.now(), { cache: 'no-store' })
-      .then(function (r) {
-        if (!r.ok) throw new Error('history fetch failed: ' + r.status);
-        return r.json();
-      })
-      .then(function (hdata) {
-        const histByTicker = hdata && hdata.history ? hdata.history : {};
-        if (window.UAE_DATA && window.UAE_DATA.stocks && Array.isArray(window.UAE_DATA.stocks.stocks)) {
-          window.UAE_DATA.stocks.stocks.forEach(function (s) {
-            if (histByTicker[s.ticker]) s.history = histByTicker[s.ticker];
-          });
-        }
-        done(true);
-      })
-      .catch(function (e) {
-        console.warn('UAE history.json failed to load; showing snapshot only', e);
-        done(false);
-      });
-  }
-
-  // Kick off async history load (don't block initial render).
-  loadHistory();
+  // History is now inlined into stocks.json (per ticker, ~6 MB total payload).
+// No async fetch needed; the UI renders immediately.
 
   // ---- Load sub-modules ----
   function loadModule(name) {

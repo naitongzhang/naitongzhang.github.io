@@ -191,14 +191,12 @@ def main():
     # ---- Synthetic DFMGI proxy from DFM stock history ----
     # Read stocks.json if available; build a daily market-cap-weighted index.
     stocks_json = REPO_ROOT / "_data" / "uae" / "stocks.json"
-    history_json = REPO_ROOT / "assets" / "data" / "history.json"
-    if stocks_json.exists() and history_json.exists():
+    if stocks_json.exists():
         try:
             with stocks_json.open("r", encoding="utf-8") as f:
                 sdata = json.load(f)
-            with history_json.open("r", encoding="utf-8") as f:
-                hdata = json.load(f)
-            synth = build_synthetic_dfmgi(sdata.get("stocks", []), hdata.get("history", {}))
+            # History is now inlined into each stock record — pass it through directly.
+            synth = build_synthetic_dfmgi(sdata.get("stocks", []))
             if synth:
                 indices_out.append({
                     "id": "DFMGI_SYNTH",
@@ -210,12 +208,8 @@ def main():
                     "note": "Proxy for official DFMGI. Daily market-cap-weighted index computed from the 52 DFM stocks' daily close prices and current market caps.",
                 })
                 print(f"  DFMGI_SYNTH: {len(synth)} rows (replaces single-point DFMGI for daily history)")
-                # Replace the official intraday DFMGI row in place with a note, since the
-                # synthetic daily series supersedes it for chart purposes.
                 dfmgi_idx = next((i for i, x in enumerate(indices_out) if x["id"] == "DFMGI"), None)
                 if dfmgi_idx is not None:
-                    # Keep the intraday feed as `intraday` for the live stats card,
-                    # but make sure the `history` array doesn't dominate the chart.
                     intraday = indices_out[dfmgi_idx].get("history", [])
                     indices_out[dfmgi_idx]["history"] = []
                     indices_out[dfmgi_idx]["intraday"] = intraday
@@ -235,12 +229,10 @@ def main():
     print(f"\nWrote {OUTPUT_JSON.relative_to(REPO_ROOT)}")
 
 
-def build_synthetic_dfmgi(stocks, history_index):
+def build_synthetic_dfmgi(stocks):
     """Build a daily market-cap-weighted DFMGI proxy from DFM stock history.
 
-    history_index: {ticker: [{date, close, volume}, ...]} — same dict that
-    fetch_stocks.py writes to history.json. Stocks pass without an entry in
-    this dict are skipped (e.g. ADX-only stocks).
+    Reads `history` field that is now inlined into each stock record.
 
     Method: index_t = sum(w_s * close_s_t / close_s_base) * 100
     where w_s = market_cap_s / sum(market_cap_s) is the constant weight
@@ -260,14 +252,14 @@ def build_synthetic_dfmgi(stocks, history_index):
     valid = [s for s in stocks if s.get("exchange") == "DFM"
              and s.get("price") is not None
              and s.get("market_cap")
-             and history_index.get(s["ticker"])]
+             and s.get("history")]
     if len(valid) < 5:
         return []
 
     # Build date -> {ticker: close} map
     date_to_closes = {}
     for s in valid:
-        for h in history_index[s["ticker"]]:
+        for h in s["history"]:
             if h.get("close") is not None:
                 date_to_closes.setdefault(h["date"], {})[s["ticker"]] = h["close"]
 
@@ -292,22 +284,19 @@ def build_synthetic_dfmgi(stocks, history_index):
 
     # Walk dates in order. Forward-fill each stock's price between its actual
     # trading days so the index stays continuous.
-    last_known = dict(base_closes)  # seed with base-date closes
+    last_known = dict(base_closes)
     history = []
     for d in sorted(date_to_closes.keys()):
         if d < base_date:
             continue
         closes = date_to_closes[d]
-        # Require minimum coverage
         if len(closes) < min_required:
             continue
-        # Forward-fill any missing ticker from previous trading day
         for ticker in weights:
             if ticker in closes:
                 last_known[ticker] = closes[ticker]
             else:
                 closes[ticker] = last_known.get(ticker)
-        # Compute weighted ratio
         idx_val = 0.0
         for ticker, w in weights.items():
             cur = closes.get(ticker)
