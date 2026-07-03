@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-07-03T08:16:58+00:00",
+  "site_version": "1.0.0",
+  "data_source": {
+    "primary": "Yahoo Finance via yfinance (DFM coverage ~50-60%)",
+    "augmenting": "DFM official API (https://api2.dfm.ae/mw/v1/indices)",
+    "missing": "ADX equities — Yahoo Finance does not carry ADX tickers; manual entry not supported in this build."
+  },
+  "coverage": {
+    "dfm_total": 52,
+    "dfm_ok": 52,
+    "adx_total": 52
+  },
+  "tickers_count": 104,
+  "indices_count": 6,
+  "dfmgi_latest": {
+    "date": "2026-07-03",
+    "close": 6007.23,
+    "change": 16.64,
+    "change_pct": 0.278,
+    "volume": 660583
+  },
+  "adxgi_latest": null,
+  "notes": [
+    "All AED-denominated prices from Yahoo Finance.",
+    "ADX rows show sector/subsector metadata only — price = null.",
+    "Index history spans ~1 year (DFMGI from DFM official = ~100 trading days)."
+  ]
+}

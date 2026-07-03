@@ -1,0 +1,2768 @@
+{
+  "generated_at": "2026-07-03T08:15:53+00:00",
+  "indices": [
+    {
+      "id": "DFMGI",
+      "name": "DFM General Index",
+      "exchange": "DFM",
+      "currency": "AED",
+      "source": "DFM official /api2.dfm.ae/mw/v1/indices",
+      "history": [
+        {
+          "date": "2026-07-03",
+          "close": 6026.16,
+          "change": 35.57,
+          "change_pct": 0.594,
+          "volume": 52334213
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.69,
+          "change": 35.1,
+          "change_pct": 0.586,
+          "volume": 52331727
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6026.36,
+          "change": 35.77,
+          "change_pct": 0.597,
+          "volume": 52195486
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6026.07,
+          "change": 35.48,
+          "change_pct": 0.592,
+          "volume": 52051051
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6027.02,
+          "change": 36.43,
+          "change_pct": 0.608,
+          "volume": 51882716
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6027.9,
+          "change": 37.31,
+          "change_pct": 0.623,
+          "volume": 51805117
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6031.64,
+          "change": 41.05,
+          "change_pct": 0.685,
+          "volume": 51699179
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6032.07,
+          "change": 41.48,
+          "change_pct": 0.692,
+          "volume": 51278554
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6033.06,
+          "change": 42.47,
+          "change_pct": 0.709,
+          "volume": 51257329
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6034.72,
+          "change": 44.13,
+          "change_pct": 0.737,
+          "volume": 51129526
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6030.9,
+          "change": 40.31,
+          "change_pct": 0.673,
+          "volume": 51066139
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6027.98,
+          "change": 37.39,
+          "change_pct": 0.624,
+          "volume": 50966029
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6027.98,
+          "change": 37.39,
+          "change_pct": 0.624,
+          "volume": 50896430
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.91,
+          "change": 39.32,
+          "change_pct": 0.656,
+          "volume": 50749596
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.91,
+          "change": 39.32,
+          "change_pct": 0.656,
+          "volume": 50720966
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.91,
+          "change": 39.32,
+          "change_pct": 0.656,
+          "volume": 49856383
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6027.9,
+          "change": 37.31,
+          "change_pct": 0.623,
+          "volume": 49549586
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.38,
+          "change": 37.79,
+          "change_pct": 0.631,
+          "volume": 49525650
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6030.24,
+          "change": 39.65,
+          "change_pct": 0.662,
+          "volume": 49387616
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6031.01,
+          "change": 40.42,
+          "change_pct": 0.675,
+          "volume": 49376072
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.51,
+          "change": 37.92,
+          "change_pct": 0.633,
+          "volume": 49349955
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.3,
+          "change": 38.71,
+          "change_pct": 0.646,
+          "volume": 49292039
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.42,
+          "change": 37.83,
+          "change_pct": 0.631,
+          "volume": 49181141
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.0,
+          "change": 38.41,
+          "change_pct": 0.641,
+          "volume": 49141074
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.64,
+          "change": 38.05,
+          "change_pct": 0.635,
+          "volume": 49106503
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.79,
+          "change": 39.2,
+          "change_pct": 0.654,
+          "volume": 49032754
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6030.48,
+          "change": 39.89,
+          "change_pct": 0.666,
+          "volume": 46014139
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6031.51,
+          "change": 40.92,
+          "change_pct": 0.683,
+          "volume": 45940433
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6030.87,
+          "change": 40.28,
+          "change_pct": 0.672,
+          "volume": 45564580
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.77,
+          "change": 35.18,
+          "change_pct": 0.587,
+          "volume": 45185889
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6024.7,
+          "change": 34.11,
+          "change_pct": 0.569,
+          "volume": 44627152
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.01,
+          "change": 34.42,
+          "change_pct": 0.575,
+          "volume": 43866289
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6021.01,
+          "change": 30.42,
+          "change_pct": 0.508,
+          "volume": 43671819
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6019.46,
+          "change": 28.87,
+          "change_pct": 0.482,
+          "volume": 43621652
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6019.29,
+          "change": 28.7,
+          "change_pct": 0.479,
+          "volume": 43081980
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6020.82,
+          "change": 30.23,
+          "change_pct": 0.505,
+          "volume": 42965725
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.95,
+          "change": 35.36,
+          "change_pct": 0.59,
+          "volume": 42945130
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6027.64,
+          "change": 37.05,
+          "change_pct": 0.618,
+          "volume": 42889844
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6026.86,
+          "change": 36.27,
+          "change_pct": 0.605,
+          "volume": 42874209
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.61,
+          "change": 35.02,
+          "change_pct": 0.585,
+          "volume": 42694480
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6024.64,
+          "change": 34.05,
+          "change_pct": 0.568,
+          "volume": 42597255
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.4,
+          "change": 34.81,
+          "change_pct": 0.581,
+          "volume": 42382501
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6023.74,
+          "change": 33.15,
+          "change_pct": 0.553,
+          "volume": 42267916
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6022.11,
+          "change": 31.52,
+          "change_pct": 0.526,
+          "volume": 42196631
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6023.46,
+          "change": 32.87,
+          "change_pct": 0.549,
+          "volume": 42076946
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6021.07,
+          "change": 30.48,
+          "change_pct": 0.509,
+          "volume": 40961592
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6016.49,
+          "change": 25.9,
+          "change_pct": 0.432,
+          "volume": 38500953
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6020.12,
+          "change": 29.53,
+          "change_pct": 0.493,
+          "volume": 38402708
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6019.26,
+          "change": 28.67,
+          "change_pct": 0.479,
+          "volume": 37762430
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6021.75,
+          "change": 31.16,
+          "change_pct": 0.52,
+          "volume": 37504584
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6023.85,
+          "change": 33.26,
+          "change_pct": 0.555,
+          "volume": 36411798
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6022.62,
+          "change": 32.03,
+          "change_pct": 0.535,
+          "volume": 36361077
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6022.78,
+          "change": 32.19,
+          "change_pct": 0.537,
+          "volume": 36216482
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6020.04,
+          "change": 29.45,
+          "change_pct": 0.492,
+          "volume": 36153985
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6021.86,
+          "change": 31.27,
+          "change_pct": 0.522,
+          "volume": 35706439
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6019.89,
+          "change": 29.3,
+          "change_pct": 0.489,
+          "volume": 35633032
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6020.22,
+          "change": 29.63,
+          "change_pct": 0.495,
+          "volume": 35536383
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6020.23,
+          "change": 29.64,
+          "change_pct": 0.495,
+          "volume": 33411670
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6020.23,
+          "change": 29.64,
+          "change_pct": 0.495,
+          "volume": 33398564
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.65,
+          "change": 35.06,
+          "change_pct": 0.585,
+          "volume": 32755414
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.73,
+          "change": 35.14,
+          "change_pct": 0.587,
+          "volume": 32137704
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6027.39,
+          "change": 36.8,
+          "change_pct": 0.614,
+          "volume": 31812804
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6023.48,
+          "change": 32.89,
+          "change_pct": 0.549,
+          "volume": 31706380
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.57,
+          "change": 34.98,
+          "change_pct": 0.584,
+          "volume": 30574492
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6026.88,
+          "change": 36.29,
+          "change_pct": 0.606,
+          "volume": 30525606
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.54,
+          "change": 37.95,
+          "change_pct": 0.633,
+          "volume": 30488827
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6033.22,
+          "change": 42.63,
+          "change_pct": 0.712,
+          "volume": 30115554
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6033.39,
+          "change": 42.8,
+          "change_pct": 0.714,
+          "volume": 29662736
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6033.22,
+          "change": 42.63,
+          "change_pct": 0.712,
+          "volume": 29271297
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6032.68,
+          "change": 42.09,
+          "change_pct": 0.703,
+          "volume": 28501133
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6034.36,
+          "change": 43.77,
+          "change_pct": 0.731,
+          "volume": 28078873
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6032.82,
+          "change": 42.23,
+          "change_pct": 0.705,
+          "volume": 27972323
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.71,
+          "change": 39.12,
+          "change_pct": 0.653,
+          "volume": 27882291
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.6,
+          "change": 38.01,
+          "change_pct": 0.635,
+          "volume": 27612101
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.33,
+          "change": 38.74,
+          "change_pct": 0.647,
+          "volume": 26785189
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6033.56,
+          "change": 42.97,
+          "change_pct": 0.717,
+          "volume": 26495882
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6034.5,
+          "change": 43.91,
+          "change_pct": 0.733,
+          "volume": 26471367
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6031.27,
+          "change": 40.68,
+          "change_pct": 0.679,
+          "volume": 26409538
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.85,
+          "change": 38.26,
+          "change_pct": 0.639,
+          "volume": 26241906
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.48,
+          "change": 34.89,
+          "change_pct": 0.582,
+          "volume": 26123350
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6024.48,
+          "change": 33.89,
+          "change_pct": 0.566,
+          "volume": 26030746
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6024.39,
+          "change": 33.8,
+          "change_pct": 0.564,
+          "volume": 25989162
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.63,
+          "change": 35.04,
+          "change_pct": 0.585,
+          "volume": 25853231
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.45,
+          "change": 34.86,
+          "change_pct": 0.582,
+          "volume": 25712790
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6026.84,
+          "change": 36.25,
+          "change_pct": 0.605,
+          "volume": 25692687
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.34,
+          "change": 34.75,
+          "change_pct": 0.58,
+          "volume": 25487439
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6024.44,
+          "change": 33.85,
+          "change_pct": 0.565,
+          "volume": 25307999
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6026.62,
+          "change": 36.03,
+          "change_pct": 0.601,
+          "volume": 25238184
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6026.73,
+          "change": 36.14,
+          "change_pct": 0.603,
+          "volume": 25109783
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.47,
+          "change": 37.88,
+          "change_pct": 0.632,
+          "volume": 25042192
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.71,
+          "change": 39.12,
+          "change_pct": 0.653,
+          "volume": 24982413
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6031.28,
+          "change": 40.69,
+          "change_pct": 0.679,
+          "volume": 24955837
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.38,
+          "change": 37.79,
+          "change_pct": 0.631,
+          "volume": 24904157
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.99,
+          "change": 38.4,
+          "change_pct": 0.641,
+          "volume": 22830464
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.59,
+          "change": 39.0,
+          "change_pct": 0.651,
+          "volume": 22751367
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6031.34,
+          "change": 40.75,
+          "change_pct": 0.68,
+          "volume": 22238034
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6031.9,
+          "change": 41.31,
+          "change_pct": 0.69,
+          "volume": 22185001
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6030.86,
+          "change": 40.27,
+          "change_pct": 0.672,
+          "volume": 22175009
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6034.22,
+          "change": 43.63,
+          "change_pct": 0.728,
+          "volume": 22162370
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6037.26,
+          "change": 46.67,
+          "change_pct": 0.779,
+          "volume": 22129683
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6035.97,
+          "change": 45.38,
+          "change_pct": 0.758,
+          "volume": 21985506
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6038.86,
+          "change": 48.27,
+          "change_pct": 0.806,
+          "volume": 20946148
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6038.8,
+          "change": 48.21,
+          "change_pct": 0.805,
+          "volume": 20009303
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6037.58,
+          "change": 46.99,
+          "change_pct": 0.784,
+          "volume": 19717324
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6040.19,
+          "change": 49.6,
+          "change_pct": 0.828,
+          "volume": 19633943
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6039.7,
+          "change": 49.11,
+          "change_pct": 0.82,
+          "volume": 19357540
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6037.94,
+          "change": 47.35,
+          "change_pct": 0.79,
+          "volume": 19237587
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6038.51,
+          "change": 47.92,
+          "change_pct": 0.8,
+          "volume": 18961139
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6036.41,
+          "change": 45.82,
+          "change_pct": 0.765,
+          "volume": 18853079
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6036.61,
+          "change": 46.02,
+          "change_pct": 0.768,
+          "volume": 18664614
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6036.67,
+          "change": 46.08,
+          "change_pct": 0.769,
+          "volume": 18263745
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6039.05,
+          "change": 48.46,
+          "change_pct": 0.809,
+          "volume": 17902298
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6038.57,
+          "change": 47.98,
+          "change_pct": 0.801,
+          "volume": 16468428
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6036.97,
+          "change": 46.38,
+          "change_pct": 0.774,
+          "volume": 14066285
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6033.24,
+          "change": 42.65,
+          "change_pct": 0.712,
+          "volume": 12794346
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6035.57,
+          "change": 44.98,
+          "change_pct": 0.751,
+          "volume": 12457551
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6035.27,
+          "change": 44.68,
+          "change_pct": 0.746,
+          "volume": 11414860
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6042.81,
+          "change": 52.22,
+          "change_pct": 0.872,
+          "volume": 11298480
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6037.94,
+          "change": 47.35,
+          "change_pct": 0.79,
+          "volume": 10960320
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6042.75,
+          "change": 52.16,
+          "change_pct": 0.871,
+          "volume": 10207724
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6043.2,
+          "change": 52.61,
+          "change_pct": 0.878,
+          "volume": 9825687
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6039.57,
+          "change": 48.98,
+          "change_pct": 0.818,
+          "volume": 9065963
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6037.89,
+          "change": 47.3,
+          "change_pct": 0.79,
+          "volume": 7353547
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6031.09,
+          "change": 40.5,
+          "change_pct": 0.676,
+          "volume": 6690785
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6033.15,
+          "change": 42.56,
+          "change_pct": 0.71,
+          "volume": 6255171
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6028.59,
+          "change": 38.0,
+          "change_pct": 0.634,
+          "volume": 5982384
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6029.91,
+          "change": 39.32,
+          "change_pct": 0.656,
+          "volume": 5818396
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6030.58,
+          "change": 39.99,
+          "change_pct": 0.668,
+          "volume": 5521901
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6030.05,
+          "change": 39.46,
+          "change_pct": 0.659,
+          "volume": 4768701
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6025.96,
+          "change": 35.37,
+          "change_pct": 0.59,
+          "volume": 4182347
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6022.52,
+          "change": 31.93,
+          "change_pct": 0.533,
+          "volume": 3375868
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6018.96,
+          "change": 28.37,
+          "change_pct": 0.474,
+          "volume": 3173862
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6015.82,
+          "change": 25.23,
+          "change_pct": 0.421,
+          "volume": 3108491
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6017.93,
+          "change": 27.34,
+          "change_pct": 0.456,
+          "volume": 2675082
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6010.6,
+          "change": 20.01,
+          "change_pct": 0.334,
+          "volume": 1629976
+        },
+        {
+          "date": "2026-07-03",
+          "close": 6007.23,
+          "change": 16.64,
+          "change_pct": 0.278,
+          "volume": 660583
+        }
+      ]
+    },
+    {
+      "id": "ADXGI",
+      "name": "FTSE ADX General Index",
+      "exchange": "ADX",
+      "currency": "AED",
+      "source": "Yahoo Finance",
+      "history": [],
+      "note": "Yahoo returned no data."
+    },
+    {
+      "id": "UAEETF",
+      "name": "iShares MSCI UAE ETF",
+      "exchange": "ETF",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "history": [
+        {
+          "date": "2025-07-03",
+          "close": 18.84000015258789,
+          "change": null,
+          "change_pct": null,
+          "volume": 177300
+        },
+        {
+          "date": "2025-07-07",
+          "close": 18.860000610351562,
+          "change": 0.02,
+          "change_pct": 0.11,
+          "volume": 104800
+        },
+        {
+          "date": "2025-07-08",
+          "close": 18.84000015258789,
+          "change": -0.02,
+          "change_pct": -0.11,
+          "volume": 45700
+        },
+        {
+          "date": "2025-07-09",
+          "close": 19.1299991607666,
+          "change": 0.29,
+          "change_pct": 1.54,
+          "volume": 127800
+        },
+        {
+          "date": "2025-07-10",
+          "close": 19.079999923706055,
+          "change": -0.05,
+          "change_pct": -0.26,
+          "volume": 81100
+        },
+        {
+          "date": "2025-07-11",
+          "close": 19.209999084472656,
+          "change": 0.13,
+          "change_pct": 0.68,
+          "volume": 324700
+        },
+        {
+          "date": "2025-07-14",
+          "close": 19.3700008392334,
+          "change": 0.16,
+          "change_pct": 0.83,
+          "volume": 167800
+        },
+        {
+          "date": "2025-07-15",
+          "close": 19.40999984741211,
+          "change": 0.04,
+          "change_pct": 0.21,
+          "volume": 426600
+        },
+        {
+          "date": "2025-07-16",
+          "close": 19.860000610351562,
+          "change": 0.45,
+          "change_pct": 2.32,
+          "volume": 659000
+        },
+        {
+          "date": "2025-07-17",
+          "close": 20.049999237060547,
+          "change": 0.19,
+          "change_pct": 0.96,
+          "volume": 290500
+        },
+        {
+          "date": "2025-07-18",
+          "close": 19.979999542236328,
+          "change": -0.07,
+          "change_pct": -0.35,
+          "volume": 96900
+        },
+        {
+          "date": "2025-07-21",
+          "close": 19.899999618530273,
+          "change": -0.08,
+          "change_pct": -0.4,
+          "volume": 97000
+        },
+        {
+          "date": "2025-07-22",
+          "close": 19.795000076293945,
+          "change": -0.105,
+          "change_pct": -0.53,
+          "volume": 60700
+        },
+        {
+          "date": "2025-07-23",
+          "close": 20.104999542236328,
+          "change": 0.31,
+          "change_pct": 1.57,
+          "volume": 133600
+        },
+        {
+          "date": "2025-07-24",
+          "close": 20.110000610351562,
+          "change": 0.005,
+          "change_pct": 0.02,
+          "volume": 36600
+        },
+        {
+          "date": "2025-07-25",
+          "close": 20.350000381469727,
+          "change": 0.24,
+          "change_pct": 1.19,
+          "volume": 99700
+        },
+        {
+          "date": "2025-07-28",
+          "close": 20.31999969482422,
+          "change": -0.03,
+          "change_pct": -0.15,
+          "volume": 294900
+        },
+        {
+          "date": "2025-07-29",
+          "close": 20.145000457763672,
+          "change": -0.175,
+          "change_pct": -0.86,
+          "volume": 211200
+        },
+        {
+          "date": "2025-07-30",
+          "close": 20.260000228881836,
+          "change": 0.115,
+          "change_pct": 0.57,
+          "volume": 238000
+        },
+        {
+          "date": "2025-07-31",
+          "close": 20.040000915527344,
+          "change": -0.22,
+          "change_pct": -1.09,
+          "volume": 132400
+        },
+        {
+          "date": "2025-08-01",
+          "close": 19.950000762939453,
+          "change": -0.09,
+          "change_pct": -0.45,
+          "volume": 193600
+        },
+        {
+          "date": "2025-08-04",
+          "close": 20.209999084472656,
+          "change": 0.26,
+          "change_pct": 1.3,
+          "volume": 270100
+        },
+        {
+          "date": "2025-08-05",
+          "close": 20.010000228881836,
+          "change": -0.2,
+          "change_pct": -0.99,
+          "volume": 600200
+        },
+        {
+          "date": "2025-08-06",
+          "close": 20.25,
+          "change": 0.24,
+          "change_pct": 1.2,
+          "volume": 146900
+        },
+        {
+          "date": "2025-08-07",
+          "close": 20.100000381469727,
+          "change": -0.15,
+          "change_pct": -0.74,
+          "volume": 79600
+        },
+        {
+          "date": "2025-08-08",
+          "close": 20.139999389648438,
+          "change": 0.04,
+          "change_pct": 0.2,
+          "volume": 58100
+        },
+        {
+          "date": "2025-08-11",
+          "close": 20.079999923706055,
+          "change": -0.06,
+          "change_pct": -0.3,
+          "volume": 43300
+        },
+        {
+          "date": "2025-08-12",
+          "close": 20.149999618530273,
+          "change": 0.07,
+          "change_pct": 0.35,
+          "volume": 141900
+        },
+        {
+          "date": "2025-08-13",
+          "close": 19.93000030517578,
+          "change": -0.22,
+          "change_pct": -1.09,
+          "volume": 74200
+        },
+        {
+          "date": "2025-08-14",
+          "close": 19.979999542236328,
+          "change": 0.05,
+          "change_pct": 0.25,
+          "volume": 385600
+        },
+        {
+          "date": "2025-08-15",
+          "close": 19.905000686645508,
+          "change": -0.075,
+          "change_pct": -0.38,
+          "volume": 88900
+        },
+        {
+          "date": "2025-08-18",
+          "close": 19.96500015258789,
+          "change": 0.06,
+          "change_pct": 0.3,
+          "volume": 179400
+        },
+        {
+          "date": "2025-08-19",
+          "close": 19.83799934387207,
+          "change": -0.127,
+          "change_pct": -0.64,
+          "volume": 150200
+        },
+        {
+          "date": "2025-08-20",
+          "close": 19.799999237060547,
+          "change": -0.038,
+          "change_pct": -0.19,
+          "volume": 170600
+        },
+        {
+          "date": "2025-08-21",
+          "close": 19.753000259399414,
+          "change": -0.047,
+          "change_pct": -0.24,
+          "volume": 94400
+        },
+        {
+          "date": "2025-08-22",
+          "close": 19.959999084472656,
+          "change": 0.207,
+          "change_pct": 1.05,
+          "volume": 156300
+        },
+        {
+          "date": "2025-08-25",
+          "close": 19.829999923706055,
+          "change": -0.13,
+          "change_pct": -0.65,
+          "volume": 128500
+        },
+        {
+          "date": "2025-08-26",
+          "close": 19.75,
+          "change": -0.08,
+          "change_pct": -0.4,
+          "volume": 887800
+        },
+        {
+          "date": "2025-08-27",
+          "close": 19.68000030517578,
+          "change": -0.07,
+          "change_pct": -0.35,
+          "volume": 169500
+        },
+        {
+          "date": "2025-08-28",
+          "close": 19.530000686645508,
+          "change": -0.15,
+          "change_pct": -0.76,
+          "volume": 130600
+        },
+        {
+          "date": "2025-08-29",
+          "close": 19.3799991607666,
+          "change": -0.15,
+          "change_pct": -0.77,
+          "volume": 67300
+        },
+        {
+          "date": "2025-09-02",
+          "close": 19.139999389648438,
+          "change": -0.24,
+          "change_pct": -1.24,
+          "volume": 371600
+        },
+        {
+          "date": "2025-09-03",
+          "close": 19.030000686645508,
+          "change": -0.11,
+          "change_pct": -0.57,
+          "volume": 138600
+        },
+        {
+          "date": "2025-09-04",
+          "close": 19.200000762939453,
+          "change": 0.17,
+          "change_pct": 0.89,
+          "volume": 29600
+        },
+        {
+          "date": "2025-09-05",
+          "close": 19.15999984741211,
+          "change": -0.04,
+          "change_pct": -0.21,
+          "volume": 161900
+        },
+        {
+          "date": "2025-09-08",
+          "close": 18.940000534057617,
+          "change": -0.22,
+          "change_pct": -1.15,
+          "volume": 98700
+        },
+        {
+          "date": "2025-09-09",
+          "close": 18.90999984741211,
+          "change": -0.03,
+          "change_pct": -0.16,
+          "volume": 590600
+        },
+        {
+          "date": "2025-09-10",
+          "close": 18.850000381469727,
+          "change": -0.06,
+          "change_pct": -0.32,
+          "volume": 81200
+        },
+        {
+          "date": "2025-09-11",
+          "close": 19.010000228881836,
+          "change": 0.16,
+          "change_pct": 0.85,
+          "volume": 93600
+        },
+        {
+          "date": "2025-09-12",
+          "close": 19.170000076293945,
+          "change": 0.16,
+          "change_pct": 0.84,
+          "volume": 78700
+        },
+        {
+          "date": "2025-09-15",
+          "close": 19.200000762939453,
+          "change": 0.03,
+          "change_pct": 0.16,
+          "volume": 201600
+        },
+        {
+          "date": "2025-09-16",
+          "close": 19.31999969482422,
+          "change": 0.12,
+          "change_pct": 0.62,
+          "volume": 503200
+        },
+        {
+          "date": "2025-09-17",
+          "close": 19.15999984741211,
+          "change": -0.16,
+          "change_pct": -0.83,
+          "volume": 206800
+        },
+        {
+          "date": "2025-09-18",
+          "close": 19.360000610351562,
+          "change": 0.2,
+          "change_pct": 1.04,
+          "volume": 299300
+        },
+        {
+          "date": "2025-09-19",
+          "close": 19.469999313354492,
+          "change": 0.11,
+          "change_pct": 0.57,
+          "volume": 144100
+        },
+        {
+          "date": "2025-09-22",
+          "close": 19.549999237060547,
+          "change": 0.08,
+          "change_pct": 0.41,
+          "volume": 232900
+        },
+        {
+          "date": "2025-09-23",
+          "close": 19.139999389648438,
+          "change": -0.41,
+          "change_pct": -2.1,
+          "volume": 721100
+        },
+        {
+          "date": "2025-09-24",
+          "close": 18.68000030517578,
+          "change": -0.46,
+          "change_pct": -2.4,
+          "volume": 362900
+        },
+        {
+          "date": "2025-09-25",
+          "close": 18.84000015258789,
+          "change": 0.16,
+          "change_pct": 0.86,
+          "volume": 547800
+        },
+        {
+          "date": "2025-09-26",
+          "close": 18.979999542236328,
+          "change": 0.14,
+          "change_pct": 0.74,
+          "volume": 13400
+        },
+        {
+          "date": "2025-09-29",
+          "close": 18.81999969482422,
+          "change": -0.16,
+          "change_pct": -0.84,
+          "volume": 259500
+        },
+        {
+          "date": "2025-09-30",
+          "close": 18.889999389648438,
+          "change": 0.07,
+          "change_pct": 0.37,
+          "volume": 247000
+        },
+        {
+          "date": "2025-10-01",
+          "close": 18.989999771118164,
+          "change": 0.1,
+          "change_pct": 0.53,
+          "volume": 912200
+        },
+        {
+          "date": "2025-10-02",
+          "close": 19.079999923706055,
+          "change": 0.09,
+          "change_pct": 0.47,
+          "volume": 170400
+        },
+        {
+          "date": "2025-10-03",
+          "close": 19.110000610351562,
+          "change": 0.03,
+          "change_pct": 0.16,
+          "volume": 184600
+        },
+        {
+          "date": "2025-10-06",
+          "close": 19.040000915527344,
+          "change": -0.07,
+          "change_pct": -0.37,
+          "volume": 221400
+        },
+        {
+          "date": "2025-10-07",
+          "close": 19.1299991607666,
+          "change": 0.09,
+          "change_pct": 0.47,
+          "volume": 183600
+        },
+        {
+          "date": "2025-10-08",
+          "close": 19.290000915527344,
+          "change": 0.16,
+          "change_pct": 0.84,
+          "volume": 163700
+        },
+        {
+          "date": "2025-10-09",
+          "close": 19.25,
+          "change": -0.04,
+          "change_pct": -0.21,
+          "volume": 445500
+        },
+        {
+          "date": "2025-10-10",
+          "close": 19.0,
+          "change": -0.25,
+          "change_pct": -1.3,
+          "volume": 64000
+        },
+        {
+          "date": "2025-10-13",
+          "close": 19.15999984741211,
+          "change": 0.16,
+          "change_pct": 0.84,
+          "volume": 495900
+        },
+        {
+          "date": "2025-10-14",
+          "close": 19.56999969482422,
+          "change": 0.41,
+          "change_pct": 2.14,
+          "volume": 123900
+        },
+        {
+          "date": "2025-10-15",
+          "close": 19.469999313354492,
+          "change": -0.1,
+          "change_pct": -0.51,
+          "volume": 93000
+        },
+        {
+          "date": "2025-10-16",
+          "close": 19.469999313354492,
+          "change": 0.0,
+          "change_pct": 0.0,
+          "volume": 46400
+        },
+        {
+          "date": "2025-10-17",
+          "close": 19.6299991607666,
+          "change": 0.16,
+          "change_pct": 0.82,
+          "volume": 180800
+        },
+        {
+          "date": "2025-10-20",
+          "close": 19.56999969482422,
+          "change": -0.06,
+          "change_pct": -0.31,
+          "volume": 100900
+        },
+        {
+          "date": "2025-10-21",
+          "close": 19.579999923706055,
+          "change": 0.01,
+          "change_pct": 0.05,
+          "volume": 413200
+        },
+        {
+          "date": "2025-10-22",
+          "close": 19.690000534057617,
+          "change": 0.11,
+          "change_pct": 0.56,
+          "volume": 86700
+        },
+        {
+          "date": "2025-10-23",
+          "close": 19.920000076293945,
+          "change": 0.23,
+          "change_pct": 1.17,
+          "volume": 166300
+        },
+        {
+          "date": "2025-10-24",
+          "close": 19.979999542236328,
+          "change": 0.06,
+          "change_pct": 0.3,
+          "volume": 54400
+        },
+        {
+          "date": "2025-10-27",
+          "close": 19.969999313354492,
+          "change": -0.01,
+          "change_pct": -0.05,
+          "volume": 99300
+        },
+        {
+          "date": "2025-10-28",
+          "close": 20.010000228881836,
+          "change": 0.04,
+          "change_pct": 0.2,
+          "volume": 92100
+        },
+        {
+          "date": "2025-10-29",
+          "close": 20.0,
+          "change": -0.01,
+          "change_pct": -0.05,
+          "volume": 194500
+        },
+        {
+          "date": "2025-10-30",
+          "close": 20.149999618530273,
+          "change": 0.15,
+          "change_pct": 0.75,
+          "volume": 175600
+        },
+        {
+          "date": "2025-10-31",
+          "close": 19.68000030517578,
+          "change": -0.47,
+          "change_pct": -2.33,
+          "volume": 100300
+        },
+        {
+          "date": "2025-11-03",
+          "close": 19.579999923706055,
+          "change": -0.1,
+          "change_pct": -0.51,
+          "volume": 118500
+        },
+        {
+          "date": "2025-11-04",
+          "close": 19.360000610351562,
+          "change": -0.22,
+          "change_pct": -1.12,
+          "volume": 95700
+        },
+        {
+          "date": "2025-11-05",
+          "close": 19.350000381469727,
+          "change": -0.01,
+          "change_pct": -0.05,
+          "volume": 308700
+        },
+        {
+          "date": "2025-11-06",
+          "close": 19.309999465942383,
+          "change": -0.04,
+          "change_pct": -0.21,
+          "volume": 124800
+        },
+        {
+          "date": "2025-11-07",
+          "close": 19.43000030517578,
+          "change": 0.12,
+          "change_pct": 0.62,
+          "volume": 76400
+        },
+        {
+          "date": "2025-11-10",
+          "close": 19.530000686645508,
+          "change": 0.1,
+          "change_pct": 0.51,
+          "volume": 213500
+        },
+        {
+          "date": "2025-11-11",
+          "close": 19.690000534057617,
+          "change": 0.16,
+          "change_pct": 0.82,
+          "volume": 565000
+        },
+        {
+          "date": "2025-11-12",
+          "close": 19.479999542236328,
+          "change": -0.21,
+          "change_pct": -1.07,
+          "volume": 60000
+        },
+        {
+          "date": "2025-11-13",
+          "close": 19.190000534057617,
+          "change": -0.29,
+          "change_pct": -1.49,
+          "volume": 72800
+        },
+        {
+          "date": "2025-11-14",
+          "close": 19.170000076293945,
+          "change": -0.02,
+          "change_pct": -0.1,
+          "volume": 20600
+        },
+        {
+          "date": "2025-11-17",
+          "close": 18.93000030517578,
+          "change": -0.24,
+          "change_pct": -1.25,
+          "volume": 124700
+        },
+        {
+          "date": "2025-11-18",
+          "close": 18.850000381469727,
+          "change": -0.08,
+          "change_pct": -0.42,
+          "volume": 246100
+        },
+        {
+          "date": "2025-11-19",
+          "close": 18.8700008392334,
+          "change": 0.02,
+          "change_pct": 0.11,
+          "volume": 244100
+        },
+        {
+          "date": "2025-11-20",
+          "close": 18.757999420166016,
+          "change": -0.112,
+          "change_pct": -0.59,
+          "volume": 208200
+        },
+        {
+          "date": "2025-11-21",
+          "close": 18.68000030517578,
+          "change": -0.078,
+          "change_pct": -0.42,
+          "volume": 52300
+        },
+        {
+          "date": "2025-11-24",
+          "close": 18.75,
+          "change": 0.07,
+          "change_pct": 0.37,
+          "volume": 515100
+        },
+        {
+          "date": "2025-11-25",
+          "close": 18.709999084472656,
+          "change": -0.04,
+          "change_pct": -0.21,
+          "volume": 412000
+        },
+        {
+          "date": "2025-11-26",
+          "close": 18.530000686645508,
+          "change": -0.18,
+          "change_pct": -0.96,
+          "volume": 172300
+        },
+        {
+          "date": "2025-11-28",
+          "close": 18.579999923706055,
+          "change": 0.05,
+          "change_pct": 0.27,
+          "volume": 58200
+        },
+        {
+          "date": "2025-12-01",
+          "close": 18.493999481201172,
+          "change": -0.086,
+          "change_pct": -0.46,
+          "volume": 120500
+        },
+        {
+          "date": "2025-12-02",
+          "close": 18.530000686645508,
+          "change": 0.036,
+          "change_pct": 0.19,
+          "volume": 36600
+        },
+        {
+          "date": "2025-12-03",
+          "close": 18.850000381469727,
+          "change": 0.32,
+          "change_pct": 1.73,
+          "volume": 134600
+        },
+        {
+          "date": "2025-12-04",
+          "close": 19.049999237060547,
+          "change": 0.2,
+          "change_pct": 1.06,
+          "volume": 66400
+        },
+        {
+          "date": "2025-12-05",
+          "close": 19.219999313354492,
+          "change": 0.17,
+          "change_pct": 0.89,
+          "volume": 51700
+        },
+        {
+          "date": "2025-12-08",
+          "close": 19.079999923706055,
+          "change": -0.14,
+          "change_pct": -0.73,
+          "volume": 117700
+        },
+        {
+          "date": "2025-12-09",
+          "close": 19.3799991607666,
+          "change": 0.3,
+          "change_pct": 1.57,
+          "volume": 630900
+        },
+        {
+          "date": "2025-12-10",
+          "close": 19.440000534057617,
+          "change": 0.06,
+          "change_pct": 0.31,
+          "volume": 357100
+        },
+        {
+          "date": "2025-12-11",
+          "close": 19.510000228881836,
+          "change": 0.07,
+          "change_pct": 0.36,
+          "volume": 47800
+        },
+        {
+          "date": "2025-12-12",
+          "close": 19.350000381469727,
+          "change": -0.16,
+          "change_pct": -0.82,
+          "volume": 164100
+        },
+        {
+          "date": "2025-12-15",
+          "close": 19.3799991607666,
+          "change": 0.03,
+          "change_pct": 0.16,
+          "volume": 167700
+        },
+        {
+          "date": "2025-12-16",
+          "close": 19.239999771118164,
+          "change": -0.14,
+          "change_pct": -0.72,
+          "volume": 802900
+        },
+        {
+          "date": "2025-12-17",
+          "close": 19.113000869750977,
+          "change": -0.127,
+          "change_pct": -0.66,
+          "volume": 156500
+        },
+        {
+          "date": "2025-12-18",
+          "close": 19.309999465942383,
+          "change": 0.197,
+          "change_pct": 1.03,
+          "volume": 153600
+        },
+        {
+          "date": "2025-12-19",
+          "close": 19.25,
+          "change": -0.06,
+          "change_pct": -0.31,
+          "volume": 190900
+        },
+        {
+          "date": "2025-12-22",
+          "close": 19.450000762939453,
+          "change": 0.2,
+          "change_pct": 1.04,
+          "volume": 228500
+        },
+        {
+          "date": "2025-12-23",
+          "close": 19.559999465942383,
+          "change": 0.11,
+          "change_pct": 0.57,
+          "volume": 40000
+        },
+        {
+          "date": "2025-12-24",
+          "close": 19.520000457763672,
+          "change": -0.04,
+          "change_pct": -0.2,
+          "volume": 37100
+        },
+        {
+          "date": "2025-12-26",
+          "close": 19.540000915527344,
+          "change": 0.02,
+          "change_pct": 0.1,
+          "volume": 787600
+        },
+        {
+          "date": "2025-12-29",
+          "close": 19.600000381469727,
+          "change": 0.06,
+          "change_pct": 0.31,
+          "volume": 665600
+        },
+        {
+          "date": "2025-12-30",
+          "close": 19.049999237060547,
+          "change": -0.55,
+          "change_pct": -2.81,
+          "volume": 1046900
+        },
+        {
+          "date": "2025-12-31",
+          "close": 19.1200008392334,
+          "change": 0.07,
+          "change_pct": 0.37,
+          "volume": 69700
+        },
+        {
+          "date": "2026-01-02",
+          "close": 19.21500015258789,
+          "change": 0.095,
+          "change_pct": 0.5,
+          "volume": 59000
+        },
+        {
+          "date": "2026-01-05",
+          "close": 19.219999313354492,
+          "change": 0.005,
+          "change_pct": 0.03,
+          "volume": 334800
+        },
+        {
+          "date": "2026-01-06",
+          "close": 19.424999237060547,
+          "change": 0.205,
+          "change_pct": 1.07,
+          "volume": 204800
+        },
+        {
+          "date": "2026-01-07",
+          "close": 19.649999618530273,
+          "change": 0.225,
+          "change_pct": 1.16,
+          "volume": 185100
+        },
+        {
+          "date": "2026-01-08",
+          "close": 19.649999618530273,
+          "change": 0.0,
+          "change_pct": 0.0,
+          "volume": 99600
+        },
+        {
+          "date": "2026-01-09",
+          "close": 19.43000030517578,
+          "change": -0.22,
+          "change_pct": -1.12,
+          "volume": 217100
+        },
+        {
+          "date": "2026-01-12",
+          "close": 19.549999237060547,
+          "change": 0.12,
+          "change_pct": 0.62,
+          "volume": 71600
+        },
+        {
+          "date": "2026-01-13",
+          "close": 19.760000228881836,
+          "change": 0.21,
+          "change_pct": 1.07,
+          "volume": 258000
+        },
+        {
+          "date": "2026-01-14",
+          "close": 19.59000015258789,
+          "change": -0.17,
+          "change_pct": -0.86,
+          "volume": 371100
+        },
+        {
+          "date": "2026-01-15",
+          "close": 19.729999542236328,
+          "change": 0.14,
+          "change_pct": 0.71,
+          "volume": 598000
+        },
+        {
+          "date": "2026-01-16",
+          "close": 19.8700008392334,
+          "change": 0.14,
+          "change_pct": 0.71,
+          "volume": 46600
+        },
+        {
+          "date": "2026-01-20",
+          "close": 20.09000015258789,
+          "change": 0.22,
+          "change_pct": 1.11,
+          "volume": 445500
+        },
+        {
+          "date": "2026-01-21",
+          "close": 20.299999237060547,
+          "change": 0.21,
+          "change_pct": 1.05,
+          "volume": 288000
+        },
+        {
+          "date": "2026-01-22",
+          "close": 20.6200008392334,
+          "change": 0.32,
+          "change_pct": 1.58,
+          "volume": 267900
+        },
+        {
+          "date": "2026-01-23",
+          "close": 20.459999084472656,
+          "change": -0.16,
+          "change_pct": -0.78,
+          "volume": 485600
+        },
+        {
+          "date": "2026-01-26",
+          "close": 20.40999984741211,
+          "change": -0.05,
+          "change_pct": -0.24,
+          "volume": 217900
+        },
+        {
+          "date": "2026-01-27",
+          "close": 20.709999084472656,
+          "change": 0.3,
+          "change_pct": 1.47,
+          "volume": 198300
+        },
+        {
+          "date": "2026-01-28",
+          "close": 20.75,
+          "change": 0.04,
+          "change_pct": 0.19,
+          "volume": 203300
+        },
+        {
+          "date": "2026-01-29",
+          "close": 20.65999984741211,
+          "change": -0.09,
+          "change_pct": -0.43,
+          "volume": 272000
+        },
+        {
+          "date": "2026-01-30",
+          "close": 20.489999771118164,
+          "change": -0.17,
+          "change_pct": -0.82,
+          "volume": 239000
+        },
+        {
+          "date": "2026-02-02",
+          "close": 20.940000534057617,
+          "change": 0.45,
+          "change_pct": 2.2,
+          "volume": 440100
+        },
+        {
+          "date": "2026-02-03",
+          "close": 21.110000610351562,
+          "change": 0.17,
+          "change_pct": 0.81,
+          "volume": 144700
+        },
+        {
+          "date": "2026-02-04",
+          "close": 21.290000915527344,
+          "change": 0.18,
+          "change_pct": 0.85,
+          "volume": 552300
+        },
+        {
+          "date": "2026-02-05",
+          "close": 21.389999389648438,
+          "change": 0.1,
+          "change_pct": 0.47,
+          "volume": 201700
+        },
+        {
+          "date": "2026-02-06",
+          "close": 21.729999542236328,
+          "change": 0.34,
+          "change_pct": 1.59,
+          "volume": 298000
+        },
+        {
+          "date": "2026-02-09",
+          "close": 21.889999389648438,
+          "change": 0.16,
+          "change_pct": 0.74,
+          "volume": 132200
+        },
+        {
+          "date": "2026-02-10",
+          "close": 21.899999618530273,
+          "change": 0.01,
+          "change_pct": 0.05,
+          "volume": 121300
+        },
+        {
+          "date": "2026-02-11",
+          "close": 21.829999923706055,
+          "change": -0.07,
+          "change_pct": -0.32,
+          "volume": 218900
+        },
+        {
+          "date": "2026-02-12",
+          "close": 21.889999389648438,
+          "change": 0.06,
+          "change_pct": 0.27,
+          "volume": 330300
+        },
+        {
+          "date": "2026-02-13",
+          "close": 21.940000534057617,
+          "change": 0.05,
+          "change_pct": 0.23,
+          "volume": 107900
+        },
+        {
+          "date": "2026-02-17",
+          "close": 21.850000381469727,
+          "change": -0.09,
+          "change_pct": -0.41,
+          "volume": 125300
+        },
+        {
+          "date": "2026-02-18",
+          "close": 22.229999542236328,
+          "change": 0.38,
+          "change_pct": 1.74,
+          "volume": 128800
+        },
+        {
+          "date": "2026-02-19",
+          "close": 21.690000534057617,
+          "change": -0.54,
+          "change_pct": -2.43,
+          "volume": 2110800
+        },
+        {
+          "date": "2026-02-20",
+          "close": 21.6299991607666,
+          "change": -0.06,
+          "change_pct": -0.28,
+          "volume": 1342300
+        },
+        {
+          "date": "2026-02-23",
+          "close": 21.959999084472656,
+          "change": 0.33,
+          "change_pct": 1.53,
+          "volume": 492000
+        },
+        {
+          "date": "2026-02-24",
+          "close": 22.0,
+          "change": 0.04,
+          "change_pct": 0.18,
+          "volume": 583500
+        },
+        {
+          "date": "2026-02-25",
+          "close": 22.0,
+          "change": 0.0,
+          "change_pct": 0.0,
+          "volume": 178600
+        },
+        {
+          "date": "2026-02-26",
+          "close": 21.540000915527344,
+          "change": -0.46,
+          "change_pct": -2.09,
+          "volume": 674000
+        },
+        {
+          "date": "2026-02-27",
+          "close": 21.350000381469727,
+          "change": -0.19,
+          "change_pct": -0.88,
+          "volume": 1411200
+        },
+        {
+          "date": "2026-03-02",
+          "close": 20.309999465942383,
+          "change": -1.04,
+          "change_pct": -4.87,
+          "volume": 2245600
+        },
+        {
+          "date": "2026-03-03",
+          "close": 19.690000534057617,
+          "change": -0.62,
+          "change_pct": -3.05,
+          "volume": 4255100
+        },
+        {
+          "date": "2026-03-04",
+          "close": 19.834999084472656,
+          "change": 0.145,
+          "change_pct": 0.74,
+          "volume": 2349100
+        },
+        {
+          "date": "2026-03-05",
+          "close": 19.399999618530273,
+          "change": -0.435,
+          "change_pct": -2.19,
+          "volume": 1747000
+        },
+        {
+          "date": "2026-03-06",
+          "close": 19.079999923706055,
+          "change": -0.32,
+          "change_pct": -1.65,
+          "volume": 1240100
+        },
+        {
+          "date": "2026-03-09",
+          "close": 19.170000076293945,
+          "change": 0.09,
+          "change_pct": 0.47,
+          "volume": 1227200
+        },
+        {
+          "date": "2026-03-10",
+          "close": 19.110000610351562,
+          "change": -0.06,
+          "change_pct": -0.31,
+          "volume": 1914900
+        },
+        {
+          "date": "2026-03-11",
+          "close": 18.68000030517578,
+          "change": -0.43,
+          "change_pct": -2.25,
+          "volume": 774200
+        },
+        {
+          "date": "2026-03-12",
+          "close": 17.889999389648438,
+          "change": -0.79,
+          "change_pct": -4.23,
+          "volume": 1265400
+        },
+        {
+          "date": "2026-03-13",
+          "close": 17.760000228881836,
+          "change": -0.13,
+          "change_pct": -0.73,
+          "volume": 838800
+        },
+        {
+          "date": "2026-03-16",
+          "close": 17.899999618530273,
+          "change": 0.14,
+          "change_pct": 0.79,
+          "volume": 1279500
+        },
+        {
+          "date": "2026-03-17",
+          "close": 18.299999237060547,
+          "change": 0.4,
+          "change_pct": 2.23,
+          "volume": 1232700
+        },
+        {
+          "date": "2026-03-18",
+          "close": 17.8799991607666,
+          "change": -0.42,
+          "change_pct": -2.3,
+          "volume": 902700
+        },
+        {
+          "date": "2026-03-19",
+          "close": 17.920000076293945,
+          "change": 0.04,
+          "change_pct": 0.22,
+          "volume": 901200
+        },
+        {
+          "date": "2026-03-20",
+          "close": 17.450000762939453,
+          "change": -0.47,
+          "change_pct": -2.62,
+          "volume": 1172000
+        },
+        {
+          "date": "2026-03-23",
+          "close": 18.600000381469727,
+          "change": 1.15,
+          "change_pct": 6.59,
+          "volume": 2457300
+        },
+        {
+          "date": "2026-03-24",
+          "close": 18.06999969482422,
+          "change": -0.53,
+          "change_pct": -2.85,
+          "volume": 877600
+        },
+        {
+          "date": "2026-03-25",
+          "close": 18.709999084472656,
+          "change": 0.64,
+          "change_pct": 3.54,
+          "volume": 738200
+        },
+        {
+          "date": "2026-03-26",
+          "close": 17.950000762939453,
+          "change": -0.76,
+          "change_pct": -4.06,
+          "volume": 506700
+        },
+        {
+          "date": "2026-03-27",
+          "close": 17.799999237060547,
+          "change": -0.15,
+          "change_pct": -0.84,
+          "volume": 629300
+        },
+        {
+          "date": "2026-03-30",
+          "close": 17.84000015258789,
+          "change": 0.04,
+          "change_pct": 0.22,
+          "volume": 362300
+        },
+        {
+          "date": "2026-03-31",
+          "close": 18.649999618530273,
+          "change": 0.81,
+          "change_pct": 4.54,
+          "volume": 1077300
+        },
+        {
+          "date": "2026-04-01",
+          "close": 18.649999618530273,
+          "change": 0.0,
+          "change_pct": 0.0,
+          "volume": 938300
+        },
+        {
+          "date": "2026-04-02",
+          "close": 18.299999237060547,
+          "change": -0.35,
+          "change_pct": -1.88,
+          "volume": 931300
+        },
+        {
+          "date": "2026-04-06",
+          "close": 18.3700008392334,
+          "change": 0.07,
+          "change_pct": 0.38,
+          "volume": 402900
+        },
+        {
+          "date": "2026-04-07",
+          "close": 18.40999984741211,
+          "change": 0.04,
+          "change_pct": 0.22,
+          "volume": 266100
+        },
+        {
+          "date": "2026-04-08",
+          "close": 19.21500015258789,
+          "change": 0.805,
+          "change_pct": 4.37,
+          "volume": 1332600
+        },
+        {
+          "date": "2026-04-09",
+          "close": 19.479999542236328,
+          "change": 0.265,
+          "change_pct": 1.38,
+          "volume": 469900
+        },
+        {
+          "date": "2026-04-10",
+          "close": 19.190000534057617,
+          "change": -0.29,
+          "change_pct": -1.49,
+          "volume": 217100
+        },
+        {
+          "date": "2026-04-13",
+          "close": 19.56999969482422,
+          "change": 0.38,
+          "change_pct": 1.98,
+          "volume": 587200
+        },
+        {
+          "date": "2026-04-14",
+          "close": 19.920000076293945,
+          "change": 0.35,
+          "change_pct": 1.79,
+          "volume": 582000
+        },
+        {
+          "date": "2026-04-15",
+          "close": 19.959999084472656,
+          "change": 0.04,
+          "change_pct": 0.2,
+          "volume": 217000
+        },
+        {
+          "date": "2026-04-16",
+          "close": 19.790000915527344,
+          "change": -0.17,
+          "change_pct": -0.85,
+          "volume": 358800
+        },
+        {
+          "date": "2026-04-17",
+          "close": 20.399999618530273,
+          "change": 0.61,
+          "change_pct": 3.08,
+          "volume": 452900
+        },
+        {
+          "date": "2026-04-20",
+          "close": 19.860000610351562,
+          "change": -0.54,
+          "change_pct": -2.65,
+          "volume": 286200
+        },
+        {
+          "date": "2026-04-21",
+          "close": 19.510000228881836,
+          "change": -0.35,
+          "change_pct": -1.76,
+          "volume": 1254900
+        },
+        {
+          "date": "2026-04-22",
+          "close": 19.43000030517578,
+          "change": -0.08,
+          "change_pct": -0.41,
+          "volume": 198200
+        },
+        {
+          "date": "2026-04-23",
+          "close": 19.06999969482422,
+          "change": -0.36,
+          "change_pct": -1.85,
+          "volume": 510500
+        },
+        {
+          "date": "2026-04-24",
+          "close": 19.459999084472656,
+          "change": 0.39,
+          "change_pct": 2.05,
+          "volume": 63800
+        },
+        {
+          "date": "2026-04-27",
+          "close": 19.459999084472656,
+          "change": 0.0,
+          "change_pct": 0.0,
+          "volume": 112800
+        },
+        {
+          "date": "2026-04-28",
+          "close": 19.639999389648438,
+          "change": 0.18,
+          "change_pct": 0.92,
+          "volume": 452200
+        },
+        {
+          "date": "2026-04-29",
+          "close": 19.549999237060547,
+          "change": -0.09,
+          "change_pct": -0.46,
+          "volume": 129800
+        },
+        {
+          "date": "2026-04-30",
+          "close": 19.229999542236328,
+          "change": -0.32,
+          "change_pct": -1.64,
+          "volume": 491500
+        },
+        {
+          "date": "2026-05-01",
+          "close": 19.469999313354492,
+          "change": 0.24,
+          "change_pct": 1.25,
+          "volume": 198000
+        },
+        {
+          "date": "2026-05-04",
+          "close": 18.979999542236328,
+          "change": -0.49,
+          "change_pct": -2.52,
+          "volume": 682800
+        },
+        {
+          "date": "2026-05-05",
+          "close": 19.15999984741211,
+          "change": 0.18,
+          "change_pct": 0.95,
+          "volume": 261100
+        },
+        {
+          "date": "2026-05-06",
+          "close": 19.760000228881836,
+          "change": 0.6,
+          "change_pct": 3.13,
+          "volume": 306600
+        },
+        {
+          "date": "2026-05-07",
+          "close": 19.489999771118164,
+          "change": -0.27,
+          "change_pct": -1.37,
+          "volume": 235900
+        },
+        {
+          "date": "2026-05-08",
+          "close": 19.56999969482422,
+          "change": 0.08,
+          "change_pct": 0.41,
+          "volume": 108000
+        },
+        {
+          "date": "2026-05-11",
+          "close": 19.200000762939453,
+          "change": -0.37,
+          "change_pct": -1.89,
+          "volume": 514800
+        },
+        {
+          "date": "2026-05-12",
+          "close": 19.0,
+          "change": -0.2,
+          "change_pct": -1.04,
+          "volume": 345100
+        },
+        {
+          "date": "2026-05-13",
+          "close": 18.969999313354492,
+          "change": -0.03,
+          "change_pct": -0.16,
+          "volume": 533900
+        },
+        {
+          "date": "2026-05-14",
+          "close": 19.040000915527344,
+          "change": 0.07,
+          "change_pct": 0.37,
+          "volume": 90200
+        },
+        {
+          "date": "2026-05-15",
+          "close": 18.920000076293945,
+          "change": -0.12,
+          "change_pct": -0.63,
+          "volume": 228200
+        },
+        {
+          "date": "2026-05-18",
+          "close": 18.600000381469727,
+          "change": -0.32,
+          "change_pct": -1.69,
+          "volume": 227000
+        },
+        {
+          "date": "2026-05-19",
+          "close": 18.770000457763672,
+          "change": 0.17,
+          "change_pct": 0.91,
+          "volume": 118000
+        },
+        {
+          "date": "2026-05-20",
+          "close": 18.8799991607666,
+          "change": 0.11,
+          "change_pct": 0.59,
+          "volume": 724800
+        },
+        {
+          "date": "2026-05-21",
+          "close": 19.049999237060547,
+          "change": 0.17,
+          "change_pct": 0.9,
+          "volume": 904200
+        },
+        {
+          "date": "2026-05-22",
+          "close": 18.915000915527344,
+          "change": -0.135,
+          "change_pct": -0.71,
+          "volume": 597300
+        },
+        {
+          "date": "2026-05-26",
+          "close": 18.959999084472656,
+          "change": 0.045,
+          "change_pct": 0.24,
+          "volume": 500200
+        },
+        {
+          "date": "2026-05-27",
+          "close": 19.170000076293945,
+          "change": 0.21,
+          "change_pct": 1.11,
+          "volume": 1493700
+        },
+        {
+          "date": "2026-05-28",
+          "close": 19.6299991607666,
+          "change": 0.46,
+          "change_pct": 2.4,
+          "volume": 367400
+        },
+        {
+          "date": "2026-05-29",
+          "close": 19.530000686645508,
+          "change": -0.1,
+          "change_pct": -0.51,
+          "volume": 374300
+        },
+        {
+          "date": "2026-06-01",
+          "close": 19.010000228881836,
+          "change": -0.52,
+          "change_pct": -2.66,
+          "volume": 292800
+        },
+        {
+          "date": "2026-06-02",
+          "close": 18.84000015258789,
+          "change": -0.17,
+          "change_pct": -0.89,
+          "volume": 198400
+        },
+        {
+          "date": "2026-06-03",
+          "close": 18.579999923706055,
+          "change": -0.26,
+          "change_pct": -1.38,
+          "volume": 89500
+        },
+        {
+          "date": "2026-06-04",
+          "close": 18.850000381469727,
+          "change": 0.27,
+          "change_pct": 1.45,
+          "volume": 310100
+        },
+        {
+          "date": "2026-06-05",
+          "close": 18.5,
+          "change": -0.35,
+          "change_pct": -1.86,
+          "volume": 621300
+        },
+        {
+          "date": "2026-06-08",
+          "close": 18.700000762939453,
+          "change": 0.2,
+          "change_pct": 1.08,
+          "volume": 170700
+        },
+        {
+          "date": "2026-06-09",
+          "close": 18.510000228881836,
+          "change": -0.19,
+          "change_pct": -1.02,
+          "volume": 543000
+        },
+        {
+          "date": "2026-06-10",
+          "close": 18.540000915527344,
+          "change": 0.03,
+          "change_pct": 0.16,
+          "volume": 240900
+        },
+        {
+          "date": "2026-06-11",
+          "close": 18.899999618530273,
+          "change": 0.36,
+          "change_pct": 1.94,
+          "volume": 331800
+        },
+        {
+          "date": "2026-06-12",
+          "close": 19.6200008392334,
+          "change": 0.72,
+          "change_pct": 3.81,
+          "volume": 877200
+        },
+        {
+          "date": "2026-06-15",
+          "close": 19.799999237060547,
+          "change": 0.18,
+          "change_pct": 0.92,
+          "volume": 429300
+        },
+        {
+          "date": "2026-06-16",
+          "close": 19.729999542236328,
+          "change": -0.07,
+          "change_pct": -0.35,
+          "volume": 971900
+        },
+        {
+          "date": "2026-06-17",
+          "close": 19.610000610351562,
+          "change": -0.12,
+          "change_pct": -0.61,
+          "volume": 276300
+        },
+        {
+          "date": "2026-06-18",
+          "close": 20.350000381469727,
+          "change": 0.74,
+          "change_pct": 3.77,
+          "volume": 580200
+        },
+        {
+          "date": "2026-06-22",
+          "close": 19.979999542236328,
+          "change": -0.37,
+          "change_pct": -1.82,
+          "volume": 767600
+        },
+        {
+          "date": "2026-06-23",
+          "close": 19.68000030517578,
+          "change": -0.3,
+          "change_pct": -1.5,
+          "volume": 272400
+        },
+        {
+          "date": "2026-06-24",
+          "close": 19.81999969482422,
+          "change": 0.14,
+          "change_pct": 0.71,
+          "volume": 296500
+        },
+        {
+          "date": "2026-06-25",
+          "close": 19.100000381469727,
+          "change": -0.72,
+          "change_pct": -3.63,
+          "volume": 274200
+        },
+        {
+          "date": "2026-06-26",
+          "close": 19.239999771118164,
+          "change": 0.14,
+          "change_pct": 0.73,
+          "volume": 225900
+        },
+        {
+          "date": "2026-06-29",
+          "close": 19.190000534057617,
+          "change": -0.05,
+          "change_pct": -0.26,
+          "volume": 74000
+        },
+        {
+          "date": "2026-06-30",
+          "close": 19.010000228881836,
+          "change": -0.18,
+          "change_pct": -0.94,
+          "volume": 225700
+        },
+        {
+          "date": "2026-07-01",
+          "close": 19.030000686645508,
+          "change": 0.02,
+          "change_pct": 0.11,
+          "volume": 281800
+        },
+        {
+          "date": "2026-07-02",
+          "close": 19.020000457763672,
+          "change": -0.01,
+          "change_pct": -0.05,
+          "volume": 75800
+        }
+      ]
+    },
+    {
+      "id": "DFMRI",
+      "name": "DFM Real Estate Index",
+      "exchange": "DFM",
+      "currency": "AED",
+      "source": "N/A",
+      "history": [],
+      "note": "Sub-indices not exposed via DFM official API. Manual entry only."
+    },
+    {
+      "id": "DFMBI",
+      "name": "DFM Banks Index",
+      "exchange": "DFM",
+      "currency": "AED",
+      "source": "N/A",
+      "history": [],
+      "note": "Sub-indices not exposed via DFM official API. Manual entry only."
+    },
+    {
+      "id": "DFMSI",
+      "name": "DFM Services Index",
+      "exchange": "DFM",
+      "currency": "AED",
+      "source": "N/A",
+      "history": [],
+      "note": "Sub-indices not exposed via DFM official API. Manual entry only."
+    }
+  ]
+}

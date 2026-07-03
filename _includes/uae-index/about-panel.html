@@ -1,0 +1,21 @@
+<div class="uae-about">
+  <h3>About this dashboard</h3>
+  <p>A static-rendered UAE equities dashboard. Data refreshed daily by GitHub Actions.</p>
+  <h4>Data source</h4>
+  <ul>
+    <li><strong>DFM equities</strong> (52/52 live): Yahoo Finance via <code>yfinance</code>. All prices in AED.</li>
+    <li><strong>DFM General Index</strong> (DFMGI): DFM's official API.</li>
+    <li><strong>ADX equities</strong> (52): metadata only.</li>
+    <li><strong>iShares MSCI UAE ETF</strong> (UAE, USD): Yahoo Finance cross-check benchmark.</li>
+  </ul>
+  <h4>Limitations</h4>
+  <ul>
+    <li>ADX index (FTSE ADX General) is not on Yahoo Finance. UI shows N/A.</li>
+    <li>Custom index builder only uses DFM stocks because ADX has no price feed here.</li>
+    <li>Data is end-of-day (no intraday, no Level 2).</li>
+  </ul>
+  <h4>How to add new tickers</h4>
+  <p>Edit <code>_data/uae/tickers.json</code>. The next GitHub Actions run picks up changes.</p>
+  <h4>Source</h4>
+  <p>See <code>scripts/uae-index/</code> on <a href="https://github.com/naitongzhang/naitongzhang.github.io/tree/master/scripts/uae-index">GitHub</a>.</p>
+</div>

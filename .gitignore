@@ -3,3 +3,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Added for UAE index dashboard
+node_modules
+__pycache__
+*.pyc

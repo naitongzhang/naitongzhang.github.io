@@ -1,0 +1,70 @@
+<div class="uae-builder">
+  <div class="uae-builder-controls">
+    <h3>Build a synthetic UAE index</h3>
+    <p class="uae-builder-hint">
+      Pick DFM stocks (live data). Use filters and weight presets. The index is rebased to 100 on the start date.
+    </p>
+
+    <div class="uae-builder-row">
+      <label>Filter:
+        <input type="search" data-builder-search placeholder="Search DFM ticker or company…" />
+      </label>
+      <label>Sector:
+        <select data-builder-sector>
+          <option value="">All</option>
+        </select>
+      </label>
+      <label>Top N by market cap:
+        <input type="number" min="1" max="30" value="10" data-builder-topn />
+      </label>
+    </div>
+
+    <div class="uae-builder-row">
+      <label>Weighting:
+        <select data-builder-weighting>
+          <option value="equal" selected>Equal weight</option>
+          <option value="market_cap">Market cap weighted</option>
+          <option value="inverse_vol">Inverse volatility weighted</option>
+          <option value="custom">Custom weights (set per-row)</option>
+        </select>
+      </label>
+      <label>Rebase start:
+        <select data-builder-start>
+          <option value="-30">Last 1 month</option>
+          <option value="-90" selected>Last 3 months</option>
+          <option value="-180">Last 6 months</option>
+          <option value="-365">Last 1 year</option>
+        </select>
+      </label>
+      <button type="button" data-builder-addtopn>Add top N</button>
+      <button type="button" data-builder-clear>Clear selection</button>
+    </div>
+
+    <div class="uae-builder-row">
+      <span data-builder-selected-count>0 selected</span>
+      <button type="button" class="uae-builder-primary" data-builder-calc>Compute index</button>
+    </div>
+
+    <div class="uae-builder-list-wrap">
+      <table class="uae-table uae-builder-list">
+        <thead>
+          <tr>
+            <th>Include</th>
+            <th>Ticker</th>
+            <th>Name</th>
+            <th class="num">Price</th>
+            <th class="num">Market Cap</th>
+            <th class="num">Weight (auto)</th>
+            <th class="num">Custom weight</th>
+          </tr>
+        </thead>
+        <tbody data-builder-tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="uae-builder-chart">
+    <div id="uae-builder-chart" class="uae-chart" style="height:380px;"></div>
+    <div class="uae-builder-stats" data-builder-stats></div>
+  </div>
+</div>

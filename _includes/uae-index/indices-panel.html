@@ -1,0 +1,20 @@
+<div class="uae-chart-wrap">
+  <div class="uae-chart-controls">
+    <label>Range:
+      <select data-idx-range>
+        <option value="30">1M</option>
+        <option value="90" selected>3M</option>
+        <option value="180">6M</option>
+        <option value="365">1Y</option>
+      </select>
+    </label>
+    <label>Rebase to 100:
+      <input type="checkbox" data-idx-rebase checked />
+    </label>
+    <span class="uae-chart-legend">
+      <span class="uae-legend-item" data-legend="DFMGI"><i style="background:#d4af37"></i> DFMGI</span>
+      <span class="uae-legend-item" data-legend="UAEETF"><i style="background:#0a66c2"></i> UAE ETF (USD)</span>
+    </span>
+  </div>
+  <div id="uae-indices-chart" class="uae-chart" style="height:420px;"></div>
+</div>

@@ -1,0 +1,52 @@
+<div class="uae-stocks-controls">
+  <input type="search" placeholder="Search ticker or company…" data-stocks-search class="uae-search" />
+
+  <label>Exchange:
+    <select data-stocks-exchange>
+      <option value="all">All</option>
+      <option value="DFM" selected>DFM (live)</option>
+      <option value="ADX">ADX (metadata)</option>
+    </select>
+  </label>
+
+  <label>Sector:
+    <select data-stocks-sector>
+      <option value="">All sectors</option>
+    </select>
+  </label>
+
+  <label>Sort:
+    <select data-stocks-sort>
+      <option value="market_cap_desc" selected>Market cap (high → low)</option>
+      <option value="market_cap_asc">Market cap (low → high)</option>
+      <option value="change_pct_desc">Today's gainers</option>
+      <option value="change_pct_asc">Today's losers</option>
+      <option value="symbol_asc">Ticker (A → Z)</option>
+      <option value="name_asc">Name (A → Z)</option>
+    </select>
+  </label>
+
+  <span class="uae-stats-summary" data-stocks-summary></span>
+</div>
+
+<div class="uae-table-wrap">
+  <table class="uae-table" data-stocks-table>
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Name</th>
+        <th>Exch</th>
+        <th>Sector</th>
+        <th class="num">Price (AED)</th>
+        <th class="num">Change</th>
+        <th class="num">Change %</th>
+        <th class="num">Volume</th>
+        <th class="num">Market Cap</th>
+        <th class="num">P/E</th>
+        <th class="num">Div Yield</th>
+        <th>Sparkline 3M</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>

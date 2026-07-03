@@ -45,8 +45,9 @@ header_pages:
   - index.md
   - articles.md
   - artworks.md
-  - about.md
+  - uae-index.md
   - arkplan.md
+  - about.md
   - search.md
 
 google_analytics: G-790T779RET # Replace with your Google Analytics ID

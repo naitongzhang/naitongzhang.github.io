@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+{%- assign meta = site.data.uae.meta -%}
+{%- assign stocks = site.data.uae.stocks -%}
+{%- assign indices = site.data.uae.indices -%}
+{%- assign tickers = site.data.uae.tickers -%}
+
+<link rel="stylesheet" href="{{ '/assets/css/uae-index/style.css' | relative_url }}">
+
+<div class="uae-dashboard" data-generated="{{ meta.generated_at | escape }}">
+  <header class="uae-header">
+    <h1 class="uae-title">UAE Equities Dashboard</h1>
+    <p class="uae-subtitle">
+      DFM live data + ADX metadata.
+      Updated <time datetime="{{ meta.generated_at }}">{{ meta.generated_at | date: "%Y-%m-%d %H:%M UTC" }}</time>.
+    </p>
+  </header>
+
+  {%- include uae-index/market-overview.html -%}
+
+  <nav class="uae-tabs" role="tablist">
+    <button class="uae-tab is-active" data-tab="indices" role="tab">Indices</button>
+    <button class="uae-tab" data-tab="stocks" role="tab">All Stocks</button>
+    <button class="uae-tab" data-tab="builder" role="tab">Custom Index Builder</button>
+    <button class="uae-tab" data-tab="about" role="tab">About</button>
+  </nav>
+
+  <section class="uae-panel is-active" data-panel="indices" role="tabpanel">
+    {%- include uae-index/indices-panel.html -%}
+  </section>
+
+  <section class="uae-panel" data-panel="stocks" role="tabpanel" hidden>
+    {%- include uae-index/stocks-panel.html -%}
+  </section>
+
+  <section class="uae-panel" data-panel="builder" role="tabpanel" hidden>
+    {%- include uae-index/builder-panel.html -%}
+  </section>
+
+  <section class="uae-panel" data-panel="about" role="tabpanel" hidden>
+    {%- include uae-index/about-panel.html -%}
+  </section>
+
+  <footer class="uae-footer">
+    <p>
+      Data source: Yahoo Finance (DFM) + DFM official API (DFMGI).
+      ADX equities are metadata-only in this build.
+      See <code>scripts/uae-index/</code> for code.
+    </p>
+  </footer>
+</div>
+
+<!-- ECharts (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js" defer></script>
+
+<!-- Data exposed as global for the front-end -->
+<script>
+  window.UAE_DATA = {
+    meta: {{ meta | jsonify }},
+    stocks: {{ stocks | jsonify }},
+    indices: {{ indices | jsonify }},
+    tickers: {{ tickers | jsonify }}
+  };
+</script>
+
+<!-- Dashboard JS modules -->
+<script src="{{ '/assets/js/uae-index/dashboard.js' | relative_url }}" defer></script>

@@ -1,0 +1,82 @@
+{%- assign meta = site.data.uae.meta -%}
+{%- assign stocks = site.data.uae.stocks -%}
+{%- assign indices = site.data.uae.indices -%}
+
+{%- comment -%}
+Compute summary stats from data.
+{%- endcomment -%}
+{%- assign dfm_live = 0 -%}
+{%- assign adx_live = 0 -%}
+{%- assign total_market_cap = 0 -%}
+{%- assign dfm_gainers = 0 -%}
+{%- assign dfm_losers = 0 -%}
+{%- for s in stocks.stocks -%}
+  {%- if s.exchange == 'DFM' and s.price -%}
+    {%- assign dfm_live = dfm_live | plus: 1 -%}
+    {%- if s.market_cap -%}
+      {%- assign total_market_cap = total_market_cap | plus: s.market_cap -%}
+    {%- endif -%}
+    {%- if s.change_pct and s.change_pct > 0 -%}
+      {%- assign dfm_gainers = dfm_gainers | plus: 1 -%}
+    {%- elsif s.change_pct and s.change_pct < 0 -%}
+      {%- assign dfm_losers = dfm_losers | plus: 1 -%}
+    {%- endif -%}
+  {%- elsif s.exchange == 'ADX' -%}
+    {%- assign adx_live = adx_live | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign dfmgi_latest = nil -%}
+{%- assign adxgi_latest = nil -%}
+{%- for idx in indices.indices -%}
+  {%- if idx.id == 'DFMGI' and idx.history.size > 0 -%}
+    {%- assign dfmgi_latest = idx.history | last -%}
+  {%- elsif idx.id == 'ADXGI' and idx.history.size > 0 -%}
+    {%- assign adxgi_latest = idx.history | last -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<div class="uae-stats">
+  <div class="uae-stat-card">
+    <span class="uae-stat-label">DFM General Index</span>
+    {%- if dfmgi_latest -%}
+      <span class="uae-stat-value">{{ dfmgi_latest.close | round: 2 }}</span>
+      <span class="uae-stat-delta {% if dfmgi_latest.change_pct and dfmgi_latest.change_pct >= 0 %}is-up{% else %}is-down{% endif %}">
+        {%- if dfmgi_latest.change_pct and dfmgi_latest.change_pct >= 0 -%}+{%- endif -%}{{ dfmgi_latest.change_pct | round: 2 }}%
+      </span>
+      <span class="uae-stat-meta">{{ dfmgi_latest.date }}</span>
+    {%- else -%}
+      <span class="uae-stat-value">N/A</span>
+    {%- endif -%}
+  </div>
+
+  <div class="uae-stat-card">
+    <span class="uae-stat-label">ADX General Index</span>
+    {%- if adxgi_latest -%}
+      <span class="uae-stat-value">{{ adxgi_latest.close | round: 2 }}</span>
+      <span class="uae-stat-delta {% if adxgi_latest.change_pct and adxgi_latest.change_pct >= 0 %}is-up{% else %}is-down{% endif %}">
+        {%- if adxgi_latest.change_pct and adxgi_latest.change_pct >= 0 -%}+{%- endif -%}{{ adxgi_latest.change_pct | round: 2 }}%
+      </span>
+      <span class="uae-stat-meta">{{ adxgi_latest.date }}</span>
+    {%- else -%}
+      <span class="uae-stat-value">N/A</span>
+      <span class="uae-stat-meta">ADX index not on Yahoo</span>
+    {%- endif -%}
+  </div>
+
+  <div class="uae-stat-card">
+    <span class="uae-stat-label">DFM stocks live</span>
+    <span class="uae-stat-value">{{ dfm_live }} <small>/ {{ meta.coverage.dfm_total }}</small></span>
+    <span class="uae-stat-meta">
+      <span class="is-up">{{ dfm_gainers }} ▲</span> &nbsp;
+      <span class="is-down">{{ dfm_losers }} ▼</span>
+    </span>
+  </div>
+
+  <div class="uae-stat-card">
+    <span class="uae-stat-label">DFM market cap (tracked)</span>
+    {%- assign cap_aed = total_market_cap | divided_by: 1000000000.0 -%}
+    <span class="uae-stat-value">{{ cap_aed | round: 1 }} <small>B AED</small></span>
+    <span class="uae-stat-meta">+ ADX {{ adx_live }} metadata-only</span>
+  </div>
+</div>
