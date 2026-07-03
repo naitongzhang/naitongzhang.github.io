@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T13:28:01+00:00",
+  "generated_at": "2026-07-03T14:54:38+00:00",
   "site_version": "1.0.0",
   "data_source": {
     "primary": "Yahoo Finance via yfinance (DFM coverage ~50-60%)",
@@ -12,7 +12,7 @@
     "adx_total": 52
   },
   "tickers_count": 104,
-  "indices_count": 7,
+  "indices_count": 8,
   "dfmgi_latest": null,
   "adxgi_latest": null,
   "notes": [
