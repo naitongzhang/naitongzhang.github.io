@@ -2,7 +2,7 @@
   <div class="uae-builder-controls">
     <h3>Build a synthetic UAE index</h3>
     <p class="uae-builder-hint">
-      Default basket: <strong>14 DFM stocks</strong> (Yahoo Finance coverage), market-cap weighted, 3-month window. Pick / uncheck any stock or change weighting / start period below. The index is rebased to 100 on the start date.
+      Default basket: <strong>14 DFM stocks</strong> (Yahoo Finance coverage), equal weighted, 3-month window. Pick / uncheck any stock or change weighting / start period below. The index is rebased to 100 on the start date.
     </p>
 
     <div class="uae-builder-row">
@@ -22,8 +22,8 @@
     <div class="uae-builder-row">
       <label>Weighting:
         <select data-builder-weighting>
-          <option value="equal">Equal weight</option>
-          <option value="market_cap" selected>Market cap weighted</option>
+          <option value="equal" selected>Equal weight</option>
+          <option value="market_cap">Market cap weighted</option>
           <option value="inverse_vol">Inverse volatility weighted</option>
           <option value="custom">Custom weights (set per-row)</option>
         </select>

@@ -5,7 +5,7 @@
   "last_reviewed": "2026-07-03",
   "default_index": {
     "description": "Default basket for Custom Index Builder. DFM equities that have Yahoo Finance coverage. Mirrors the 'UAE market' dividend-yield screener (DFM-only subset).",
-    "weighting": "market_cap",
+    "weighting": "equal",
     "start_period_days": -90,
     "tickers": [
       "EMAAR.AE",
