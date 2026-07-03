@@ -161,17 +161,20 @@ def main():
             "note": "ADX equities not covered by Yahoo Finance. Live data unavailable in this build.",
         })
 
-    # Split into two files:
-    #   stocks.json:  snapshot (price, market cap, fundamentals) — small, used for table
-    #   history.json: per-ticker daily OHLCV — large, fetched async for charts
+    # Split history per ticker into:
+    #   inline  (last 90 trading days) — embedded in snapshot, ~150 KB total
+    #   async   (full 10y)             — assets/data/history.json, ~6 MB
+    INLINE_HISTORY_DAYS = 90
     history_index = {}
+    inline_history = {}
     compact_records = []
     for r in records:
         hist = r.pop("history", None) or []
-        compact_records.append(r)
         if hist and r.get("exchange") == "DFM":
-            # Compact format: list of {d, c, v} dicts; downstream code reads via _compat
             history_index[r["ticker"]] = hist
+            inline_history[r["ticker"]] = hist[-INLINE_HISTORY_DAYS:]
+            r["history"] = inline_history[r["ticker"]]  # also embed short history
+        compact_records.append(r)
 
     snapshot = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -202,8 +205,8 @@ def main():
     with public_history.open("w", encoding="utf-8") as f:
         json.dump(history_payload, f, ensure_ascii=False, allow_nan=False)
 
-    print(f"\nWrote {OUTPUT_JSON.relative_to(REPO_ROOT)} (snapshot)")
-    print(f"Wrote {public_history.relative_to(REPO_ROOT)} (history, async-loaded)")
+    print(f"\nWrote {OUTPUT_JSON.relative_to(REPO_ROOT)} (snapshot, incl. inline 90d)")
+    print(f"Wrote {public_history.relative_to(REPO_ROOT)} (full history, async-loaded)")
     print(f"  DFM ok: {ok_count}/{len(dfm_tickers)}")
     print(f"  ADX (metadata only): {len(adx_tickers)}")
     print(f"  Missing DFM tickers: {missing}")

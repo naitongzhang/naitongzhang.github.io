@@ -30,14 +30,10 @@
       </label>
       <label>Rebase start:
         <select data-builder-start>
+          <option value="-7">Last 1 week</option>
           <option value="-30">Last 1 month</option>
-          <option value="-90">Last 3 months</option>
-          <option value="-180">Last 6 months</option>
-          <option value="-365">Last 1 year</option>
-          <option value="-730">Last 2 years</option>
-          <option value="-1095">Last 3 years</option>
-          <option value="-1825">Last 5 years</option>
-          <option value="0">Maximum available</option>
+          <option value="-90" selected>Last 3 months</option>
+          <option value="0">Maximum (90 days available inline)</option>
         </select>
       </label>
       <button type="button" data-builder-addtopn>Add top N</button>
@@ -62,7 +58,7 @@
             <th class="num">Custom weight</th>
           </tr>
         </thead>
-        <tbody data-builder-tbody><tr><td colspan="7" class="uae-empty">Loading price history…</td></tr></tbody>
+        <tbody data-builder-tbody></tbody>
       </table>
     </div>
   </div>

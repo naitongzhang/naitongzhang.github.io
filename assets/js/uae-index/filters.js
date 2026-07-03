@@ -12,22 +12,8 @@
     const sortSel = document.querySelector('[data-stocks-sort]');
     const summary = document.querySelector('[data-stocks-summary]');
 
-    // Wait for async history.json. Fall back to rendering without history if
-    // it doesn't arrive within a reasonable window.
-    if (!window.UAE_HISTORY_READY && window.UAE_HISTORY_LOADING !== false) {
-      if (window.UAE_HISTORY_LOADING === undefined) {
-        window.UAE_HISTORY_LOADING = true;
-        setTimeout(function () {
-          if (window.UAE_HISTORY_READY === undefined) {
-            window.UAE_HISTORY_READY = false;
-            window.dispatchEvent(new Event('uae-history-ready'));
-          }
-        }, 8000);
-      }
-      window.addEventListener('uae-history-ready', init, { once: true });
-      return;
-    }
-
+    // Stocks.json now embeds the last ~90 days of history inline per ticker,
+    // so we render immediately. Sparklines use that 90-day window.
     const stocks = (window.UAE_DATA.stocks && window.UAE_DATA.stocks.stocks) || [];
 
     // Populate sector dropdown
