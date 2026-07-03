@@ -157,10 +157,17 @@
         });
       });
 
-      // Build aligned series: use stocks' normalized base
+      // Build aligned series. startOffset semantics:
+      //   < 0  : take last |offset| days of available data (e.g. -90 = 3 months)
+      //   == 0 : use ALL available data (Maximum)
       const allDates = Object.keys(dateMap).sort();
-      const startIdx = Math.max(0, allDates.length + startOffset);
-      const dates = allDates.slice(startIdx);
+      let dates;
+      if (startOffset === 0) {
+        dates = allDates;
+      } else {
+        const startIdx = Math.max(0, allDates.length + startOffset);
+        dates = allDates.slice(startIdx);
+      }
       if (dates.length < 2) {
         statsEl.innerHTML = '<em>Not enough overlapping history.</em>';
         renderChart([], []);
