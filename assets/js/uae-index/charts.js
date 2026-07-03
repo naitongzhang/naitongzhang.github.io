@@ -10,7 +10,11 @@
 
     function getRangeDays() {
       const sel = document.querySelector('[data-idx-range]');
-      return sel ? parseInt(sel.value, 10) || 90 : 90;
+      if (!sel) return 90;
+      const v = parseInt(sel.value, 10);
+      // 0 = "Maximum" (no windowing); NaN = default to 90 days
+      if (Number.isNaN(v)) return 90;
+      return v;
     }
     function getRebase() {
       const cb = document.querySelector('[data-idx-rebase]');
