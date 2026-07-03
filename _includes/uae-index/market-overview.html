@@ -1,6 +1,5 @@
 {%- assign meta = site.data.uae.meta -%}
 {%- assign stocks = site.data.uae.stocks -%}
-{%- assign indices = site.data.uae.indices -%}
 
 {%- comment -%}
 Compute summary stats from data.
@@ -26,47 +25,7 @@ Compute summary stats from data.
   {%- endif -%}
 {%- endfor -%}
 
-{%- assign dfmgi_latest = nil -%}
-{%- assign adxgi_latest = nil -%}
-{%- for idx in indices.indices -%}
-  {%- if idx.id == 'DFMGI' and idx.history.size > 0 -%}
-    {%- assign dfmgi_latest = idx.history | last -%}
-  {%- elsif idx.id == 'ADXGI' and idx.history.size > 0 -%}
-    {%- assign adxgi_latest = idx.history | last -%}
-  {%- endif -%}
-{%- endfor -%}
-
 <div class="uae-stats">
-  <div class="uae-stat-card">
-    <span class="uae-stat-label">DFM General Index</span>
-    {%- if dfmgi_latest -%}
-      <span class="uae-stat-value">{{ dfmgi_latest.close | round: 2 }}</span>
-      <span class="uae-stat-delta {% if dfmgi_latest.change_pct and dfmgi_latest.change_pct >= 0 %}is-up{% else %}is-down{% endif %}">
-        {%- if dfmgi_latest.change_pct and dfmgi_latest.change_pct >= 0 -%}+{%- endif -%}{{ dfmgi_latest.change_pct | round: 2 }}%
-      </span>
-      <span class="uae-stat-meta">
-        {%- assign dfmgi_meta = dfmgi_latest.date | slice: 0, 10 -%}
-        {{ dfmgi_meta }} (intraday)
-      </span>
-    {%- else -%}
-      <span class="uae-stat-value">N/A</span>
-    {%- endif -%}
-  </div>
-
-  <div class="uae-stat-card">
-    <span class="uae-stat-label">ADX General Index</span>
-    {%- if adxgi_latest -%}
-      <span class="uae-stat-value">{{ adxgi_latest.close | round: 2 }}</span>
-      <span class="uae-stat-delta {% if adxgi_latest.change_pct and adxgi_latest.change_pct >= 0 %}is-up{% else %}is-down{% endif %}">
-        {%- if adxgi_latest.change_pct and adxgi_latest.change_pct >= 0 -%}+{%- endif -%}{{ adxgi_latest.change_pct | round: 2 }}%
-      </span>
-      <span class="uae-stat-meta">{{ adxgi_latest.date }}</span>
-    {%- else -%}
-      <span class="uae-stat-value">N/A</span>
-      <span class="uae-stat-meta">ADX index not on Yahoo</span>
-    {%- endif -%}
-  </div>
-
   <div class="uae-stat-card">
     <span class="uae-stat-label">DFM stocks live</span>
     <span class="uae-stat-value">{{ dfm_live }} <small>/ {{ meta.coverage.dfm_total }}</small></span>
