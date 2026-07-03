@@ -191,7 +191,7 @@ def main():
     })
     print(f"  UAEETF: {len(uae['history'])} rows")
 
-    # Naitong UAE ETF — custom basket of DFM stocks (tickers.json:default_index).
+    # Custom basket — DFM stocks from tickers.json:default_index.
     # Built by the same weighted-index math as DFMGI_SYNTH, just with a different
     # ticker set and (typically) a different weighting scheme.
     if sdata.get("stocks") and tdata:
@@ -208,7 +208,7 @@ def main():
                 if etf:
                     indices_out.append({
                         "id": "NAITONG_ETF",
-                        "name": "Naitong UAE ETF",
+                        "name": "Custom",
                         "exchange": "DFM",
                         "currency": "AED",
                         "source": f"Synthetic: daily {'equal-weighted' if basket_weighting == 'equal' else basket_weighting + '-weighted'} basket of {len(basket_tickers)} DFM stocks (from tickers.json:default_index), rebased to 100",
@@ -217,7 +217,7 @@ def main():
                     })
                     print(f"  NAITONG_ETF: {len(etf)} rows (basket={len(basket_tickers)} {basket_weighting})")
         except Exception as e:
-            print(f"Naitong UAE ETF build failed: {e}")
+            print(f"Custom basket build failed: {e}")
 
     # Other DFM sub-indices (placeholder, will be empty until DFM exposes more)
     for sub in [

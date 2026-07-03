@@ -258,7 +258,7 @@
       }
 
       chart.setOption({
-        title: { text: 'Naitong UAE ETF vs DFMGI', left: 'center', textStyle: { fontSize: 16 } },
+        title: { text: 'Build a synthetic UAE index vs DFMGI', left: 'center', textStyle: { fontSize: 16 } },
         tooltip: { trigger: 'axis' },
         legend: { bottom: 0 },
         grid: { left: 60, right: 30, top: 50, bottom: 50 },
@@ -270,7 +270,7 @@
         ],
         series: [
           {
-            name: 'Naitong UAE ETF',
+            name: 'Custom',
             type: 'line',
             data,
             smooth: true,

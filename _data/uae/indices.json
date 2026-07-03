@@ -23510,7 +23510,7 @@
     },
     {
       "id": "NAITONG_ETF",
-      "name": "Naitong UAE ETF",
+      "name": "Custom",
       "exchange": "DFM",
       "currency": "AED",
       "source": "Synthetic: daily equal-weighted basket of 14 DFM stocks (from tickers.json:default_index), rebased to 100",
