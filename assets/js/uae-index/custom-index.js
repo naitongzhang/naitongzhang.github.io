@@ -270,10 +270,13 @@
     });
 
     renderList();
-    // Auto-compute once with default top-10 equal-weight
+    // Auto-compute once with DEFAULT: all DFM stocks, market-cap weighted, 3-month window.
     setTimeout(() => {
-      addBtn.click();
-      setTimeout(autoComputeIndex, 100);
+      stocks.forEach((s) => {
+        if (!state[s.ticker]) state[s.ticker] = { customWeight: 1 };
+      });
+      renderList();
+      autoComputeIndex();
     }, 50);
   }
 

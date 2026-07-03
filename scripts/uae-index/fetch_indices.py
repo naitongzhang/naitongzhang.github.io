@@ -51,7 +51,7 @@ def fetch_yahoo(yahoo_symbol, fallback_id):
         return {"id": fallback_id, "history": [], "note": "Not covered by Yahoo Finance."}
     try:
         tk = yf.Ticker(yahoo_symbol)
-        hist = tk.history(period="1y", auto_adjust=False)
+        hist = tk.history(period="2y", auto_adjust=False)
         if hist is None or len(hist) == 0:
             return {"id": fallback_id, "yahoo_symbol": yahoo_symbol, "history": [], "note": "Yahoo returned no data."}
 

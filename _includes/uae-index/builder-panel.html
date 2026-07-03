@@ -2,7 +2,7 @@
   <div class="uae-builder-controls">
     <h3>Build a synthetic UAE index</h3>
     <p class="uae-builder-hint">
-      Pick DFM stocks (live data). Use filters and weight presets. The index is rebased to 100 on the start date.
+      Default selection: <strong>all DFM stocks</strong> (52), market-cap weighted. Pick / uncheck any stock. Change weighting / start period below. The index is rebased to 100 on the start date.
     </p>
 
     <div class="uae-builder-row">
@@ -14,16 +14,16 @@
           <option value="">All</option>
         </select>
       </label>
-      <label>Top N by market cap:
-        <input type="number" min="1" max="30" value="10" data-builder-topn />
+      <label>Top N by market cap (quick add):
+        <input type="number" min="1" max="50" value="10" data-builder-topn />
       </label>
     </div>
 
     <div class="uae-builder-row">
       <label>Weighting:
         <select data-builder-weighting>
-          <option value="equal" selected>Equal weight</option>
-          <option value="market_cap">Market cap weighted</option>
+          <option value="equal">Equal weight</option>
+          <option value="market_cap" selected>Market cap weighted</option>
           <option value="inverse_vol">Inverse volatility weighted</option>
           <option value="custom">Custom weights (set per-row)</option>
         </select>
@@ -31,9 +31,13 @@
       <label>Rebase start:
         <select data-builder-start>
           <option value="-30">Last 1 month</option>
-          <option value="-90" selected>Last 3 months</option>
+          <option value="-90">Last 3 months</option>
           <option value="-180">Last 6 months</option>
           <option value="-365">Last 1 year</option>
+          <option value="-730">Last 2 years</option>
+          <option value="-1095">Last 3 years</option>
+          <option value="-1825">Last 5 years</option>
+          <option value="0">Maximum available</option>
         </select>
       </label>
       <button type="button" data-builder-addtopn>Add top N</button>
