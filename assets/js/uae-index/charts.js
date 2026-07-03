@@ -35,6 +35,8 @@
       if (deduped.length === 0) return null;
 
       if (rebase) {
+        // Rebase to the FIRST point of the displayed window, so all series
+        // start at 100 on the same date. This makes them visually comparable.
         const base = deduped[0][1];
         if (!base) return null;
         return deduped.map((d) => [d[0], (d[1] / base) * 100]);
@@ -79,9 +81,10 @@
         grid: { left: 60, right: 30, top: 50, bottom: 50 },
         xAxis: { type: 'time' },
         yAxis: { type: 'value', name: yName, scale: true },
+        // Lock zoom to the displayed window so both lines share the same start date.
         dataZoom: [
-          { type: 'inside' },
-          { type: 'slider', height: 20, bottom: 30 },
+          { type: 'inside', start: 0, end: 100 },
+          { type: 'slider', start: 0, end: 100, height: 20, bottom: 30 },
         ],
         series,
       }, true);
