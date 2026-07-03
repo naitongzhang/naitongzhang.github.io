@@ -17,14 +17,23 @@
       return cb ? cb.checked : true;
     }
 
-    function buildSeriesData(history, days, rebase) {
+    function buildSeriesData(history, days, rebase, commonEndDate, commonStartDate) {
       if (!history || history.length === 0) return null;
-      const sliced = history.slice(-Math.min(days, history.length));
-      const values = sliced.map((d) => [d.date, d.close]).filter((d) => d[1] !== null && d[1] !== undefined);
+      const endTs = commonEndDate
+        ? new Date(commonEndDate).getTime()
+        : new Date(history[history.length - 1].date).getTime();
+      const startTs = commonStartDate
+        ? new Date(commonStartDate).getTime()
+        : (days > 0 ? endTs - days * 86400000 : new Date(history[0].date).getTime());
+      const window = history.filter((d) => {
+        const t = new Date(d.date).getTime();
+        return t >= startTs && t <= endTs;
+      });
+      if (window.length === 0) return null;
+
+      const values = window.map((d) => [d.date, d.close]).filter((d) => d[1] !== null && d[1] !== undefined);
       if (values.length === 0) return null;
 
-      // Dedupe same-timestamp rows to avoid drawing vertical artifacts when
-      // multiple intraday points collapse onto one x position.
       const seen = new Set();
       const deduped = [];
       for (const v of values) {
@@ -35,10 +44,11 @@
       if (deduped.length === 0) return null;
 
       if (rebase) {
-        // Rebase to the FIRST point of the displayed window, so all series
-        // start at 100 on the same date. This makes them visually comparable.
-        const base = deduped[0][1];
-        if (!base) return null;
+        // Anchor at the SHARED start date (caller-supplied). All series in
+        // the chart use this absolute date as their 100 anchor.
+        const anchorEntry = window.find((d) => new Date(d.date).getTime() >= startTs && d.close);
+        if (!anchorEntry || !anchorEntry.close) return null;
+        const base = anchorEntry.close;
         return deduped.map((d) => [d[0], (d[1] / base) * 100]);
       }
       return deduped;
@@ -56,10 +66,36 @@
       const series = [];
       const colors = { DFMGI_SYNTH: '#d4af37', DFMGI: '#d4af37', UAEETF: '#0a66c2', ADXGI: '#7c3aed' };
 
-      (window.UAE_DATA.indices.indices || []).forEach((idx) => {
-        // Skip the official DFMGI intraday row in the daily chart — the synthetic proxy supersedes it.
-        if (idx.id === 'DFMGI') return;
-        const data = buildSeriesData(idx.history, days, rebase);
+      const plottables = (window.UAE_DATA.indices.indices || []).filter(
+        (idx) => idx.id !== 'DFMGI' && idx.history && idx.history.length > 0
+      );
+      // Common end = the latest date ALL plottable series share. We pick the
+      // earliest "last date" so every series reaches the same window end.
+      let commonEnd = null;
+      plottables.forEach((idx) => {
+        const last = idx.history[idx.history.length - 1].date;
+        if (!commonEnd || new Date(last).getTime() < new Date(commonEnd).getTime()) {
+          commonEnd = last;
+        }
+      });
+      // Common start anchor (used for rebase): all series are scaled so that
+      // their value at commonStart == 100.
+      let commonStart = null;
+      if (days > 0) {
+        commonStart = new Date(new Date(commonEnd).getTime() - days * 86400000).toISOString().slice(0, 10);
+      } else {
+        // Maximum: pick the latest "first date" so all series actually start at 100 on a date they all share.
+        commonStart = null;
+        plottables.forEach((idx) => {
+          const first = idx.history[0].date;
+          if (!commonStart || new Date(first).getTime() > new Date(commonStart).getTime()) {
+            commonStart = first;
+          }
+        });
+      }
+
+      plottables.forEach((idx) => {
+        const data = buildSeriesData(idx.history, days, rebase, commonEnd, commonStart);
         if (!data) return;
         series.push({
           name: idx.id,
