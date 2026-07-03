@@ -54,7 +54,12 @@
   // stocks.json is the small snapshot (~50 KB). history.json is ~6 MB and
   // is fetched on demand so the initial page payload stays small.
   function loadHistory() {
-    return fetch('/assets/data/history.json')
+    // Always dispatch the event so the UI doesn't hang — even on failure.
+    function done(ok) {
+      window.UAE_HISTORY_READY = ok;
+      window.dispatchEvent(new Event('uae-history-ready'));
+    }
+    fetch('/assets/data/history.json?t=' + Date.now(), { cache: 'no-store' })
       .then(function (r) {
         if (!r.ok) throw new Error('history fetch failed: ' + r.status);
         return r.json();
@@ -66,13 +71,11 @@
             if (histByTicker[s.ticker]) s.history = histByTicker[s.ticker];
           });
         }
-        window.UAE_HISTORY_READY = true;
-        window.dispatchEvent(new Event('uae-history-ready'));
+        done(true);
       })
       .catch(function (e) {
-        console.warn('UAE history.json failed to load; charts will use fallback data', e);
-        window.UAE_HISTORY_READY = false;
-        window.dispatchEvent(new Event('uae-history-ready'));
+        console.warn('UAE history.json failed to load; showing snapshot only', e);
+        done(false);
       });
   }
 

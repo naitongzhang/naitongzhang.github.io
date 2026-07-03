@@ -65,5 +65,5 @@ layout: default
   };
 </script>
 
-<!-- Dashboard JS modules -->
-<script src="{{ '/assets/js/uae-index/dashboard.js' | relative_url }}" defer></script>
+<!-- Dashboard JS modules (cache-bust: latest commit SHA so a hard refresh isn't required) -->
+<script src="{{ '/assets/js/uae-index/dashboard.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
