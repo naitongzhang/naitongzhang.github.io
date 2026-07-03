@@ -6,8 +6,19 @@
     const tbody = document.querySelector('[data-builder-tbody]');
     if (!tbody) return;
 
-    const stocks = ((window.UAE_DATA.stocks && window.UAE_DATA.stocks.stocks) || [])
-      .filter((s) => s.exchange === 'DFM' && s.price !== null && s.history && s.history.length > 5);
+    // The stocks filter needs history to be loaded (it's been split into
+    // history.json and fetched async). Wait for the event before doing any
+    // work — otherwise we'd render an empty table.
+    if (!window.UAE_HISTORY_READY) {
+      window.addEventListener('uae-history-ready', init, { once: true });
+      return;
+    }
+
+    let stocks = ((window.UAE_DATA.stocks && window.UAE_DATA.stocks.stocks) || [])
+      .filter((s) => s.exchange === 'DFM' && s.price !== null);
+
+    // Filter to those that have history attached
+    stocks = stocks.filter((s) => s.history && s.history.length > 5);
 
     // Default basket comes from tickers.json:default_index (Yahoo-Finance-available DFM stocks).
     // Falls back to all DFM stocks if absent.

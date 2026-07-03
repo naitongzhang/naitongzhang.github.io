@@ -12,6 +12,12 @@
     const sortSel = document.querySelector('[data-stocks-sort]');
     const summary = document.querySelector('[data-stocks-summary]');
 
+    // Wait for async history.json before populating (sparklines need history).
+    if (!window.UAE_HISTORY_READY) {
+      window.addEventListener('uae-history-ready', init, { once: true });
+      return;
+    }
+
     const stocks = (window.UAE_DATA.stocks && window.UAE_DATA.stocks.stocks) || [];
 
     // Populate sector dropdown
