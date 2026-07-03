@@ -41,7 +41,7 @@ INDICES = [
     # ADX
     {"id": "ADXGI",  "name": "FTSE ADX General Index",  "exchange": "ADX", "yahoo": "^ADI"},
     {"id": "ADXSM",  "name": "ADX Sharjah Index",       "exchange": "ADX", "yahoo": None},
-    # UAE benchmark ETF
+    # USD-denominated UAE benchmark
     {"id": "UAEETF", "name": "iShares MSCI UAE ETF (USD)", "exchange": "ETF", "yahoo": "UAE"},
 ]
 
@@ -51,7 +51,7 @@ def fetch_yahoo(yahoo_symbol, fallback_id):
         return {"id": fallback_id, "history": [], "note": "Not covered by Yahoo Finance."}
     try:
         tk = yf.Ticker(yahoo_symbol)
-        hist = tk.history(period="2y", auto_adjust=False)
+        hist = tk.history(period="max", auto_adjust=False)
         if hist is None or len(hist) == 0:
             return {"id": fallback_id, "yahoo_symbol": yahoo_symbol, "history": [], "note": "Yahoo returned no data."}
 
