@@ -3,6 +3,28 @@
   "data_source": "Yahoo Finance (yfinance)",
   "coverage_note": "Yahoo Finance only covers DFM equities. ADX equities are listed but no live price data — UI will show 'N/A' for ADX rows.",
   "last_reviewed": "2026-07-03",
+  "default_index": {
+    "description": "Default basket for Custom Index Builder. DFM equities that have Yahoo Finance coverage. Mirrors the 'UAE market' dividend-yield screener (DFM-only subset).",
+    "weighting": "market_cap",
+    "start_period_days": -90,
+    "tickers": [
+      "EMAAR.AE",
+      "DUBAIRESI.AE",
+      "DIC.AE",
+      "SPINNEYS.AE",
+      "DU.AE",
+      "DTC.AE",
+      "TECOM.AE",
+      "DIB.AE",
+      "DEWA.AE",
+      "DFM.AE",
+      "PARKIN.AE",
+      "ALEC.AE",
+      "EMIRATESNBD.AE",
+      "SALIK.AE"
+    ],
+    "note": "ENBDREIT (CEIC) excluded — Yahoo Finance does not carry it. To re-enable when a paid data source is added, append 'ENBDREIT.AE' to the tickers array."
+  },
   "dfm": [
     { "ticker": "EMIRATESNBD.AE", "symbol": "EMIRATESNBD", "name": "Emirates NBD Bank PJSC", "sector": "Financial Services", "subsector": "Banks" },
     { "ticker": "DEWA.AE",       "symbol": "DEWA",        "name": "Dubai Electricity and Water Authority (PJSC)", "sector": "Utilities", "subsector": "Utilities - Diversified" },

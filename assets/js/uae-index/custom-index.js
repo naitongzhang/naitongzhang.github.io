@@ -9,6 +9,21 @@
     const stocks = ((window.UAE_DATA.stocks && window.UAE_DATA.stocks.stocks) || [])
       .filter((s) => s.exchange === 'DFM' && s.price !== null && s.history && s.history.length > 5);
 
+    // Default basket comes from tickers.json:default_index (Yahoo-Finance-available DFM stocks).
+    // Falls back to all DFM stocks if absent.
+    const defaultTickers = ((window.UAE_DATA.tickers && window.UAE_DATA.tickers.default_index && window.UAE_DATA.tickers.default_index.tickers) || [])
+      .filter(Boolean);
+    const defaultSet = new Set(defaultTickers);
+    const defaultWeighting = (window.UAE_DATA.tickers && window.UAE_DATA.tickers.default_index && window.UAE_DATA.tickers.default_index.weighting) || 'market_cap';
+    const defaultStartDays = (window.UAE_DATA.tickers && window.UAE_DATA.tickers.default_index && window.UAE_DATA.tickers.default_index.start_period_days) || -90;
+
+    // Apply default weighting + start period to the controls so the UI matches the JSON config.
+    if (defaultWeighting && weightingSel) weightingSel.value = defaultWeighting;
+    if (typeof defaultStartDays === 'number' && startSel) {
+      const match = Array.from(startSel.options).find((o) => parseInt(o.value, 10) === defaultStartDays);
+      if (match) startSel.value = String(defaultStartDays);
+    }
+
     const search = document.querySelector('[data-builder-search]');
     const sectorSel = document.querySelector('[data-builder-sector]');
     const topnInput = document.querySelector('[data-builder-topn]');
@@ -270,9 +285,13 @@
     });
 
     renderList();
-    // Auto-compute once with DEFAULT: all DFM stocks, market-cap weighted, 3-month window.
+    // Auto-compute once with DEFAULT basket (from tickers.json:default_index).
+    // If the JSON default_index is empty or missing, fall back to all DFM stocks.
     setTimeout(() => {
-      stocks.forEach((s) => {
+      const targetTickers = defaultSet.size > 0
+        ? stocks.filter((s) => defaultSet.has(s.ticker))
+        : stocks;
+      targetTickers.forEach((s) => {
         if (!state[s.ticker]) state[s.ticker] = { customWeight: 1 };
       });
       renderList();
