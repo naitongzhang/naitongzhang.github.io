@@ -219,18 +219,48 @@
         <strong>Method:</strong> ${weightingSel.value.replace('_', ' ')}
       `;
 
-      renderChart(series, selected.map((s, i) => ({ name: s.symbol, weight: weights[i] })));
+      renderChart(series, selected.map((s, i) => ({ name: s.symbol, weight: weights[i] })), dates[0]);
     }
 
-    function renderChart(series, weights) {
+    function renderChart(series, weights, commonStartDate) {
       const el = document.getElementById('uae-builder-chart');
       if (!el || typeof echarts === 'undefined') return;
       const chart = el.__echart || (el.__echart = echarts.init(el));
       const data = series.map(([d, v]) => [d, v]);
 
+      // Overlay DFMGI_SYNTH so the user can compare their custom basket
+      // against the synthetic daily DFMGI (≈ real DFM General Index).
+      // Both series rebased to the same shared start date for fair comparison.
+      const benchmarkSeries = [];
+      const synthEntry = (window.UAE_DATA.indices.indices || []).find(
+        (idx) => idx.id === 'DFMGI_SYNTH' && idx.history && idx.history.length > 0
+      );
+      if (synthEntry && commonStartDate) {
+        const synthHist = synthEntry.history;
+        const startTs = new Date(commonStartDate).getTime();
+        // Find anchor: the first synthEntry point at or after the user's window start.
+        const anchorEntry = synthHist.find((d) => new Date(d.date).getTime() >= startTs && d.close);
+        if (anchorEntry && anchorEntry.close) {
+          const base = anchorEntry.close;
+          benchmarkSeries.push({
+            name: 'DFMGI (synthetic)',
+            type: 'line',
+            data: synthHist
+              .filter((d) => new Date(d.date).getTime() >= startTs && d.close)
+              .map((d) => [d.date, (d.close / base) * 100]),
+            smooth: true,
+            showSymbol: false,
+            lineStyle: { width: 1.5, color: '#d4af37', type: 'dashed' },
+            itemStyle: { color: '#d4af37' },
+            connectNulls: true,
+          });
+        }
+      }
+
       chart.setOption({
-        title: { text: 'Custom Index', left: 'center', textStyle: { fontSize: 16 } },
+        title: { text: 'Custom Index vs DFMGI', left: 'center', textStyle: { fontSize: 16 } },
         tooltip: { trigger: 'axis' },
+        legend: { bottom: 0 },
         grid: { left: 60, right: 30, top: 50, bottom: 50 },
         xAxis: { type: 'time' },
         yAxis: { type: 'value', name: 'Rebased to 100', scale: true },
@@ -238,15 +268,18 @@
           { type: 'inside' },
           { type: 'slider', height: 20, bottom: 10 },
         ],
-        series: [{
-          name: 'Custom',
-          type: 'line',
-          data,
-          smooth: true,
-          showSymbol: false,
-          lineStyle: { width: 2.5, color: '#0a66c2' },
-          areaStyle: { color: 'rgba(10,102,194,0.08)' },
-        }],
+        series: [
+          {
+            name: 'Custom',
+            type: 'line',
+            data,
+            smooth: true,
+            showSymbol: false,
+            lineStyle: { width: 2.5, color: '#0a66c2' },
+            areaStyle: { color: 'rgba(10,102,194,0.08)' },
+          },
+          ...benchmarkSeries,
+        ],
       }, true);
     }
 
