@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-14T14:27:10+00:00",
+  "generated_at": "2026-07-15T14:23:30+00:00",
   "source": "Yahoo Finance via yfinance (DFM only; ADX metadata-only)",
   "coverage": {
     "dfm_total": 52,
-    "dfm_ok": 51,
+    "dfm_ok": 52,
     "adx_total": 52
   },
   "count": 104,
@@ -16,26 +16,21 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Banks - Regional",
-      "price": 30.66,
-      "previous_close": 31.32,
-      "change": -0.66,
-      "change_pct": -2.11,
-      "volume": 4599212,
-      "market_cap": 193666908160,
-      "day_high": 31.2,
-      "day_low": 30.12,
+      "price": 29.94,
+      "previous_close": 29.84,
+      "change": 0.1,
+      "change_pct": 0.34,
+      "volume": 1362206,
+      "market_cap": 189118955520,
+      "day_high": 30.4,
+      "day_low": 29.62,
       "year_high": 37.4,
       "year_low": 24.0,
-      "pe_trailing": 8.197861,
-      "pe_forward": 7.2139816,
-      "pb": 1.4338493,
-      "dividend_yield": 3.26,
+      "pe_trailing": 8.005347,
+      "pe_forward": 7.0445733,
+      "pb": 1.4001777,
+      "dividend_yield": 3.35,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 8.151250839233398,
-          "volume": 91409
-        },
         {
           "date": "2016-07-17",
           "close": 8.170475959777832,
@@ -11805,6 +11800,11 @@
           "date": "2026-07-14",
           "close": 29.84000015258789,
           "volume": 2025542
+        },
+        {
+          "date": "2026-07-15",
+          "close": 29.940000534057617,
+          "volume": 1362206
         }
       ]
     },
@@ -11816,20 +11816,20 @@
       "currency": "AED",
       "sector": "Utilities",
       "subsector": "Utilities - Diversified",
-      "price": 2.75,
-      "previous_close": 2.79,
-      "change": -0.04,
-      "change_pct": -1.43,
-      "volume": 8417129,
-      "market_cap": 137500000256,
-      "day_high": 2.78,
-      "day_low": 2.74,
+      "price": 2.71,
+      "previous_close": 2.71,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "volume": 16991087,
+      "market_cap": 135499997184,
+      "day_high": 2.75,
+      "day_low": 2.7,
       "year_high": 3.15,
       "year_low": 2.47,
-      "pe_trailing": 16.17647,
-      "pe_forward": 15.613467,
-      "pb": 1.5732266,
-      "dividend_yield": 4.51,
+      "pe_trailing": 15.055555,
+      "pe_forward": 15.386363,
+      "pb": 1.5503433,
+      "dividend_yield": 4.58,
       "history": [
         {
           "date": "2022-04-12",
@@ -16050,6 +16050,11 @@
           "date": "2026-07-14",
           "close": 2.7100000381469727,
           "volume": 11097411
+        },
+        {
+          "date": "2026-07-15",
+          "close": 2.7100000381469727,
+          "volume": 16991087
         }
       ]
     },
@@ -16061,26 +16066,21 @@
       "currency": "AED",
       "sector": "Real Estate",
       "subsector": "Real Estate - Development",
-      "price": 11.6,
-      "previous_close": 11.86,
-      "change": -0.26,
-      "change_pct": -2.19,
-      "volume": 18476537,
-      "market_cap": 102529966080,
+      "price": 11.54,
+      "previous_close": 11.5,
+      "change": 0.04,
+      "change_pct": 0.35,
+      "volume": 20083312,
+      "market_cap": 101999640576,
       "day_high": 11.76,
-      "day_low": 11.6,
+      "day_low": 11.46,
       "year_high": 17.25,
       "year_low": 10.15,
-      "pe_trailing": 5.420561,
-      "pe_forward": 5.3776402,
-      "pb": 1.1419572,
-      "dividend_yield": 8.62,
+      "pe_trailing": 5.3925233,
+      "pe_forward": 5.349825,
+      "pb": 1.1360503,
+      "dividend_yield": 8.7,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 6.699999809265137,
-          "volume": 7783598
-        },
         {
           "date": "2016-07-17",
           "close": 6.699999809265137,
@@ -27845,6 +27845,11 @@
           "date": "2026-07-14",
           "close": 11.5,
           "volume": 16467391
+        },
+        {
+          "date": "2026-07-15",
+          "close": 11.539999961853027,
+          "volume": 20083312
         }
       ]
     },
@@ -27856,20 +27861,20 @@
       "currency": "AED",
       "sector": "Real Estate",
       "subsector": "Real Estate - Development",
-      "price": 13.64,
-      "previous_close": 14.04,
-      "change": -0.4,
-      "change_pct": -2.85,
-      "volume": 4773296,
-      "market_cap": 54560002048,
-      "day_high": 13.9,
-      "day_low": 13.64,
+      "price": 13.5,
+      "previous_close": 13.56,
+      "change": -0.06,
+      "change_pct": -0.44,
+      "volume": 2173570,
+      "market_cap": 54000001024,
+      "day_high": 13.8,
+      "day_low": 13.36,
       "year_high": 20.7,
       "year_low": 12.05,
-      "pe_trailing": 4.4285717,
-      "pe_forward": 3.4763815,
-      "pb": 1.5073489,
-      "dividend_yield": 7.33,
+      "pe_trailing": 4.383117,
+      "pe_forward": 3.4423144,
+      "pb": 1.4918776,
+      "dividend_yield": 7.37,
       "history": [
         {
           "date": "2017-11-22",
@@ -37905,6 +37910,11 @@
           "date": "2026-07-14",
           "close": 13.5600004196167,
           "volume": 3050602
+        },
+        {
+          "date": "2026-07-15",
+          "close": 13.5,
+          "volume": 2173570
         }
       ]
     },
@@ -37916,26 +37926,21 @@
       "currency": "AED",
       "sector": "Communication Services",
       "subsector": "Telecom Services",
-      "price": 12.24,
-      "previous_close": 12.24,
-      "change": 0.0,
-      "change_pct": 0.0,
-      "volume": 2267271,
-      "market_cap": 55482769408,
-      "day_high": 12.34,
-      "day_low": 11.8,
+      "price": 12.26,
+      "previous_close": 12.1,
+      "change": 0.16,
+      "change_pct": 1.32,
+      "volume": 1741751,
+      "market_cap": 55573430272,
+      "day_high": 12.3,
+      "day_low": 12.12,
       "year_high": 12.8,
       "year_low": 9.05,
-      "pe_trailing": 11.027027,
-      "pe_forward": 16.811108,
-      "pb": 6.0504203,
-      "dividend_yield": 5.23,
+      "pe_trailing": 11.045045,
+      "pe_forward": 16.83858,
+      "pb": 6.0603065,
+      "dividend_yield": 5.29,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 6.53000020980835,
-          "volume": 14362
-        },
         {
           "date": "2016-07-17",
           "close": 6.650000095367432,
@@ -49705,6 +49710,11 @@
           "date": "2026-07-14",
           "close": 12.100000381469727,
           "volume": 1965484
+        },
+        {
+          "date": "2026-07-15",
+          "close": 12.260000228881836,
+          "volume": 1741751
         }
       ]
     },
@@ -49716,26 +49726,21 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Banks - Regional",
-      "price": 7.69,
-      "previous_close": 7.77,
-      "change": -0.08,
-      "change_pct": -1.03,
-      "volume": 2253498,
-      "market_cap": 55576481792,
-      "day_high": 7.74,
-      "day_low": 7.59,
+      "price": 7.58,
+      "previous_close": 7.52,
+      "change": 0.06,
+      "change_pct": 0.8,
+      "volume": 3204661,
+      "market_cap": 54781501440,
+      "day_high": 7.66,
+      "day_low": 7.52,
       "year_high": 10.2,
       "year_low": 6.97,
-      "pe_trailing": 7.767677,
-      "pe_forward": 8.37499,
-      "pb": 1.2577691,
-      "dividend_yield": 4.55,
+      "pe_trailing": 7.6565657,
+      "pe_forward": 8.255192,
+      "pb": 1.111437,
+      "dividend_yield": 4.65,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 4.852366924285889,
-          "volume": 21751596
-        },
         {
           "date": "2016-07-17",
           "close": 4.807849884033203,
@@ -61495,6 +61500,11 @@
           "date": "2026-07-14",
           "close": 7.519999980926514,
           "volume": 3656400
+        },
+        {
+          "date": "2026-07-15",
+          "close": 7.579999923706055,
+          "volume": 3204661
         }
       ]
     },
@@ -61506,26 +61516,21 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Banks - Regional",
-      "price": 259.0,
-      "previous_close": 259.0,
-      "change": 0.0,
-      "change_pct": 0.0,
-      "volume": 600,
-      "market_cap": 51957944320,
-      "day_high": 259.0,
-      "day_low": 259.0,
+      "price": 257.0,
+      "previous_close": 254.5,
+      "change": 2.5,
+      "change_pct": 0.98,
+      "volume": 51,
+      "market_cap": 51556724736,
+      "day_high": 257.0,
+      "day_low": 257.0,
       "year_high": 298.0,
       "year_low": 198.45,
-      "pe_trailing": 7.703748,
-      "pe_forward": 7.299887,
-      "pb": 1.4532845,
-      "dividend_yield": 3.94,
+      "pe_trailing": 7.6442595,
+      "pe_forward": 7.2435174,
+      "pb": 1.4420623,
+      "dividend_yield": 4.01,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 57.52212142944336,
-          "volume": 226
-        },
         {
           "date": "2016-07-17",
           "close": 57.52212142944336,
@@ -73410,6 +73415,11 @@
           "date": "2026-07-14",
           "close": 254.5,
           "volume": 555
+        },
+        {
+          "date": "2026-07-15",
+          "close": 257.0,
+          "volume": 51
         }
       ]
     },
@@ -73421,20 +73431,20 @@
       "currency": "AED",
       "sector": "Industrials",
       "subsector": "Infrastructure Operations",
-      "price": 5.6,
-      "previous_close": 5.7,
-      "change": -0.1,
-      "change_pct": -1.75,
-      "volume": 4994624,
-      "market_cap": 41999998976,
-      "day_high": 5.68,
-      "day_low": 5.59,
+      "price": 5.57,
+      "previous_close": 5.55,
+      "change": 0.02,
+      "change_pct": 0.36,
+      "volume": 2145103,
+      "market_cap": 41775001600,
+      "day_high": 5.65,
+      "day_low": 5.54,
       "year_high": 6.96,
       "year_low": 4.96,
-      "pe_trailing": 26.666668,
-      "pe_forward": 24.275,
-      "pb": 26.415094,
-      "dividend_yield": 4.24,
+      "pe_trailing": 26.523811,
+      "pe_forward": 24.144957,
+      "pb": 26.273586,
+      "dividend_yield": 4.28,
       "history": [
         {
           "date": "2022-10-03",
@@ -77330,6 +77340,11 @@
           "date": "2026-07-14",
           "close": 5.550000190734863,
           "volume": 4104525
+        },
+        {
+          "date": "2026-07-15",
+          "close": 5.570000171661377,
+          "volume": 2145103
         }
       ]
     },
@@ -77342,19 +77357,19 @@
       "sector": "Consumer Cyclical",
       "subsector": "Internet Retail",
       "price": 1.19,
-      "previous_close": 1.21,
-      "change": -0.02,
-      "change_pct": -1.65,
-      "volume": 17198003,
+      "previous_close": 1.18,
+      "change": 0.01,
+      "change_pct": 0.85,
+      "volume": 82706975,
       "market_cap": 27713007616,
-      "day_high": 1.2,
-      "day_low": 1.17,
+      "day_high": 1.25,
+      "day_low": 1.18,
       "year_high": 1.36,
       "year_low": 0.627,
       "pe_trailing": 14.875001,
-      "pe_forward": 19.87972,
+      "pe_forward": 19.74776,
       "pb": 9.816419,
-      "dividend_yield": 7.04,
+      "dividend_yield": 7.1,
       "history": [
         {
           "date": "2024-12-10",
@@ -79000,6 +79015,11 @@
           "date": "2026-07-14",
           "close": 1.1799999475479126,
           "volume": 23276404
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.190000057220459,
+          "volume": 82706975
         }
       ]
     },
@@ -79012,13 +79032,13 @@
       "sector": "Financial Services",
       "subsector": "Banks - Regional",
       "price": 9.45,
-      "previous_close": 9.4,
-      "change": 0.05,
-      "change_pct": 0.53,
-      "volume": 20393,
+      "previous_close": 9.45,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "volume": 34902,
       "market_cap": 28210063360,
-      "day_high": 9.49,
-      "day_low": 9.4,
+      "day_high": 9.45,
+      "day_low": 9.45,
       "year_high": 10.85,
       "year_low": 8.45,
       "pe_trailing": 8.362832,
@@ -79026,11 +79046,6 @@
       "pb": 1.7509727,
       "dividend_yield": 6.2,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 4.741337776184082,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 4.976058006286621,
@@ -90856,26 +90871,21 @@
       "currency": "AED",
       "sector": "Industrials",
       "subsector": "Airlines",
-      "price": 5.39,
-      "previous_close": 5.46,
-      "change": -0.07,
-      "change_pct": -1.28,
-      "volume": 2883642,
-      "market_cap": 25153511424,
-      "day_high": 5.46,
-      "day_low": 5.36,
+      "price": 5.3,
+      "previous_close": 5.28,
+      "change": 0.02,
+      "change_pct": 0.38,
+      "volume": 1480323,
+      "market_cap": 24733509632,
+      "day_high": 5.38,
+      "day_low": 5.27,
       "year_high": 6.03,
-      "year_low": 3.46,
-      "pe_trailing": 15.852941,
-      "pe_forward": 14.672655,
-      "pb": 3.3271604,
-      "dividend_yield": 5.57,
+      "year_low": 3.49,
+      "pe_trailing": 15.588236,
+      "pe_forward": 14.427657,
+      "pb": 3.271605,
+      "dividend_yield": 5.68,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.350000023841858,
-          "volume": 1930349
-        },
         {
           "date": "2016-07-17",
           "close": 1.350000023841858,
@@ -102640,6 +102650,11 @@
           "date": "2026-07-14",
           "close": 5.28000020980835,
           "volume": 2659539
+        },
+        {
+          "date": "2026-07-15",
+          "close": 5.300000190734863,
+          "volume": 1480323
         }
       ]
     },
@@ -102651,20 +102666,20 @@
       "currency": "AED",
       "sector": "Industrials",
       "subsector": "Infrastructure Operations",
-      "price": 5.61,
-      "previous_close": 5.7,
-      "change": -0.09,
-      "change_pct": -1.58,
-      "volume": 764434,
-      "market_cap": 16828271616,
-      "day_high": 5.68,
-      "day_low": 5.61,
+      "price": 5.6,
+      "previous_close": 5.59,
+      "change": 0.01,
+      "change_pct": 0.18,
+      "volume": 1476072,
+      "market_cap": 16798273536,
+      "day_high": 5.69,
+      "day_low": 5.59,
       "year_high": 6.5,
       "year_low": 4.38,
-      "pe_trailing": 25.5,
-      "pe_forward": 22.785429,
-      "pb": 47.542374,
-      "dividend_yield": 3.9,
+      "pe_trailing": 25.454546,
+      "pe_forward": 22.744812,
+      "pb": 47.457626,
+      "dividend_yield": 3.91,
       "history": [
         {
           "date": "2024-03-21",
@@ -105025,6 +105040,11 @@
           "date": "2026-07-14",
           "close": 5.590000152587891,
           "volume": 2144721
+        },
+        {
+          "date": "2026-07-15",
+          "close": 5.599999904632568,
+          "volume": 1476072
         }
       ]
     },
@@ -105036,20 +105056,20 @@
       "currency": "AED",
       "sector": "Real Estate",
       "subsector": "Real Estate Services",
-      "price": 3.33,
-      "previous_close": 3.38,
-      "change": -0.05,
-      "change_pct": -1.48,
-      "volume": 129786,
-      "market_cap": 16649999360,
+      "price": 3.37,
+      "previous_close": 3.3,
+      "change": 0.07,
+      "change_pct": 2.12,
+      "volume": 350817,
+      "market_cap": 16849999872,
       "day_high": 3.38,
       "day_low": 3.3,
       "year_high": 4.15,
       "year_low": 2.96,
-      "pe_trailing": 7.744186,
-      "pe_forward": 9.971851,
-      "pb": 2.119669,
-      "dividend_yield": 5.29,
+      "pe_trailing": 7.8372087,
+      "pe_forward": 10.091633,
+      "pb": 2.1451304,
+      "dividend_yield": 5.33,
       "history": [
         {
           "date": "2022-07-06",
@@ -109200,6 +109220,11 @@
           "date": "2026-07-14",
           "close": 3.299999952316284,
           "volume": 254228
+        },
+        {
+          "date": "2026-07-15",
+          "close": 3.369999885559082,
+          "volume": 350817
         }
       ]
     },
@@ -109211,20 +109236,20 @@
       "currency": "AED",
       "sector": "Real Estate",
       "subsector": "REIT - Residential",
-      "price": 1.28,
+      "price": 1.27,
       "previous_close": 1.27,
-      "change": 0.01,
-      "change_pct": 0.79,
-      "volume": 1568141,
-      "market_cap": 16639998976,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "volume": 1472666,
+      "market_cap": 16509999104,
       "day_high": 1.28,
       "day_low": 1.26,
       "year_high": 1.47,
       "year_low": 1.09,
-      "pe_trailing": 5.565217,
-      "pe_forward": 5.9665313,
-      "pb": 0.754717,
-      "dividend_yield": 6.56,
+      "pe_trailing": 5.521739,
+      "pe_forward": 5.9199176,
+      "pb": 0.7488208,
+      "dividend_yield": 6.61,
       "history": [
         {
           "date": "2025-05-28",
@@ -110390,6 +110415,11 @@
           "date": "2026-07-14",
           "close": 1.2699999809265137,
           "volume": 4951597
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.2699999809265137,
+          "volume": 1472666
         }
       ]
     },
@@ -110401,20 +110431,20 @@
       "currency": "AED",
       "sector": "Utilities",
       "subsector": "Utilities - Regulated Water",
-      "price": 1.62,
-      "previous_close": 1.61,
-      "change": 0.01,
-      "change_pct": 0.62,
-      "volume": 2121159,
-      "market_cap": 16200000512,
-      "day_high": 1.62,
-      "day_low": 1.6,
+      "price": 1.61,
+      "previous_close": 1.59,
+      "change": 0.02,
+      "change_pct": 1.26,
+      "volume": 1182690,
+      "market_cap": 16099999744,
+      "day_high": 1.61,
+      "day_low": 1.58,
       "year_high": 1.96,
       "year_low": 1.48,
-      "pe_trailing": 14.727273,
-      "pe_forward": 14.091858,
-      "pb": 5.2597404,
-      "dividend_yield": 5.4,
+      "pe_trailing": 14.636364,
+      "pe_forward": 14.004871,
+      "pb": 5.227273,
+      "dividend_yield": 5.5,
       "history": [
         {
           "date": "2022-11-17",
@@ -114175,6 +114205,11 @@
           "date": "2026-07-14",
           "close": 1.590000033378601,
           "volume": 3299396
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.6100000143051147,
+          "volume": 1182690
         }
       ]
     },
@@ -114186,26 +114221,21 @@
       "currency": "AED",
       "sector": "Real Estate",
       "subsector": "Real Estate - Development",
-      "price": 3.68,
+      "price": 3.69,
       "previous_close": 3.7,
-      "change": -0.02,
-      "change_pct": -0.54,
-      "volume": 2591685,
-      "market_cap": 15647432704,
-      "day_high": 3.73,
-      "day_low": 3.65,
+      "change": -0.01,
+      "change_pct": -0.27,
+      "volume": 896113,
+      "market_cap": 15689953280,
+      "day_high": 3.71,
+      "day_low": 3.67,
       "year_high": 4.35,
-      "year_low": 2.74,
-      "pe_trailing": 10.222222,
-      "pe_forward": 26.285715,
-      "pb": 1.0380818,
-      "dividend_yield": 6.79,
+      "year_low": 2.79,
+      "pe_trailing": 10.25,
+      "pe_forward": 26.357143,
+      "pb": 1.0409026,
+      "dividend_yield": 6.76,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 2.0666658878326416,
-          "volume": 11656478
-        },
         {
           "date": "2016-07-17",
           "close": 2.0761899948120117,
@@ -125970,6 +126000,11 @@
           "date": "2026-07-14",
           "close": 3.700000047683716,
           "volume": 3591985
+        },
+        {
+          "date": "2026-07-15",
+          "close": 3.690000057220459,
+          "volume": 896113
         }
       ]
     },
@@ -125981,26 +126016,21 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Financial Data & Stock Exchanges",
-      "price": 1.47,
-      "previous_close": 1.49,
-      "change": -0.02,
-      "change_pct": -1.34,
-      "volume": 880159,
-      "market_cap": 11753772032,
-      "day_high": 1.49,
-      "day_low": 1.46,
+      "price": 1.44,
+      "previous_close": 1.45,
+      "change": -0.01,
+      "change_pct": -0.69,
+      "volume": 2195914,
+      "market_cap": 11513899008,
+      "day_high": 1.46,
+      "day_low": 1.44,
       "year_high": 1.84,
       "year_low": 1.31,
-      "pe_trailing": 11.307693,
-      "pe_forward": 19.558277,
-      "pb": 1.3207546,
-      "dividend_yield": 4.42,
+      "pe_trailing": 11.076924,
+      "pe_forward": 19.159128,
+      "pb": 1.2938006,
+      "dividend_yield": 4.48,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.3600000143051147,
-          "volume": 4786389
-        },
         {
           "date": "2016-07-17",
           "close": 1.3700000047683716,
@@ -137765,6 +137795,11 @@
           "date": "2026-07-14",
           "close": 1.4500000476837158,
           "volume": 2543291
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.440000057220459,
+          "volume": 2195914
         }
       ]
     },
@@ -137777,25 +137812,20 @@
       "sector": "Financial Services",
       "subsector": "Banks - Regional",
       "price": 2.05,
-      "previous_close": 2.02,
-      "change": 0.03,
-      "change_pct": 1.49,
-      "volume": 541303,
+      "previous_close": 2.04,
+      "change": 0.01,
+      "change_pct": 0.49,
+      "volume": 59764,
       "market_cap": 7081188864,
       "day_high": 2.05,
-      "day_low": 1.99,
+      "day_low": 2.03,
       "year_high": 2.34,
       "year_low": 1.27,
       "pe_trailing": 0.5366492,
       "pe_forward": 13.666666,
       "pb": 2.1299655,
-      "dividend_yield": 4.8,
+      "dividend_yield": 4.83,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 0.5964869856834412,
-          "volume": 61595275
-        },
         {
           "date": "2016-07-17",
           "close": 0.5964869856834412,
@@ -149565,6 +149595,11 @@
           "date": "2026-07-14",
           "close": 2.0399999618530273,
           "volume": 162928
+        },
+        {
+          "date": "2026-07-15",
+          "close": 2.049999952316284,
+          "volume": 59764
         }
       ]
     },
@@ -149576,26 +149611,21 @@
       "currency": "AED",
       "sector": "Utilities",
       "subsector": "Utilities - Regulated Water",
-      "price": 2.62,
-      "previous_close": 2.66,
-      "change": -0.04,
-      "change_pct": -1.5,
-      "volume": 1023922,
-      "market_cap": 7454609920,
-      "day_high": 2.66,
-      "day_low": 2.61,
+      "price": 2.59,
+      "previous_close": 2.61,
+      "change": -0.02,
+      "change_pct": -0.77,
+      "volume": 1315913,
+      "market_cap": 7369251840,
+      "day_high": 2.62,
+      "day_low": 2.58,
       "year_high": 3.33,
       "year_low": 2.49,
-      "pe_trailing": 17.466665,
-      "pe_forward": 11.831113,
-      "pb": 1.2393565,
-      "dividend_yield": 4.96,
+      "pe_trailing": 17.266665,
+      "pe_forward": 11.6956415,
+      "pb": 1.2251655,
+      "dividend_yield": 4.98,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.3934249877929688,
-          "volume": 435351
-        },
         {
           "date": "2016-07-17",
           "close": 1.3743369579315186,
@@ -161370,17 +161400,808 @@
           "date": "2026-07-14",
           "close": 2.609999895095825,
           "volume": 1266359
+        },
+        {
+          "date": "2026-07-15",
+          "close": 2.5899999141693115,
+          "volume": 1315913
         }
       ]
     },
     {
       "ticker": "ALEC.AE",
       "symbol": "ALEC",
-      "name": "ALEC Holdings PJSC",
+      "name": "ALEC HOLDINGS PJSC",
       "exchange": "DFM",
+      "currency": "AED",
       "sector": "Industrials",
-      "subsector": "Construction",
-      "error": "Failed to perform, curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for mo"
+      "subsector": "Engineering & Construction",
+      "price": 1.47,
+      "previous_close": 1.45,
+      "change": 0.02,
+      "change_pct": 1.38,
+      "volume": 718740,
+      "market_cap": 7350000128,
+      "day_high": 1.47,
+      "day_low": 1.44,
+      "year_high": 1.85,
+      "year_low": 1.24,
+      "pe_trailing": 9.1875,
+      "pe_forward": 6.1400948,
+      "pb": 5.3454547,
+      "dividend_yield": 3.45,
+      "history": [
+        {
+          "date": "2025-10-15",
+          "close": 1.409999966621399,
+          "volume": 128440553
+        },
+        {
+          "date": "2025-10-16",
+          "close": 1.399999976158142,
+          "volume": 58667250
+        },
+        {
+          "date": "2025-10-20",
+          "close": 1.350000023841858,
+          "volume": 34524890
+        },
+        {
+          "date": "2025-10-21",
+          "close": 1.309999942779541,
+          "volume": 17624334
+        },
+        {
+          "date": "2025-10-22",
+          "close": 1.350000023841858,
+          "volume": 7752240
+        },
+        {
+          "date": "2025-10-23",
+          "close": 1.3700000047683716,
+          "volume": 8500014
+        },
+        {
+          "date": "2025-10-27",
+          "close": 1.3600000143051147,
+          "volume": 6032319
+        },
+        {
+          "date": "2025-10-28",
+          "close": 1.3600000143051147,
+          "volume": 0
+        },
+        {
+          "date": "2025-10-29",
+          "close": 1.3600000143051147,
+          "volume": 3037592
+        },
+        {
+          "date": "2025-10-30",
+          "close": 1.350000023841858,
+          "volume": 944776
+        },
+        {
+          "date": "2025-11-03",
+          "close": 1.350000023841858,
+          "volume": 4842981
+        },
+        {
+          "date": "2025-11-04",
+          "close": 1.350000023841858,
+          "volume": 2424788
+        },
+        {
+          "date": "2025-11-05",
+          "close": 1.3600000143051147,
+          "volume": 2253629
+        },
+        {
+          "date": "2025-11-06",
+          "close": 1.3899999856948853,
+          "volume": 7301776
+        },
+        {
+          "date": "2025-11-10",
+          "close": 1.3899999856948853,
+          "volume": 1903669
+        },
+        {
+          "date": "2025-11-11",
+          "close": 1.3899999856948853,
+          "volume": 9852870
+        },
+        {
+          "date": "2025-11-12",
+          "close": 1.399999976158142,
+          "volume": 7869866
+        },
+        {
+          "date": "2025-11-13",
+          "close": 1.409999966621399,
+          "volume": 2732637
+        },
+        {
+          "date": "2025-11-17",
+          "close": 1.399999976158142,
+          "volume": 6876571
+        },
+        {
+          "date": "2025-11-18",
+          "close": 1.399999976158142,
+          "volume": 4599071
+        },
+        {
+          "date": "2025-11-19",
+          "close": 1.399999976158142,
+          "volume": 2490007
+        },
+        {
+          "date": "2025-11-20",
+          "close": 1.399999976158142,
+          "volume": 971693
+        },
+        {
+          "date": "2025-11-24",
+          "close": 1.3899999856948853,
+          "volume": 0
+        },
+        {
+          "date": "2025-11-25",
+          "close": 1.399999976158142,
+          "volume": 4267609
+        },
+        {
+          "date": "2025-11-26",
+          "close": 1.409999966621399,
+          "volume": 3877943
+        },
+        {
+          "date": "2025-11-27",
+          "close": 1.4500000476837158,
+          "volume": 23446925
+        },
+        {
+          "date": "2025-12-01",
+          "close": 1.4299999475479126,
+          "volume": 0
+        },
+        {
+          "date": "2025-12-02",
+          "close": 1.4299999475479126,
+          "volume": 0
+        },
+        {
+          "date": "2025-12-03",
+          "close": 1.350000023841858,
+          "volume": 2424788
+        },
+        {
+          "date": "2025-12-04",
+          "close": 1.399999976158142,
+          "volume": 3858693
+        },
+        {
+          "date": "2025-12-08",
+          "close": 1.4500000476837158,
+          "volume": 5634394
+        },
+        {
+          "date": "2025-12-09",
+          "close": 1.4500000476837158,
+          "volume": 2708217
+        },
+        {
+          "date": "2025-12-10",
+          "close": 1.4500000476837158,
+          "volume": 2878270
+        },
+        {
+          "date": "2025-12-11",
+          "close": 1.440000057220459,
+          "volume": 3665192
+        },
+        {
+          "date": "2025-12-15",
+          "close": 1.4600000381469727,
+          "volume": 862226
+        },
+        {
+          "date": "2025-12-16",
+          "close": 1.4700000286102295,
+          "volume": 2907067
+        },
+        {
+          "date": "2025-12-17",
+          "close": 1.4900000095367432,
+          "volume": 13790560
+        },
+        {
+          "date": "2025-12-18",
+          "close": 1.5199999809265137,
+          "volume": 22298037
+        },
+        {
+          "date": "2025-12-22",
+          "close": 1.5099999904632568,
+          "volume": 9509095
+        },
+        {
+          "date": "2025-12-23",
+          "close": 1.5199999809265137,
+          "volume": 1184264
+        },
+        {
+          "date": "2025-12-24",
+          "close": 1.5199999809265137,
+          "volume": 2089858
+        },
+        {
+          "date": "2025-12-25",
+          "close": 1.5299999713897705,
+          "volume": 1734218
+        },
+        {
+          "date": "2025-12-29",
+          "close": 1.5299999713897705,
+          "volume": 842903
+        },
+        {
+          "date": "2025-12-30",
+          "close": 1.5099999904632568,
+          "volume": 5189736
+        },
+        {
+          "date": "2025-12-31",
+          "close": 1.5199999809265137,
+          "volume": 427992
+        },
+        {
+          "date": "2026-01-05",
+          "close": 1.6399999856948853,
+          "volume": 14000642
+        },
+        {
+          "date": "2026-01-06",
+          "close": 1.6799999475479126,
+          "volume": 19700619
+        },
+        {
+          "date": "2026-01-07",
+          "close": 1.7000000476837158,
+          "volume": 14561983
+        },
+        {
+          "date": "2026-01-08",
+          "close": 1.659999966621399,
+          "volume": 2300754
+        },
+        {
+          "date": "2026-01-12",
+          "close": 1.7999999523162842,
+          "volume": 12982420
+        },
+        {
+          "date": "2026-01-13",
+          "close": 1.7200000286102295,
+          "volume": 10082677
+        },
+        {
+          "date": "2026-01-14",
+          "close": 1.6399999856948853,
+          "volume": 5933339
+        },
+        {
+          "date": "2026-01-15",
+          "close": 1.6200000047683716,
+          "volume": 4799207
+        },
+        {
+          "date": "2026-01-19",
+          "close": 1.6299999952316284,
+          "volume": 9002129
+        },
+        {
+          "date": "2026-01-20",
+          "close": 1.6299999952316284,
+          "volume": 1994133
+        },
+        {
+          "date": "2026-01-21",
+          "close": 1.6100000143051147,
+          "volume": 3735583
+        },
+        {
+          "date": "2026-01-22",
+          "close": 1.6200000047683716,
+          "volume": 2940150
+        },
+        {
+          "date": "2026-01-26",
+          "close": 1.559999942779541,
+          "volume": 3803422
+        },
+        {
+          "date": "2026-01-27",
+          "close": 1.6100000143051147,
+          "volume": 4149892
+        },
+        {
+          "date": "2026-01-28",
+          "close": 1.5700000524520874,
+          "volume": 2903858
+        },
+        {
+          "date": "2026-01-29",
+          "close": 1.5499999523162842,
+          "volume": 2304662
+        },
+        {
+          "date": "2026-02-02",
+          "close": 1.5700000524520874,
+          "volume": 3037615
+        },
+        {
+          "date": "2026-02-03",
+          "close": 1.600000023841858,
+          "volume": 6481042
+        },
+        {
+          "date": "2026-02-04",
+          "close": 1.649999976158142,
+          "volume": 5882893
+        },
+        {
+          "date": "2026-02-05",
+          "close": 1.6399999856948853,
+          "volume": 1963921
+        },
+        {
+          "date": "2026-02-09",
+          "close": 1.5800000429153442,
+          "volume": 2602083
+        },
+        {
+          "date": "2026-02-10",
+          "close": 1.5700000524520874,
+          "volume": 8675437
+        },
+        {
+          "date": "2026-02-11",
+          "close": 1.5700000524520874,
+          "volume": 8675437
+        },
+        {
+          "date": "2026-02-12",
+          "close": 1.659999966621399,
+          "volume": 20537866
+        },
+        {
+          "date": "2026-02-16",
+          "close": 1.6299999952316284,
+          "volume": 5426277
+        },
+        {
+          "date": "2026-02-17",
+          "close": 1.6299999952316284,
+          "volume": 4970698
+        },
+        {
+          "date": "2026-02-18",
+          "close": 1.6399999856948853,
+          "volume": 7260418
+        },
+        {
+          "date": "2026-02-19",
+          "close": 1.600000023841858,
+          "volume": 15027085
+        },
+        {
+          "date": "2026-02-23",
+          "close": 1.6399999856948853,
+          "volume": 3850294
+        },
+        {
+          "date": "2026-02-24",
+          "close": 1.6299999952316284,
+          "volume": 6726892
+        },
+        {
+          "date": "2026-02-25",
+          "close": 1.6100000143051147,
+          "volume": 4581706
+        },
+        {
+          "date": "2026-02-26",
+          "close": 1.6100000143051147,
+          "volume": 4992942
+        },
+        {
+          "date": "2026-03-02",
+          "close": 1.6100000143051147,
+          "volume": 0
+        },
+        {
+          "date": "2026-03-03",
+          "close": 1.6100000143051147,
+          "volume": 0
+        },
+        {
+          "date": "2026-03-04",
+          "close": 1.5299999713897705,
+          "volume": 923358
+        },
+        {
+          "date": "2026-03-05",
+          "close": 1.4600000381469727,
+          "volume": 6154056
+        },
+        {
+          "date": "2026-03-09",
+          "close": 1.350000023841858,
+          "volume": 7801514
+        },
+        {
+          "date": "2026-03-10",
+          "close": 1.4299999475479126,
+          "volume": 13375559
+        },
+        {
+          "date": "2026-03-11",
+          "close": 1.3600000143051147,
+          "volume": 10552598
+        },
+        {
+          "date": "2026-03-12",
+          "close": 1.350000023841858,
+          "volume": 4206940
+        },
+        {
+          "date": "2026-03-16",
+          "close": 1.309999942779541,
+          "volume": 4165710
+        },
+        {
+          "date": "2026-03-17",
+          "close": 1.350000023841858,
+          "volume": 3887167
+        },
+        {
+          "date": "2026-03-18",
+          "close": 1.409999966621399,
+          "volume": 6327820
+        },
+        {
+          "date": "2026-03-19",
+          "close": 1.409999966621399,
+          "volume": 0
+        },
+        {
+          "date": "2026-03-24",
+          "close": 1.3899999856948853,
+          "volume": 1318115
+        },
+        {
+          "date": "2026-03-25",
+          "close": 1.4600000381469727,
+          "volume": 3236988
+        },
+        {
+          "date": "2026-03-26",
+          "close": 1.3899999856948853,
+          "volume": 2401617
+        },
+        {
+          "date": "2026-03-30",
+          "close": 1.399999976158142,
+          "volume": 3240264
+        },
+        {
+          "date": "2026-03-31",
+          "close": 1.399999976158142,
+          "volume": 599509
+        },
+        {
+          "date": "2026-04-01",
+          "close": 1.3600000143051147,
+          "volume": 11652254
+        },
+        {
+          "date": "2026-04-02",
+          "close": 1.309999942779541,
+          "volume": 2072516
+        },
+        {
+          "date": "2026-04-06",
+          "close": 1.2999999523162842,
+          "volume": 974484
+        },
+        {
+          "date": "2026-04-07",
+          "close": 1.2400000095367432,
+          "volume": 3002574
+        },
+        {
+          "date": "2026-04-08",
+          "close": 1.399999976158142,
+          "volume": 14311579
+        },
+        {
+          "date": "2026-04-09",
+          "close": 1.340000033378601,
+          "volume": 5310106
+        },
+        {
+          "date": "2026-04-13",
+          "close": 1.399999976158142,
+          "volume": 2882229
+        },
+        {
+          "date": "2026-04-14",
+          "close": 1.399999976158142,
+          "volume": 3997894
+        },
+        {
+          "date": "2026-04-15",
+          "close": 1.409999966621399,
+          "volume": 3941140
+        },
+        {
+          "date": "2026-04-16",
+          "close": 1.4299999475479126,
+          "volume": 11876410
+        },
+        {
+          "date": "2026-04-20",
+          "close": 1.3600000143051147,
+          "volume": 1517863
+        },
+        {
+          "date": "2026-04-21",
+          "close": 1.409999966621399,
+          "volume": 3519015
+        },
+        {
+          "date": "2026-04-22",
+          "close": 1.3700000047683716,
+          "volume": 4721321
+        },
+        {
+          "date": "2026-04-23",
+          "close": 1.3799999952316284,
+          "volume": 2074578
+        },
+        {
+          "date": "2026-04-27",
+          "close": 1.3899999856948853,
+          "volume": 1160727
+        },
+        {
+          "date": "2026-04-28",
+          "close": 1.350000023841858,
+          "volume": 5725691
+        },
+        {
+          "date": "2026-04-29",
+          "close": 1.340000033378601,
+          "volume": 6788592
+        },
+        {
+          "date": "2026-04-30",
+          "close": 1.3700000047683716,
+          "volume": 7032545
+        },
+        {
+          "date": "2026-05-04",
+          "close": 1.409999966621399,
+          "volume": 12037421
+        },
+        {
+          "date": "2026-05-05",
+          "close": 1.399999976158142,
+          "volume": 3234836
+        },
+        {
+          "date": "2026-05-06",
+          "close": 1.5,
+          "volume": 11654325
+        },
+        {
+          "date": "2026-05-07",
+          "close": 1.4500000476837158,
+          "volume": 11011429
+        },
+        {
+          "date": "2026-05-11",
+          "close": 1.409999966621399,
+          "volume": 15544222
+        },
+        {
+          "date": "2026-05-12",
+          "close": 1.4199999570846558,
+          "volume": 5092257
+        },
+        {
+          "date": "2026-05-13",
+          "close": 1.3899999856948853,
+          "volume": 7151125
+        },
+        {
+          "date": "2026-05-14",
+          "close": 1.399999976158142,
+          "volume": 1069404
+        },
+        {
+          "date": "2026-05-18",
+          "close": 1.3799999952316284,
+          "volume": 4151284
+        },
+        {
+          "date": "2026-05-19",
+          "close": 1.3700000047683716,
+          "volume": 8970494
+        },
+        {
+          "date": "2026-05-20",
+          "close": 1.340000033378601,
+          "volume": 6543471
+        },
+        {
+          "date": "2026-05-21",
+          "close": 1.350000023841858,
+          "volume": 3595066
+        },
+        {
+          "date": "2026-05-25",
+          "close": 1.4700000286102295,
+          "volume": 15217178
+        },
+        {
+          "date": "2026-05-26",
+          "close": 1.4700000286102295,
+          "volume": 0
+        },
+        {
+          "date": "2026-05-27",
+          "close": 1.4700000286102295,
+          "volume": 0
+        },
+        {
+          "date": "2026-05-28",
+          "close": 1.4700000286102295,
+          "volume": 0
+        },
+        {
+          "date": "2026-06-01",
+          "close": 1.4800000190734863,
+          "volume": 7968807
+        },
+        {
+          "date": "2026-06-02",
+          "close": 1.4900000095367432,
+          "volume": 3848724
+        },
+        {
+          "date": "2026-06-03",
+          "close": 1.4900000095367432,
+          "volume": 1499480
+        },
+        {
+          "date": "2026-06-04",
+          "close": 1.4800000190734863,
+          "volume": 636701
+        },
+        {
+          "date": "2026-06-08",
+          "close": 1.4500000476837158,
+          "volume": 2497311
+        },
+        {
+          "date": "2026-06-09",
+          "close": 1.4900000095367432,
+          "volume": 2359070
+        },
+        {
+          "date": "2026-06-10",
+          "close": 1.5,
+          "volume": 1627738
+        },
+        {
+          "date": "2026-06-11",
+          "close": 1.5,
+          "volume": 1591100
+        },
+        {
+          "date": "2026-06-16",
+          "close": 1.5499999523162842,
+          "volume": 8984115
+        },
+        {
+          "date": "2026-06-17",
+          "close": 1.5700000524520874,
+          "volume": 4822177
+        },
+        {
+          "date": "2026-06-18",
+          "close": 1.559999942779541,
+          "volume": 4055878
+        },
+        {
+          "date": "2026-06-22",
+          "close": 1.5700000524520874,
+          "volume": 3103717
+        },
+        {
+          "date": "2026-06-23",
+          "close": 1.559999942779541,
+          "volume": 2012896
+        },
+        {
+          "date": "2026-06-24",
+          "close": 1.5499999523162842,
+          "volume": 3404652
+        },
+        {
+          "date": "2026-06-25",
+          "close": 1.5399999618530273,
+          "volume": 1777037
+        },
+        {
+          "date": "2026-06-29",
+          "close": 1.4700000286102295,
+          "volume": 759255
+        },
+        {
+          "date": "2026-06-30",
+          "close": 1.4800000190734863,
+          "volume": 927046
+        },
+        {
+          "date": "2026-07-01",
+          "close": 1.4900000095367432,
+          "volume": 4615217
+        },
+        {
+          "date": "2026-07-02",
+          "close": 1.4600000381469727,
+          "volume": 446465
+        },
+        {
+          "date": "2026-07-06",
+          "close": 1.4700000286102295,
+          "volume": 393817
+        },
+        {
+          "date": "2026-07-07",
+          "close": 1.4700000286102295,
+          "volume": 363759
+        },
+        {
+          "date": "2026-07-08",
+          "close": 1.4600000381469727,
+          "volume": 1114411
+        },
+        {
+          "date": "2026-07-09",
+          "close": 1.4700000286102295,
+          "volume": 461819
+        },
+        {
+          "date": "2026-07-13",
+          "close": 1.4700000286102295,
+          "volume": 690742
+        },
+        {
+          "date": "2026-07-14",
+          "close": 1.4500000476837158,
+          "volume": 840106
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.4700000286102295,
+          "volume": 718740
+        }
+      ]
     },
     {
       "ticker": "GULFNAV.AE",
@@ -161406,9 +162227,9 @@
       "dividend_yield": null,
       "history": [
         {
-          "date": "2026-07-13",
-          "close": 2.869999885559082,
-          "volume": 26936751
+          "date": "2026-07-14",
+          "close": 2.8399999141693115,
+          "volume": 1376566
         }
       ]
     },
@@ -161421,12 +162242,12 @@
       "sector": "Financial Services",
       "subsector": "Capital Markets",
       "price": 0.95,
-      "previous_close": 0.951,
-      "change": -0.001,
-      "change_pct": -0.11,
-      "volume": 65924,
+      "previous_close": 0.95,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "volume": 86563,
       "market_cap": 7125000192,
-      "day_high": 0.95,
+      "day_high": 0.952,
       "day_low": 0.936,
       "year_high": 1.01,
       "year_low": 0.91,
@@ -164794,6 +165615,11 @@
           "date": "2026-07-14",
           "close": 0.949999988079071,
           "volume": 134907
+        },
+        {
+          "date": "2026-07-15",
+          "close": 0.949999988079071,
+          "volume": 86563
         }
       ]
     },
@@ -164820,11 +165646,6 @@
       "pb": 14.525862,
       "dividend_yield": 1.76,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.3769220113754272,
-          "volume": 39958
-        },
         {
           "date": "2016-07-17",
           "close": 1.3769220113754272,
@@ -176739,6 +177560,11 @@
           "date": "2026-07-13",
           "close": 3.369999885559082,
           "volume": 31
+        },
+        {
+          "date": "2026-07-14",
+          "close": 3.369999885559082,
+          "volume": 31
         }
       ]
     },
@@ -176751,25 +177577,20 @@
       "sector": "Financial Services",
       "subsector": "Banks - Regional",
       "price": 2.05,
-      "previous_close": 2.06,
-      "change": -0.01,
-      "change_pct": -0.49,
-      "volume": 377961,
+      "previous_close": 2.07,
+      "change": -0.02,
+      "change_pct": -0.97,
+      "volume": 411962,
       "market_cap": 6509428224,
       "day_high": 2.07,
-      "day_low": 2.03,
+      "day_low": 2.02,
       "year_high": 2.205751,
       "year_low": 1.86,
       "pe_trailing": 9.761905,
       "pe_forward": null,
       "pb": 10.353535,
-      "dividend_yield": 3.77,
+      "dividend_yield": 3.73,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 0.6001309752464294,
-          "volume": 2382325
-        },
         {
           "date": "2016-07-17",
           "close": 0.593388020992279,
@@ -188599,6 +189420,11 @@
           "date": "2026-07-14",
           "close": 2.069999933242798,
           "volume": 511364
+        },
+        {
+          "date": "2026-07-15",
+          "close": 2.049999952316284,
+          "volume": 411962
         }
       ]
     },
@@ -188610,19 +189436,19 @@
       "currency": "AED",
       "sector": "Industrials",
       "subsector": "Railroads",
-      "price": 2.2,
-      "previous_close": 2.27,
-      "change": -0.07,
-      "change_pct": -3.08,
-      "volume": 968737,
-      "market_cap": 5494275072,
-      "day_high": 2.26,
-      "day_low": 2.2,
+      "price": 2.16,
+      "previous_close": 2.2,
+      "change": -0.04,
+      "change_pct": -1.82,
+      "volume": 2761151,
+      "market_cap": 5394379264,
+      "day_high": 2.2,
+      "day_low": 2.15,
       "year_high": 2.89,
       "year_low": 1.97,
-      "pe_trailing": 16.923079,
-      "pe_forward": 15.778527,
-      "pb": 14.193548,
+      "pe_trailing": 16.615385,
+      "pe_forward": 15.491645,
+      "pb": 13.935484,
       "dividend_yield": 5.5,
       "history": [
         {
@@ -191284,6 +192110,11 @@
           "date": "2026-07-14",
           "close": 2.200000047683716,
           "volume": 363835
+        },
+        {
+          "date": "2026-07-15",
+          "close": 2.1600000858306885,
+          "volume": 2761151
         }
       ]
     },
@@ -191295,19 +192126,19 @@
       "currency": "AED",
       "sector": "Consumer Defensive",
       "subsector": "Grocery Stores",
-      "price": 1.29,
-      "previous_close": 1.28,
-      "change": 0.01,
-      "change_pct": 0.78,
-      "volume": 212925,
-      "market_cap": 4643999744,
+      "price": 1.28,
+      "previous_close": 1.29,
+      "change": -0.01,
+      "change_pct": -0.78,
+      "volume": 99682,
+      "market_cap": 4608000000,
       "day_high": 1.29,
-      "day_low": 1.25,
+      "day_low": 1.26,
       "year_high": 1.81,
       "year_low": 1.08,
-      "pe_trailing": 14.333332,
-      "pe_forward": 12.352772,
-      "pb": 11.834863,
+      "pe_trailing": 14.222221,
+      "pe_forward": 12.146517,
+      "pb": 11.743119,
       "dividend_yield": 5.36,
       "history": [
         {
@@ -193549,6 +194380,11 @@
           "date": "2026-07-14",
           "close": 1.2899999618530273,
           "volume": 340498
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.2799999713897705,
+          "volume": 99682
         }
       ]
     },
@@ -193564,7 +194400,7 @@
       "previous_close": 1.63,
       "change": 0.0,
       "change_pct": 0.0,
-      "volume": 43500,
+      "volume": 960,
       "market_cap": 4160318208,
       "day_high": 1.63,
       "day_low": 1.63,
@@ -193575,11 +194411,6 @@
       "pb": 6.848739,
       "dividend_yield": 1.44,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.5698269605636597,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 1.5698269605636597,
@@ -205489,6 +206320,16 @@
           "date": "2026-07-13",
           "close": 1.6299999952316284,
           "volume": 43500
+        },
+        {
+          "date": "2026-07-14",
+          "close": 1.6299999952316284,
+          "volume": 43500
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.6299999952316284,
+          "volume": 960
         }
       ]
     },
@@ -205500,26 +206341,21 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Banks - Regional",
-      "price": 1.38,
-      "previous_close": 1.4,
-      "change": -0.02,
-      "change_pct": -1.43,
-      "volume": 642488,
-      "market_cap": 3754628096,
-      "day_high": 1.39,
+      "price": 1.37,
+      "previous_close": 1.37,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "volume": 265174,
+      "market_cap": 3727420672,
+      "day_high": 1.38,
       "day_low": 1.37,
       "year_high": 1.66,
       "year_low": 1.28,
-      "pe_trailing": 7.6666665,
+      "pe_trailing": 7.6111107,
       "pe_forward": null,
-      "pb": 1.1714771,
-      "dividend_yield": 6.65,
+      "pb": 1.1629882,
+      "dividend_yield": 6.7,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.3834459781646729,
-          "volume": 1789494
-        },
         {
           "date": "2016-07-17",
           "close": 1.3668780326843262,
@@ -217304,6 +218140,11 @@
           "date": "2026-07-14",
           "close": 1.3700000047683716,
           "volume": 1162551
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.3700000047683716,
+          "volume": 265174
         }
       ]
     },
@@ -217315,20 +218156,20 @@
       "currency": "AED",
       "sector": "Consumer Cyclical",
       "subsector": "Department Stores",
-      "price": 2.2,
-      "previous_close": 2.24,
-      "change": -0.04,
-      "change_pct": -1.79,
-      "volume": 121547,
-      "market_cap": 3840254464,
-      "day_high": 2.2,
-      "day_low": 2.2,
+      "price": 2.21,
+      "previous_close": 2.22,
+      "change": -0.01,
+      "change_pct": -0.45,
+      "volume": 70730,
+      "market_cap": 3857710080,
+      "day_high": 2.25,
+      "day_low": 2.21,
       "year_high": 2.37,
       "year_low": 2.11,
-      "pe_trailing": 11.578948,
+      "pe_trailing": 11.631579,
       "pe_forward": null,
-      "pb": 1.4111611,
-      "dividend_yield": 6.36,
+      "pb": 1.4175754,
+      "dividend_yield": 6.31,
       "history": [
         {
           "date": "2022-08-09",
@@ -221379,6 +222220,11 @@
           "date": "2026-07-14",
           "close": 2.2200000286102295,
           "volume": 184309
+        },
+        {
+          "date": "2026-07-15",
+          "close": 2.2100000381469727,
+          "volume": 70730
         }
       ]
     },
@@ -221390,26 +222236,21 @@
       "currency": "AED",
       "sector": "Real Estate",
       "subsector": "Real Estate - Development",
-      "price": 0.786,
-      "previous_close": 0.791,
-      "change": -0.005,
-      "change_pct": -0.63,
-      "volume": 1523896,
-      "market_cap": 3439408384,
-      "day_high": 0.794,
-      "day_low": 0.781,
+      "price": 0.782,
+      "previous_close": 0.772,
+      "change": 0.01,
+      "change_pct": 1.3,
+      "volume": 6619030,
+      "market_cap": 3421905152,
+      "day_high": 0.789,
+      "day_low": 0.771,
       "year_high": 1.12,
-      "year_low": 0.775,
-      "pe_trailing": 5.614286,
-      "pe_forward": 5.24,
-      "pb": 0.59908533,
-      "dividend_yield": 6.36,
+      "year_low": 0.765,
+      "pe_trailing": 5.5857143,
+      "pe_forward": 5.213333,
+      "pb": 0.59603655,
+      "dividend_yield": 6.48,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 0.8054640293121338,
-          "volume": 3325362
-        },
         {
           "date": "2016-07-17",
           "close": 0.8054640293121338,
@@ -233184,6 +234025,11 @@
           "date": "2026-07-14",
           "close": 0.7720000147819519,
           "volume": 3268800
+        },
+        {
+          "date": "2026-07-15",
+          "close": 0.7820000052452087,
+          "volume": 6619030
         }
       ]
     },
@@ -233196,25 +234042,20 @@
       "sector": "Financial Services",
       "subsector": "Asset Management",
       "price": 1.37,
-      "previous_close": 1.4,
-      "change": -0.03,
-      "change_pct": -2.14,
-      "volume": 1254057,
+      "previous_close": 1.36,
+      "change": 0.01,
+      "change_pct": 0.74,
+      "volume": 1134765,
       "market_cap": 3399473920,
-      "day_high": 1.4,
-      "day_low": 1.36,
+      "day_high": 1.38,
+      "day_low": 1.35,
       "year_high": 1.43,
       "year_low": 1.07,
       "pe_trailing": 15.222221,
       "pe_forward": 22.833334,
       "pb": 1.2511415,
-      "dividend_yield": 5.11,
+      "dividend_yield": 5.15,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 0.8199999928474426,
-          "volume": 1998507
-        },
         {
           "date": "2016-07-17",
           "close": 0.8199999928474426,
@@ -244979,6 +245820,11 @@
           "date": "2026-07-14",
           "close": 1.3600000143051147,
           "volume": 1903935
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.3700000047683716,
+          "volume": 1134765
         }
       ]
     },
@@ -244990,26 +245836,21 @@
       "currency": "AED",
       "sector": "Industrials",
       "subsector": "Conglomerates",
-      "price": 0.668,
-      "previous_close": 0.685,
-      "change": -0.017,
-      "change_pct": -2.48,
-      "volume": 8243586,
-      "market_cap": 2865412608,
-      "day_high": 0.675,
-      "day_low": 0.654,
+      "price": 0.651,
+      "previous_close": 0.65,
+      "change": 0.001,
+      "change_pct": 0.15,
+      "volume": 7071313,
+      "market_cap": 2792490752,
+      "day_high": 0.66,
+      "day_low": 0.645,
       "year_high": 0.937,
-      "year_low": 0.654,
-      "pe_trailing": 6.072727,
-      "pe_forward": 6.68,
-      "pb": 0.78403753,
-      "dividend_yield": 4.49,
+      "year_low": 0.645,
+      "pe_trailing": 5.918182,
+      "pe_forward": 6.51,
+      "pb": 0.7640845,
+      "dividend_yield": 4.62,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 0.6944440007209778,
-          "volume": 16948213
-        },
         {
           "date": "2016-07-17",
           "close": 0.703702986240387,
@@ -256774,6 +257615,11 @@
           "date": "2026-07-14",
           "close": 0.6499999761581421,
           "volume": 16678306
+        },
+        {
+          "date": "2026-07-15",
+          "close": 0.6510000228881836,
+          "volume": 7071313
         }
       ]
     },
@@ -256785,20 +257631,20 @@
       "currency": "AED",
       "sector": "Consumer Defensive",
       "subsector": "Education & Training Services",
-      "price": 3.22,
-      "previous_close": 3.29,
-      "change": -0.07,
-      "change_pct": -2.13,
-      "volume": 212107,
-      "market_cap": 3219069696,
-      "day_high": 3.28,
-      "day_low": 3.19,
+      "price": 3.15,
+      "previous_close": 3.12,
+      "change": 0.03,
+      "change_pct": 0.96,
+      "volume": 718452,
+      "market_cap": 3149089792,
+      "day_high": 3.2,
+      "day_low": 3.12,
       "year_high": 5.0,
       "year_low": 2.71,
-      "pe_trailing": 17.888887,
-      "pe_forward": 20.125,
-      "pb": 1.7829458,
-      "dividend_yield": 4.66,
+      "pe_trailing": 17.5,
+      "pe_forward": 19.687502,
+      "pb": 1.7441862,
+      "dividend_yield": 4.81,
       "history": [
         {
           "date": "2022-12-06",
@@ -260509,6 +261355,11 @@
           "date": "2026-07-14",
           "close": 3.119999885559082,
           "volume": 217234
+        },
+        {
+          "date": "2026-07-15",
+          "close": 3.1500000953674316,
+          "volume": 718452
         }
       ]
     },
@@ -260524,7 +261375,7 @@
       "previous_close": 28.76,
       "change": 0.0,
       "change_pct": 0.0,
-      "volume": 235,
+      "volume": 265,
       "market_cap": 2588400128,
       "day_high": 28.76,
       "day_low": 28.76,
@@ -260535,11 +261386,6 @@
       "pb": 2.1754916,
       "dividend_yield": 3.82,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 17.350000381469727,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 19.950000762939453,
@@ -272424,6 +273270,16 @@
           "date": "2026-07-13",
           "close": 28.760000228881836,
           "volume": 235
+        },
+        {
+          "date": "2026-07-14",
+          "close": 28.760000228881836,
+          "volume": 235
+        },
+        {
+          "date": "2026-07-15",
+          "close": 28.760000228881836,
+          "volume": 265
         }
       ]
     },
@@ -272436,13 +273292,13 @@
       "sector": "Industrials",
       "subsector": "Integrated Freight & Logistics",
       "price": 1.68,
-      "previous_close": 1.72,
-      "change": -0.04,
-      "change_pct": -2.33,
-      "volume": 127313,
+      "previous_close": 1.7,
+      "change": -0.02,
+      "change_pct": -1.18,
+      "volume": 306683,
       "market_cap": 2459687936,
-      "day_high": 1.73,
-      "day_low": 1.68,
+      "day_high": 1.7,
+      "day_low": 1.67,
       "year_high": 2.98,
       "year_low": 1.65,
       "pe_trailing": 168.0,
@@ -272450,11 +273306,6 @@
       "pb": 0.96607244,
       "dividend_yield": null,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 3.2100000381469727,
-          "volume": 893391
-        },
         {
           "date": "2016-07-17",
           "close": 3.259999990463257,
@@ -284224,6 +285075,11 @@
           "date": "2026-07-14",
           "close": 1.7000000476837158,
           "volume": 22983
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.6799999475479126,
+          "volume": 306683
         }
       ]
     },
@@ -284235,26 +285091,21 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Asset Management",
-      "price": 5.45,
+      "price": 5.18,
       "previous_close": 5.45,
-      "change": 0.0,
-      "change_pct": 0.0,
-      "volume": 1026,
-      "market_cap": 3098177792,
-      "day_high": 5.45,
-      "day_low": 5.45,
+      "change": -0.27,
+      "change_pct": -4.95,
+      "volume": 1972,
+      "market_cap": 2944690176,
+      "day_high": 5.99,
+      "day_low": 5.18,
       "year_high": 5.99,
       "year_low": 4.090909,
-      "pe_trailing": 49.545452,
+      "pe_trailing": 47.090908,
       "pe_forward": null,
-      "pb": 22.244896,
+      "pb": 21.142857,
       "dividend_yield": null,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 0.791441023349762,
-          "volume": 1146620
-        },
         {
           "date": "2016-07-17",
           "close": 0.791441023349762,
@@ -296194,6 +297045,16 @@
           "date": "2026-07-13",
           "close": 5.449999809265137,
           "volume": 1026
+        },
+        {
+          "date": "2026-07-14",
+          "close": 5.449999809265137,
+          "volume": 1026
+        },
+        {
+          "date": "2026-07-15",
+          "close": 5.179999828338623,
+          "volume": 1972
         }
       ]
     },
@@ -296220,11 +297081,6 @@
       "pb": 0.75090057,
       "dividend_yield": 4.61,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.399999976158142,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 1.399999976158142,
@@ -308089,6 +308945,11 @@
           "date": "2026-07-13",
           "close": 5.420000076293945,
           "volume": 1000
+        },
+        {
+          "date": "2026-07-14",
+          "close": 5.420000076293945,
+          "volume": 1000
         }
       ]
     },
@@ -308100,26 +308961,21 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Mortgage Finance",
-      "price": 1.25,
-      "previous_close": 1.25,
-      "change": 0.0,
-      "change_pct": 0.0,
-      "volume": 1368179,
-      "market_cap": 1875000064,
-      "day_high": 1.27,
-      "day_low": 1.22,
+      "price": 1.21,
+      "previous_close": 1.22,
+      "change": -0.01,
+      "change_pct": -0.82,
+      "volume": 985235,
+      "market_cap": 1815000064,
+      "day_high": 1.24,
+      "day_low": 1.2,
       "year_high": 2.01,
       "year_low": 1.17,
-      "pe_trailing": 1.0245901,
+      "pe_trailing": 0.9918033,
       "pe_forward": null,
-      "pb": 0.59101653,
-      "dividend_yield": 39.2,
+      "pb": 0.57210404,
+      "dividend_yield": 40.16,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.4199999570846558,
-          "volume": 4643442
-        },
         {
           "date": "2016-07-17",
           "close": 1.4900000095367432,
@@ -319884,6 +320740,11 @@
           "date": "2026-07-14",
           "close": 1.2200000286102295,
           "volume": 2521406
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.2100000381469727,
+          "volume": 985235
         }
       ]
     },
@@ -319910,11 +320771,6 @@
       "pb": 1.4991181,
       "dividend_yield": 5.88,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 2.1600000858306885,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 2.1600000858306885,
@@ -331814,6 +332670,11 @@
           "date": "2026-07-13",
           "close": 17.0,
           "volume": 0
+        },
+        {
+          "date": "2026-07-14",
+          "close": 17.0,
+          "volume": 0
         }
       ]
     },
@@ -331825,26 +332686,21 @@
       "currency": "AED",
       "sector": "Basic Materials",
       "subsector": "Building Materials",
-      "price": 4.22,
+      "price": 4.25,
       "previous_close": 4.22,
-      "change": 0.0,
-      "change_pct": 0.0,
-      "volume": 828,
-      "market_cap": 1514135936,
-      "day_high": 4.22,
-      "day_low": 4.22,
+      "change": 0.03,
+      "change_pct": 0.71,
+      "volume": 939000,
+      "market_cap": 1524899968,
+      "day_high": 4.25,
+      "day_low": 4.1,
       "year_high": 5.0,
       "year_low": 3.66,
-      "pe_trailing": 12.411764,
+      "pe_trailing": 12.5,
       "pe_forward": null,
-      "pb": 0.57603055,
+      "pb": 0.5801256,
       "dividend_yield": 5.92,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 3.490000009536743,
-          "volume": 25890
-        },
         {
           "date": "2016-07-17",
           "close": 3.490000009536743,
@@ -343689,6 +344545,16 @@
           "date": "2026-07-13",
           "close": 4.21999979019165,
           "volume": 828
+        },
+        {
+          "date": "2026-07-14",
+          "close": 4.21999979019165,
+          "volume": 828
+        },
+        {
+          "date": "2026-07-15",
+          "close": 4.25,
+          "volume": 939000
         }
       ]
     },
@@ -343700,26 +344566,21 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Insurance - Diversified",
-      "price": 5.8,
-      "previous_close": 5.85,
-      "change": -0.05,
-      "change_pct": -0.85,
-      "volume": 2489,
-      "market_cap": 956707264,
-      "day_high": 5.83,
-      "day_low": 5.56,
+      "price": 5.68,
+      "previous_close": 5.68,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "volume": 45,
+      "market_cap": 936913216,
+      "day_high": 5.68,
+      "day_low": 5.68,
       "year_high": 6.61,
       "year_low": 5.3,
-      "pe_trailing": 9.508197,
+      "pe_trailing": 9.311475,
       "pe_forward": null,
-      "pb": 1.3513515,
-      "dividend_yield": 7.76,
+      "pb": 1.3233924,
+      "dividend_yield": 7.92,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.8454539775848389,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 1.8454539775848389,
@@ -355619,6 +356480,11 @@
           "date": "2026-07-14",
           "close": 5.679999828338623,
           "volume": 39
+        },
+        {
+          "date": "2026-07-15",
+          "close": 5.679999828338623,
+          "volume": 45
         }
       ]
     },
@@ -355639,17 +356505,12 @@
       "day_high": 1.5,
       "day_low": 1.5,
       "year_high": 1.7,
-      "year_low": 1.03,
+      "year_low": 1.07,
       "pe_trailing": 15.0,
       "pe_forward": null,
       "pb": 1.3863217,
       "dividend_yield": 4.67,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.0645569562911987,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 1.0645569562911987,
@@ -367509,6 +368370,11 @@
           "date": "2026-07-13",
           "close": 1.5,
           "volume": 150000
+        },
+        {
+          "date": "2026-07-14",
+          "close": 1.5,
+          "volume": 150000
         }
       ]
     },
@@ -367524,10 +368390,10 @@
       "previous_close": 0.203,
       "change": 0.0,
       "change_pct": 0.0,
-      "volume": 68253761,
+      "volume": 307186,
       "market_cap": 742781632,
-      "day_high": 0.206,
-      "day_low": 0.203,
+      "day_high": 0.205,
+      "day_low": 0.2,
       "year_high": 0.302,
       "year_low": 0.173,
       "pe_trailing": null,
@@ -367535,11 +368401,6 @@
       "pb": 1.3012819,
       "dividend_yield": null,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 0.6399999856948853,
-          "volume": 1503528
-        },
         {
           "date": "2016-07-17",
           "close": 0.6600000262260437,
@@ -379309,6 +380170,11 @@
           "date": "2026-07-14",
           "close": 0.2029999941587448,
           "volume": 2386154
+        },
+        {
+          "date": "2026-07-15",
+          "close": 0.2029999941587448,
+          "volume": 307186
         }
       ]
     },
@@ -379320,26 +380186,21 @@
       "currency": "AED",
       "sector": "Consumer Defensive",
       "subsector": "Beverages - Non-Alcoholic",
-      "price": 1.87,
-      "previous_close": 1.88,
-      "change": -0.01,
-      "change_pct": -0.53,
-      "volume": 188651,
-      "market_cap": 598158912,
-      "day_high": 1.9,
+      "price": 1.95,
+      "previous_close": 1.82,
+      "change": 0.13,
+      "change_pct": 7.14,
+      "volume": 1207657,
+      "market_cap": 623748608,
+      "day_high": 2.03,
       "day_low": 1.8,
       "year_high": 3.13,
       "year_low": 1.8,
-      "pe_trailing": 187.0,
+      "pe_trailing": 195.00002,
       "pe_forward": null,
-      "pb": 1.7235023,
+      "pb": 1.797235,
       "dividend_yield": null,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 4.900000095367432,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 4.900000095367432,
@@ -391124,6 +391985,11 @@
           "date": "2026-07-14",
           "close": 1.8200000524520874,
           "volume": 185072
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.9500000476837158,
+          "volume": 1207657
         }
       ]
     },
@@ -391135,26 +392001,21 @@
       "currency": "AED",
       "sector": "Industrials",
       "subsector": "Engineering & Construction",
-      "price": 0.246,
-      "previous_close": 0.247,
+      "price": 0.241,
+      "previous_close": 0.242,
       "change": -0.001,
-      "change_pct": -0.4,
-      "volume": 14797658,
-      "market_cap": 701295488,
-      "day_high": 0.246,
-      "day_low": 0.241,
-      "year_high": 0.373,
+      "change_pct": -0.41,
+      "volume": 5341561,
+      "market_cap": 687041472,
+      "day_high": 0.245,
+      "day_low": 0.24,
+      "year_high": 0.366,
       "year_low": 0.207,
       "pe_trailing": null,
       "pe_forward": null,
-      "pb": 3.6716418,
+      "pb": 3.597015,
       "dividend_yield": null,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 0.5699999928474426,
-          "volume": 28118797
-        },
         {
           "date": "2016-07-17",
           "close": 0.5699999928474426,
@@ -403059,6 +403920,11 @@
           "date": "2026-07-14",
           "close": 0.24199999868869781,
           "volume": 10177936
+        },
+        {
+          "date": "2026-07-15",
+          "close": 0.2409999966621399,
+          "volume": 5341561
         }
       ]
     },
@@ -403085,11 +403951,6 @@
       "pb": 0.42082953,
       "dividend_yield": null,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 66.2806167602539,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 66.2806167602539,
@@ -414999,6 +415860,11 @@
           "date": "2026-07-13",
           "close": 61.75,
           "volume": 40
+        },
+        {
+          "date": "2026-07-14",
+          "close": 61.75,
+          "volume": 40
         }
       ]
     },
@@ -415010,26 +415876,21 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Insurance - Diversified",
-      "price": 0.867,
-      "previous_close": 0.88,
-      "change": -0.013,
-      "change_pct": -1.48,
-      "volume": 3165098,
-      "market_cap": 710920704,
-      "day_high": 0.875,
-      "day_low": 0.851,
+      "price": 0.873,
+      "previous_close": 0.86,
+      "change": 0.013,
+      "change_pct": 1.51,
+      "volume": 5476442,
+      "market_cap": 715840576,
+      "day_high": 0.889,
+      "day_low": 0.856,
       "year_high": 0.928,
       "year_low": 0.372,
-      "pe_trailing": 28.9,
+      "pe_trailing": 29.100002,
       "pe_forward": null,
-      "pb": 0.9342672,
+      "pb": 0.94073284,
       "dividend_yield": null,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 0.6438980102539062,
-          "volume": 3401763
-        },
         {
           "date": "2016-07-17",
           "close": 0.6567760109901428,
@@ -426804,6 +427665,11 @@
           "date": "2026-07-14",
           "close": 0.8600000143051147,
           "volume": 2888310
+        },
+        {
+          "date": "2026-07-15",
+          "close": 0.8730000257492065,
+          "volume": 5476442
         }
       ]
     },
@@ -426815,20 +427681,20 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Capital Markets",
-      "price": 1.09,
-      "previous_close": 1.07,
-      "change": 0.02,
-      "change_pct": 1.87,
-      "volume": 38963,
-      "market_cap": 501400000,
-      "day_high": 1.09,
-      "day_low": 1.02,
+      "price": 1.04,
+      "previous_close": 1.04,
+      "change": 0.0,
+      "change_pct": 0.0,
+      "volume": 7801,
+      "market_cap": 478399968,
+      "day_high": 1.04,
+      "day_low": 1.0,
       "year_high": 1.28,
       "year_low": 0.73913,
-      "pe_trailing": 7.2666664,
+      "pe_trailing": 6.933333,
       "pe_forward": null,
-      "pb": 0.9846432,
-      "dividend_yield": 4.59,
+      "pb": 0.939476,
+      "dividend_yield": 4.81,
       "history": [
         {
           "date": "2017-12-20",
@@ -436954,6 +437820,11 @@
           "date": "2026-07-14",
           "close": 1.0399999618530273,
           "volume": 4973
+        },
+        {
+          "date": "2026-07-15",
+          "close": 1.0399999618530273,
+          "volume": 7801
         }
       ]
     },
@@ -436980,11 +437851,6 @@
       "pb": 9.384615,
       "dividend_yield": null,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 1.2548110485076904,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 1.2548110485076904,
@@ -448919,6 +449785,11 @@
           "date": "2026-07-13",
           "close": 0.8539999723434448,
           "volume": 28
+        },
+        {
+          "date": "2026-07-14",
+          "close": 0.8539999723434448,
+          "volume": 28
         }
       ]
     },
@@ -448934,7 +449805,7 @@
       "previous_close": 2.0,
       "change": 0.0,
       "change_pct": 0.0,
-      "volume": 50,
+      "volume": 100,
       "market_cap": 511166624,
       "day_high": 2.0,
       "day_low": 2.0,
@@ -454174,7 +455045,7 @@
       "previous_close": 11.4,
       "change": 0.0,
       "change_pct": 0.0,
-      "volume": 591,
+      "volume": 2100,
       "market_cap": 344849984,
       "day_high": 11.4,
       "day_low": 11.4,
@@ -454185,11 +455056,6 @@
       "pb": 1.0043168,
       "dividend_yield": 4.17,
       "history": [
-        {
-          "date": "2016-07-14",
-          "close": 5.699999809265137,
-          "volume": 0
-        },
         {
           "date": "2016-07-17",
           "close": 5.699999809265137,
@@ -466094,6 +466960,16 @@
           "date": "2026-07-13",
           "close": 11.399999618530273,
           "volume": 591
+        },
+        {
+          "date": "2026-07-14",
+          "close": 11.399999618530273,
+          "volume": 591
+        },
+        {
+          "date": "2026-07-15",
+          "close": 11.399999618530273,
+          "volume": 2100
         }
       ]
     },
@@ -466105,19 +466981,19 @@
       "currency": "AED",
       "sector": "Financial Services",
       "subsector": "Banks - Regional",
-      "price": 0.195,
-      "previous_close": 0.195,
-      "change": 0.0,
-      "change_pct": 0.0,
-      "volume": 510722,
-      "market_cap": 567481152,
-      "day_high": 0.195,
-      "day_low": 0.194,
+      "price": 0.191,
+      "previous_close": 0.192,
+      "change": -0.001,
+      "change_pct": -0.52,
+      "volume": 509816,
+      "market_cap": 555840512,
+      "day_high": 0.193,
+      "day_low": 0.19,
       "year_high": 0.379,
       "year_low": 0.177,
       "pe_trailing": "Infinity",
       "pe_forward": null,
-      "pb": 10.616579,
+      "pb": 10.398804,
       "dividend_yield": null,
       "history": [
         {
@@ -475909,6 +476785,11 @@
           "date": "2026-07-14",
           "close": 0.19200000166893005,
           "volume": 3193658
+        },
+        {
+          "date": "2026-07-15",
+          "close": 0.19099999964237213,
+          "volume": 509816
         }
       ]
     },
@@ -476485,7 +477366,5 @@
       "note": "ADX equities not covered by Yahoo Finance. Live data unavailable in this build."
     }
   ],
-  "missing_dfm": [
-    "ALEC.AE"
-  ]
+  "missing_dfm": []
 }

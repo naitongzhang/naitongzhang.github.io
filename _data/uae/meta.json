@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T14:27:13+00:00",
+  "generated_at": "2026-07-15T14:23:34+00:00",
   "site_version": "1.0.0",
   "data_source": {
     "primary": "Yahoo Finance via yfinance (DFM coverage ~50-60%)",
@@ -8,7 +8,7 @@
   },
   "coverage": {
     "dfm_total": 52,
-    "dfm_ok": 51,
+    "dfm_ok": 52,
     "adx_total": 52
   },
   "tickers_count": 104,
