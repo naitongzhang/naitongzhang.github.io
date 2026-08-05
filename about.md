@@ -14,7 +14,7 @@ markets. I also run my own multi-asset book (A-shares, HK/US
 equities, FX, crypto perpetuals).
 
 Before going independent I worked in strategy consulting at Strategy& [2021] 
-and China Harbour Engineering Company [2015-*2020]
+and China Harbour Engineering Company [2015-2020]
 
 ## Education
 
