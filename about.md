@@ -21,9 +21,9 @@ and China Harbour Engineering Company [2015-*2020]
 - Postgraduate Certificate in Urban Studies — Real-Estate Finance,
   Heriot-Watt University Dubai (completed Nov 2025)
 - MBA, Cheung Kong Graduate School of Business (Beijing, 2022) 
-- exchange semesters at National Taiwan University
+  exchange semesters at National Taiwan University
 - BA International Business Economics, University of Nottingham Ningbo (2015) 
-- exchange semesters at College of Charleston
+  exchange semesters at College of Charleston
 - Born and grew up in Dalian, China
 
 ## Languages
