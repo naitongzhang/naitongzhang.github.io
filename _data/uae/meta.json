@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T18:06:37+00:00",
+  "generated_at": "2026-10-01T18:33:24+00:00",
   "site_version": "1.0.0",
   "data_source": {
     "primary": "Yahoo Finance via yfinance (DFM coverage ~50-60%)",
